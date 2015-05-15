@@ -2,6 +2,10 @@
   url: "/"
   side: left
 
+- title: "DrAmor.NET"
+  url: "http://dramor.net/"
+  side: left
+
 - title: "Investigación y CV"
   url: "http://home.dramor.net/"
   side: left

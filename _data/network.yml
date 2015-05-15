@@ -1,7 +1,11 @@
-#- menu_name: "Agradecimientos"
+- menu_name: "Créditos"
 
-#- name: "Tema por Phlow"
-#  url: "http://phlow.de/"
-#  class: "network-entypo"
-#  title: "Tema por Phlow"
+- name: "Tema por Phlow"
+  url: "http://phlow.de/"
+  class: "network-entypo"
+  title: "Tema por Phlow"
+- name: "Logo Datacenter por Beraldo Leal"
+  url: "https://www.flickr.com/photos/beraldoleal/8681754154/in/photostream/"
+  class: "network-entypo"
+  title: "Logo Datacenter por Beraldo Leal"
 
