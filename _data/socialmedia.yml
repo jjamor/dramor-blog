@@ -1,42 +1,42 @@
 - name: YouTube
-  url: http://www.youtube.com/PhlowMedia
+  url: http://www.youtube.com/JuanjoAI
   class: icon-youtube
   title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
 
 - name: Twitter
-  url: http://twitter.com/phlow
+  url: http://twitter.com/dramor
   class: icon-twitter
   title: "Immer das Neuste von Phlow gibt es auf Twitter"
 
 - name: Facebook
-  url: http://www.facebook.com/phlow.media
+  url: http://www.facebook.com/juanjo.amor
   class: icon-facebook
   title: "Lass uns Freunde sein!"
 
-- name: Soundcloud
-  url: http://soundcloud.com/phlow
-  class: icon-soundcloud
-  title: "Sounds und Downloads und mehr"
+#- name: Soundcloud
+#  url: http://soundcloud.com/phlow
+#  class: icon-soundcloud
+#  title: "Sounds und Downloads und mehr"
 
 - name: GitHub
-  url: http://github.com/phlow
+  url: http://github.com/jjamor
   class: icon-github
   title: Code und mehr...
 
 - name: Instagram
-  url: http://instagram.com/phlowmedia
+  url: http://instagram.com/juanjoai
   class: icon-instagram
   title: "Bilder und Impressionen mit und ohne Filter..."
 
-- name: Pinterest
-  url: http://www.pinterest.com/phlowmedia/
-  class: icon-pinterest
-  title: "Bilder, Fotos, Illustrationen, Grafiken sammeln..."
+#- name: Pinterest
+#  url: http://www.pinterest.com/phlowmedia/
+#  class: icon-pinterest
+#  title: "Bilder, Fotos, Illustrationen, Grafiken sammeln..."
 
-- name: Mixcloud
-  url: http://www.mixcloud.com/phlow/
-  class: icon-cloud
-  title: "Mixe, was sonst?"
+#- name: Mixcloud
+#  url: http://www.mixcloud.com/phlow/
+#  class: icon-cloud
+#  title: "Mixe, was sonst?"
 
 # - name: Xing
 #   url: https://www.xing.com/profile/Moritzmo_Sauer

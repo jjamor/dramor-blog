@@ -1,16 +1,16 @@
-- menu_name: "Services"
+- menu_name: "Servicios"
 
-- name: "Contact"
+- name: "Contactar"
   url: "/contact/"
   class: "services-contact"
-  title: "Contact"
+  title: "Contactar"
 
 - name: "RSS"
   url: "/feed.xml"
   class: "rss-link"
-  title: "Subscribe to RSS"
+  title: "Subscribir RSS"
 
 - name: "sitemap.xml"
   url: "/sitemap.xml"
   class: "sitemap-link"
-  title: "Sitemap for Google Webmastertools"
+  title: "Sitemap para Google Webmaster Tools"
