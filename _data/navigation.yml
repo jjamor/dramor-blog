@@ -21,7 +21,7 @@
   dropdown:
   - title: Blog
     url: "/blog/"
-  - title: "Blog Archive"
+  - title: "Archivos Blog"
     url: "/blog/archive/"
 
 - title: "Buscar"
