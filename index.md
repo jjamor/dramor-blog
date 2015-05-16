@@ -9,26 +9,19 @@ title: "Feeling Responsive – A Jekyll Theme Based On Foundation"
 header:
    image_fullwidth: "portada-datacentre.jpg"
 widget-1:
-    title: "Blog & Portfolio"
-    url: 'http://phlow.github.io/feeling-responsive/blog/'
-    text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
-    image: unsplash_9-302x182.jpg
+    title: "Blog"
+    url: '/blog/'
+    text: 'Desde 2004, escribo regularmente este blog. Artículos a veces de índole social, pero sobre todo de carácter técnico. Principalmente sobre el paradigma que más me ha motivado siempre: el <em>open source</em> o software libre. Pero ojo, que puede que cuele hasta ¡recetas de cocina!'
+    image: oldblog.jpg
 widget-2:
-    title: "Why use this theme?"
-    url: 'http://phlow.github.io/feeling-responsive/info/'
-    text: '<em>Feeling Responsive</em> is heavily customizable.<br>1. Language-Support :)<br>2. Optimized for speed and it&#39;s responsive.<br>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br>4. Seven different Headers.<br>5. Customizable navigation, footer,...'
-    video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""></a>'
+    title: "¿Quién es el DrAmor?"
+    url: 'http://dramor.net/'
+    text: 'Mi nombre es Juanjo Amor. Soy un profesional de la informática especialista en sistemas Unix/Linux y durante mucho tiempo, <em>activista</em> del modelo de software libre. Inquietudes diversas me han llevado a pasar de empresa a investigación y viceversa. Pero DrAmor es, sobre todo, una pequeña broma que hicimos unos amigos hace muchos años.'
+    image: dramor.jpg
 widget-3:
-    title: "Download Theme"
-    url: 'https://github.com/Phlow/feeling-responsive'
-    text: '<em>Feeling Responsive</em> is totally free and licensed under the MIT License. Make it your own and do with it what you want. Grab your copy or clone it at GitHub and start your website with it. Then tell me via Twitter <a href="http://twitter.com/phlow">@phlow</a>.'
+    title: "Y ahora... github!"
+    url: 'https://github.com/jjamor'
+    text: 'Un poco cansado de la complejidad de Wordpress y siempre convencido en que hay que mostrar todas las cartas, renové mis páginas tanto principal como Blog (esta última gracias a la plantilla <em>Feeling Responsive</em> de <a href="http://twitter.com/phlow">@phlow</a>). Y como digo, mostrando todas mis cartas y las de los demás que, sin querer, me ayudaron. En Github, por supuesto.'
     image: github-303x182.jpg
 ---
 
-
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
