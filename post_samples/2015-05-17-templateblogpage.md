@@ -9,6 +9,8 @@ title:  "Plantilla de artículo de blog"
 #    - design
 #    - background color
 #    - header
+# show_meta: true
+# meta_description: Todo acerca del contenido de este artículo en el blog de Juanjo Amor
 ---
 Página de plantilla para artículos del blog.
 
