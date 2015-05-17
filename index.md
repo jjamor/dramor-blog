@@ -5,7 +5,7 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "Feeling Responsive – A Jekyll Theme Based On Foundation"
+title: "DrAmor's Blog - The boring stories written by Juanjo Amor"
 header:
    image_fullwidth: "portada-datacentre.jpg"
 widget-1:
