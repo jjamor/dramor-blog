@@ -152,11 +152,11 @@ msapplication_tilecolor:                "#fabb00"
 #    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<   
 #   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
 
-og_image:                           "http://images.phlow.de/phlow/phlow_de-logo-512x.png"
-og_locale:                          "en_EN"
+og_image:                           "http://blog.dramor.net/assets/img/logo.png"
+og_locale:                          "es_ES"
 og_type:                            "website"
-og_title:                           "Feeling Responsive – A Responsive Theme for Jekyll"
-og_description:                     "Feeling Responsive is built on the fabulous Foundation Framework and comes with lots of features to show your content right."
+og_title:                           "DrAmor's Blog - The boring stories written by Juanjo Amor"
+og_description:                     "Blog de Juan Jose Amor (Juanjo Amor). Aqui encontraras articulos escritos por Juan Jose Amor (Juanjo Amor)"
 # og_url:                           ""
 # og_site_name:                     ""
 
