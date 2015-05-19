@@ -1,51 +1,32 @@
 ---
 layout: page
-title: "About"
-subheadline: "Why another Jekyll Theme?"
+title: "Sobre esta página"
+subheadline: "Acerca de esta página de Juanjo Amor"
 show_meta: false
-teaser: "Since years I am programming and designing websites. I love to work with open source tools and learn via code from others. This time I want to try to give something back..."
+teaser: "Tras muchos años en Wordpress decidí convertir todo a una página estática. Con menos máquina todo va mucho mejor. Y sobre todo, es más seguro."
 permalink: "/info/"
 header:
-    image_fullwidth: "header_drop.jpg"
+    image_fullwidth: "portada-datacentre.jpg"
 ---
-...and learn at the same time.
+...y ya puesto, aprendemos cosas nuevas.
 
-*Feeling Responsive* is my first theme which I let into the world. It's built on work and knowledge of others. While I am still designing it, you read about whats behind this theme in the – *hopefully* – near future.
-
-
-## Features
-
-* Responsive Gallery, Videos, Grid, Typography,...
-* 100% GitHub Pages friendly
-* Easy editable navigation, footer and social media links
-* Language Ready – just translate one file.
-* Lots of possibilities to customize it to your needs
-* Lots of different headers
-* Various post formats to let your content shine
-* Uses Jekyll 3.0
-* Multiple possibilities to use images in different ways
-* Fine typography
+Con esta transformación, comencé a usar un software de blog de página estática (*Jekyll*), lo versioné con Git (en *github*) y, de paso, adaptamos todo al recomendado diseño *apto para móviles*. Y simplificamos el mantenimiento.
 
 
+## Basado en...
 
-## I got inspired by...
+Principalmente, en el trabajo de [Moritz »mo.« Sauer][1]: la plantilla [*Feeling Responsive*][2] para Jekyll. ¿Para qué diseñar de nuevo una página web, cuando se puede reutilizar el trabajo realizado por otros? (siempre que la licencia lo permita, claro). Así que *fork*, un poco de trabajo y listo: página renovada. Y el código fuente, [a disposición de todo el mundo][4].
 
-[Michael Rose][1] and his fabulous [themes for jekyll][2]. Authors of [A List Apart][4] and [Smashing Magazine][5] since 2002. [GitHub][6] and how they built such a habitat for cooperation worldwide. [Automattic][3] and how they built a fantastic community around WordPress. And many, many more...
+Tal como sugiere Moritz, esta plantilla la hice mía y la modifiqué para mí. Si quieres más diseños interesantes puedes ir a la página de este desarrollador: [Phlow][3].
 
-Please make *Feeling Responsive* yours and if you like it, please link back to my homebase <a href="http://phlow.de/">Phlow</a>. That would be awesome.
+#### Y si te gustan mis modificaciones, siempre puedes hacer tu [fork][4]!
 
-#### Since then, fork it!
-
-Yours sincerelly, [Moritz »mo.« Sauer][7]
+[Juanjo Amor][5]
 
 
- [1]: http://mademistakes.com/about/
- [2]: http://mademistakes.com/work/jekyll-themes/
- [3]: http://automattic.com/
- [4]: http://alistapart.com/
- [5]: http://www.smashingmagazine.com/
- [6]: https://github.com/
- [7]: http://sauer.io
- [8]: #
- [9]: #
- [10]: #
+ [1]: http://sauer.io
+ [2]: http://phlow.github.io/feeling-responsive/
+ [3]: http://phlow.de/
+ [4]: http://github.com/jjamor/dramor-blog/
+ [5]: http://dramor.net/
+ 
