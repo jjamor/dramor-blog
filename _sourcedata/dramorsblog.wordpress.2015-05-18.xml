@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.2.2" created="2015-05-18 14:08" -->
+<!-- generator="WordPress/4.2.2" created="2015-05-20 06:13" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>DrAmor's Blog</title>
 	<link>http://dramor.net/blog</link>
 	<description>The boring stories written by Juanjo Amor</description>
-	<pubDate>Mon, 18 May 2015 14:08:34 +0000</pubDate>
+	<pubDate>Wed, 20 May 2015 06:13:48 +0000</pubDate>
 	<language>es-ES</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://dramor.net/blog</wp:base_site_url>
@@ -204,7 +204,7 @@
 
 	<item>
 		<title>Nuevo blog</title>
-		<link>http://dramor.net/blog/archives/7</link>
+		<link>http://dramor.net/blog/2005/12/nuevo-blog/</link>
 		<pubDate>Mon, 19 Dec 2005 10:08:37 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=7</guid>
@@ -273,7 +273,7 @@ En mi blog dejé instrucciones de como recuperé yo todos mis contenidos. Si nec
 	</item>
 	<item>
 		<title>De barebones y macminis</title>
-		<link>http://dramor.net/blog/archives/8</link>
+		<link>http://dramor.net/blog/2005/12/de-barebones-y-macminis/</link>
 		<pubDate>Mon, 19 Dec 2005 12:23:04 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=8</guid>
@@ -308,7 +308,7 @@ Eso sí, espero que cuando lo compre no hayan cambiado a Intel ;-)]]></content:e
 	</item>
 	<item>
 		<title>Y se volvió a caer</title>
-		<link>http://dramor.net/blog/archives/9</link>
+		<link>http://dramor.net/blog/2005/12/y-se-volvio-a-caer/</link>
 		<pubDate>Mon, 19 Dec 2005 20:18:55 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=9</guid>
@@ -359,7 +359,7 @@ Eso sí, espero que cuando lo compre no hayan cambiado a Intel ;-)]]></content:e
 	</item>
 	<item>
 		<title>Mi breve paseo por el Congreso Hispalinux</title>
-		<link>http://dramor.net/blog/archives/10</link>
+		<link>http://dramor.net/blog/2005/12/mi-breve-paseo-por-el-congreso-hispalinux/</link>
 		<pubDate>Fri, 23 Dec 2005 15:15:34 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=10</guid>
@@ -401,7 +401,7 @@ En fin, me alegro de que hubiera encuentro Hispalinux 2005, y a ver si el año q
 	</item>
 	<item>
 		<title>Felices fiestas</title>
-		<link>http://dramor.net/blog/archives/11</link>
+		<link>http://dramor.net/blog/2005/12/felices-fiestas/</link>
 		<pubDate>Sat, 24 Dec 2005 14:26:04 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=11</guid>
@@ -492,7 +492,7 @@ Un besote :-)]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Promesas y deseos para 2006</title>
-		<link>http://dramor.net/blog/archives/12</link>
+		<link>http://dramor.net/blog/2006/01/promesas-y-deseos-para-2006/</link>
 		<pubDate>Sun, 01 Jan 2006 12:52:27 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=12</guid>
@@ -563,7 +563,7 @@ Feliz año!!!]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Preparando un entorno para Opensolaris</title>
-		<link>http://dramor.net/blog/archives/13</link>
+		<link>http://dramor.net/blog/2005/12/13/</link>
 		<pubDate>Sat, 31 Dec 2005 20:48:06 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=13</guid>
@@ -606,7 +606,7 @@ Seguiremos informando, aunque no haré un blog específico para ello, que no es 
 	</item>
 	<item>
 		<title>Phising con Skype</title>
-		<link>http://dramor.net/blog/archives/14</link>
+		<link>http://dramor.net/blog/2006/01/phising-con-skype/</link>
 		<pubDate>Sun, 01 Jan 2006 11:35:54 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=14</guid>
@@ -684,7 +684,7 @@ En mi caso, la instalación de <a href="http://www.sng.ecs.soton.ac.uk/mailscann
 	</item>
 	<item>
 		<title>A ver si puedo decir que me quedo con Wordpress 2.0</title>
-		<link>http://dramor.net/blog/archives/17</link>
+		<link>http://dramor.net/blog/2006/01/a-ver-si-puedo-decir-que-me-quedo-con-wordpress-20/</link>
 		<pubDate>Tue, 03 Jan 2006 23:05:04 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/17</guid>
@@ -809,7 +809,7 @@ Empiezan a aparecer buenos articulos sobre la migración de wordpress a 2.0. En 
 	</item>
 	<item>
 		<title>Novedades en nuestro hosting</title>
-		<link>http://dramor.net/blog/archives/19</link>
+		<link>http://dramor.net/blog/2006/01/novedades-en-nuestro-hosting/</link>
 		<pubDate>Fri, 06 Jan 2006 15:06:46 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/19</guid>
@@ -854,7 +854,7 @@ El codigo seria JB4RR]]></wp:comment_content>
 	</item>
 	<item>
 		<title>El timo de los SMS</title>
-		<link>http://dramor.net/blog/archives/20</link>
+		<link>http://dramor.net/blog/2006/01/el-timo-de-los-sms/</link>
 		<pubDate>Mon, 02 Jan 2006 07:35:20 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/20</guid>
@@ -881,7 +881,7 @@ Pero bueno, qué más da. Es navidad. Feliz año nuevo. ¡pásalo!]]></content:e
 	</item>
 	<item>
 		<title>Los confidenciales sí que sirven (envío privado)</title>
-		<link>http://dramor.net/blog/archives/21</link>
+		<link>http://dramor.net/blog/2006/01/los-confidenciales-si-que-sirven/</link>
 		<pubDate>Mon, 09 Jan 2006 09:48:52 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/21</guid>
@@ -914,7 +914,7 @@ Fuentes: <a href="http://noticiasdot.com">Noticiasdot.com</a>, <a href="http://w
 	</item>
 	<item>
 		<title>Un carril-bici a 50 metros de casa</title>
-		<link>http://dramor.net/blog/archives/22</link>
+		<link>http://dramor.net/blog/2006/01/un-carril-bici-a-50-metros-de-casa/</link>
 		<pubDate>Sun, 08 Jan 2006 07:16:36 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/22</guid>
@@ -1036,7 +1036,7 @@ Lois]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Experiencias con una VoIP libre y estándar</title>
-		<link>http://dramor.net/blog/archives/23</link>
+		<link>http://dramor.net/blog/2006/01/experiencias-con-una-voip-libre-y-estandar/</link>
 		<pubDate>Mon, 09 Jan 2006 07:48:57 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/23</guid>
@@ -1145,7 +1145,7 @@ Me vienen al pelo tus pruebas, muchas gracias :D]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Cerró una fábrica de CDs española por culpa del canon</title>
-		<link>http://dramor.net/blog/archives/24</link>
+		<link>http://dramor.net/blog/2006/01/cerro-una-fabrica-de-cds-espanola-por-culpa-del-canon/</link>
 		<pubDate>Tue, 10 Jan 2006 08:20:32 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/24</guid>
@@ -1182,7 +1182,7 @@ Me vienen al pelo tus pruebas, muchas gracias :D]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Contactar</title>
-		<link>http://dramor.net/blog/contactar</link>
+		<link>http://dramor.net/blog/contactar/</link>
 		<pubDate>Tue, 24 Jan 2006 15:41:01 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/contactar/</guid>
@@ -1344,7 +1344,7 @@ Cosillas: el tema del DNIe y su prácticamente inoperatividad para los "mortales
 	</item>
 	<item>
 		<title>Sé mejor administrador: reduce realmente el spam</title>
-		<link>http://dramor.net/blog/archives/18</link>
+		<link>http://dramor.net/blog/2006/01/se-mejor-administrador-reduce-realmente-el-spam/</link>
 		<pubDate>Sat, 21 Jan 2006 06:35:55 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/18</guid>
@@ -1600,7 +1600,7 @@ mil abrazos. IBM en tus manos en ese caso regresamos el internet a los BBS “ru
 	</item>
 	<item>
 		<title>Por una rebaja en el IVA de las telecomunicaciones</title>
-		<link>http://dramor.net/blog/archives/25</link>
+		<link>http://dramor.net/blog/2006/01/por-una-rebaja-en-el-iva-de-las-telecomunicaciones/</link>
 		<pubDate>Wed, 11 Jan 2006 09:59:11 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/25</guid>
@@ -1673,7 +1673,7 @@ Aquí va una lista de lo que he podido seg...]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Copiad estos libros</title>
-		<link>http://dramor.net/blog/archives/26</link>
+		<link>http://dramor.net/blog/2006/01/copiad-estos-libros/</link>
 		<pubDate>Fri, 13 Jan 2006 14:40:36 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/26</guid>
@@ -1761,7 +1761,7 @@ Gracias a Juanjo al fin ya tengo la copia impresa de «Copia este Libro» de Dav
 	</item>
 	<item>
 		<title>Google y el proxy de Telefónica</title>
-		<link>http://dramor.net/blog/archives/27</link>
+		<link>http://dramor.net/blog/2006/01/google-y-el-proxy-de-telefonica/</link>
 		<pubDate>Sun, 15 Jan 2006 11:23:55 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/27</guid>
@@ -1845,7 +1845,7 @@ No conocía lo de "captcha" para darle nombre a eso, por cierto :-)]]></wp:comme
 	</item>
 	<item>
 		<title>Integran Google Talk con Jabber. Wordpress en español</title>
-		<link>http://dramor.net/blog/archives/28</link>
+		<link>http://dramor.net/blog/2006/01/han-integrado-google-talk-con-la-red-jabber/</link>
 		<pubDate>Tue, 17 Jan 2006 21:34:09 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/28</guid>
@@ -1871,7 +1871,7 @@ Y por otro lado, me he enterado via <a href="http://www.lamateporunyogur.net/arc
 	</item>
 	<item>
 		<title>El sexo de la M-30</title>
-		<link>http://dramor.net/blog/archives/30</link>
+		<link>http://dramor.net/blog/2006/01/el-sexo-de-la-m-30/</link>
 		<pubDate>Fri, 20 Jan 2006 18:59:35 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/30</guid>
@@ -1897,7 +1897,7 @@ Esto lo vi esta mañana, viniendo para la universidad. Pero me sonaba a algo má
 	</item>
 	<item>
 		<title>Temblores en la calle O&#039;Donnell</title>
-		<link>http://dramor.net/blog/archives/31</link>
+		<link>http://dramor.net/blog/2006/01/temblores-en-la-c-odonnell/</link>
 		<pubDate>Mon, 23 Jan 2006 21:05:49 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/31</guid>
@@ -1934,7 +1934,7 @@ Esto lo vi esta mañana, viniendo para la universidad. Pero me sonaba a algo má
 	</item>
 	<item>
 		<title>«Reclameitor» 1 - AUNA 0</title>
-		<link>http://dramor.net/blog/archives/32</link>
+		<link>http://dramor.net/blog/2006/01/%c2%abreclameitor%c2%bb-1-auna-0/</link>
 		<pubDate>Tue, 24 Jan 2006 07:25:34 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/32</guid>
@@ -2093,7 +2093,7 @@ El que tanta gente no tenga tanta suerte como tú probablemente se deba a que no
 	</item>
 	<item>
 		<title>Google Adsense removed from here</title>
-		<link>http://dramor.net/blog/archives/34</link>
+		<link>http://dramor.net/blog/2006/01/googleads-removed-from-here/</link>
 		<pubDate>Fri, 27 Jan 2006 12:51:41 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/34</guid>
@@ -2130,7 +2130,7 @@ El que tanta gente no tenga tanta suerte como tú probablemente se deba a que no
 	</item>
 	<item>
 		<title>Gmail ya está en las listas negras antispam</title>
-		<link>http://dramor.net/blog/archives/35</link>
+		<link>http://dramor.net/blog/2006/01/gmail-ya-esta-en-las-listas-negras-antispam/</link>
 		<pubDate>Sat, 28 Jan 2006 13:07:06 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/35</guid>
@@ -2186,7 +2186,7 @@ Sigue así, que tienes un blog cojonudo!!]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Llegó la nieve a Madrid</title>
-		<link>http://dramor.net/blog/archives/36</link>
+		<link>http://dramor.net/blog/2006/01/llego-la-nieve-a-madrid/</link>
 		<pubDate>Sun, 29 Jan 2006 20:59:23 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/36</guid>
@@ -2242,7 +2242,7 @@ pd: el preview de los comentarios está muy chulo. Es un "simple" javascript que
 	</item>
 	<item>
 		<title>Mezcla de software gratis, libre, Linux y Microsoft, en El Periódico de Catalunya</title>
-		<link>http://dramor.net/blog/archives/37</link>
+		<link>http://dramor.net/blog/2006/01/mezcla-de-software-gratis-libre-linux-y-microsoft-en-el-periodico-de-catalunya/</link>
 		<pubDate>Mon, 30 Jan 2006 23:45:21 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/37</guid>
@@ -2265,7 +2265,7 @@ pd: el preview de los comentarios está muy chulo. Es un "simple" javascript que
 	</item>
 	<item>
 		<title>La campaña del 7% de IVA</title>
-		<link>http://dramor.net/blog/archives/38</link>
+		<link>http://dramor.net/blog/2006/02/la-campana-del-7-de-iva/</link>
 		<pubDate>Thu, 02 Feb 2006 16:47:19 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/38</guid>
@@ -2288,7 +2288,7 @@ pd: el preview de los comentarios está muy chulo. Es un "simple" javascript que
 	</item>
 	<item>
 		<title>Frikipedia: la historia se repite</title>
-		<link>http://dramor.net/blog/archives/39</link>
+		<link>http://dramor.net/blog/2006/02/frikipedia-la-historia-se-repite/</link>
 		<pubDate>Tue, 07 Feb 2006 07:21:38 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/39</guid>
@@ -2325,7 +2325,7 @@ pd: el preview de los comentarios está muy chulo. Es un "simple" javascript que
 	</item>
 	<item>
 		<title>Workshop de ingeniería del software libre, en Madrid</title>
-		<link>http://dramor.net/blog/archives/41</link>
+		<link>http://dramor.net/blog/2006/02/workshop-de-ingenieria-del-software-libre-en-madrid/</link>
 		<pubDate>Fri, 10 Feb 2006 22:52:30 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/41</guid>
@@ -2394,7 +2394,7 @@ Mi enhorabuena a Grex ;-)]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Se acabó el proxy de Telefónica</title>
-		<link>http://dramor.net/blog/archives/43</link>
+		<link>http://dramor.net/blog/2006/02/se-acabo-el-proxy-de-telefonica/</link>
 		<pubDate>Tue, 14 Feb 2006 20:56:58 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/43</guid>
@@ -2418,7 +2418,7 @@ Mi enhorabuena a Grex ;-)]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Creando notarios de CACert.org en Madrid</title>
-		<link>http://dramor.net/blog/archives/44</link>
+		<link>http://dramor.net/blog/2006/02/creando-notarios-de-cacertorg-en-madrid/</link>
 		<pubDate>Sat, 18 Feb 2006 19:36:25 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/44</guid>
@@ -2460,7 +2460,7 @@ La segunda, es que la semana que viene en el <a href="http://www.fosdem.org/" re
 	</item>
 	<item>
 		<title>Estuvimos en Málaga, por la II OSWC</title>
-		<link>http://dramor.net/blog/archives/45</link>
+		<link>http://dramor.net/blog/2006/02/estuvimos-en-malaga-por-la-ii-oswc/</link>
 		<pubDate>Sat, 18 Feb 2006 17:01:04 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/45</guid>
@@ -2498,7 +2498,7 @@ La segunda, es que la semana que viene en el <a href="http://www.fosdem.org/" re
 	</item>
 	<item>
 		<title>Nuevo abuso</title>
-		<link>http://dramor.net/blog/archives/46</link>
+		<link>http://dramor.net/blog/2006/02/nuevo-abuso/</link>
 		<pubDate>Sun, 19 Feb 2006 07:25:25 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/46</guid>
@@ -2549,7 +2549,7 @@ La segunda, es que la semana que viene en el <a href="http://www.fosdem.org/" re
 	</item>
 	<item>
 		<title>Mafias</title>
-		<link>http://dramor.net/blog/archives/47</link>
+		<link>http://dramor.net/blog/2006/02/mafias/</link>
 		<pubDate>Tue, 21 Feb 2006 07:16:53 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/47</guid>
@@ -2608,7 +2608,7 @@ I was astonished by an applied case of "copia privada" when I was in Madrid: if 
 	</item>
 	<item>
 		<title>¿Competir con Google? Anda que...</title>
-		<link>http://dramor.net/blog/archives/16</link>
+		<link>http://dramor.net/blog/2006/05/%c2%bfcompetir-con-google-anda-que/</link>
 		<pubDate>Sun, 14 May 2006 08:25:37 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/16</guid>
@@ -2757,7 +2757,7 @@ Bueno, acabo, que parecen post biblias, jejeje. Desechar otras opciones nunca es
 	</item>
 	<item>
 		<title>Tomando el fresco en Bruselas</title>
-		<link>http://dramor.net/blog/archives/48</link>
+		<link>http://dramor.net/blog/2006/02/tomando-el-fresco-en-bruselas/</link>
 		<pubDate>Tue, 28 Feb 2006 13:44:02 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/48</guid>
@@ -2782,7 +2782,7 @@ Mañana será el viaje que culminará este mes sin apenas tiempo para respirar. 
 	</item>
 	<item>
 		<title>Media semana en Skövde</title>
-		<link>http://dramor.net/blog/archives/50</link>
+		<link>http://dramor.net/blog/2006/03/media-semana-en-skovde/</link>
 		<pubDate>Fri, 03 Mar 2006 00:20:22 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/50</guid>
@@ -2825,7 +2825,7 @@ Mañana hacemos nuestro último día aquí, con el workshop de Calibre que comen
 	</item>
 	<item>
 		<title>El mundo moderno</title>
-		<link>http://dramor.net/blog/archives/51</link>
+		<link>http://dramor.net/blog/2006/03/el-mundo-moderno/</link>
 		<pubDate>Wed, 08 Mar 2006 07:43:29 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/51</guid>
@@ -2909,7 +2909,7 @@ Pues mu bien :D:D:D]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Seis meses y seis semanas</title>
-		<link>http://dramor.net/blog/archives/52</link>
+		<link>http://dramor.net/blog/2006/03/seis-meses-y-seis-semanas/</link>
 		<pubDate>Mon, 13 Mar 2006 09:45:24 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/52</guid>
@@ -2974,7 +2974,7 @@ Pues mu bien :D:D:D]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Discusiones sobre &quot;Copia este Libro&quot;</title>
-		<link>http://dramor.net/blog/archives/53</link>
+		<link>http://dramor.net/blog/2006/03/discusiones-sobre-copia-este-libro/</link>
 		<pubDate>Tue, 14 Mar 2006 08:42:49 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/53</guid>
@@ -2997,7 +2997,7 @@ Pues mu bien :D:D:D]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Jazztel, la pesadilla de muchos internautas</title>
-		<link>http://dramor.net/blog/archives/54</link>
+		<link>http://dramor.net/blog/2006/03/jazztel-la-pesadilla-de-muchos-internautas/</link>
 		<pubDate>Thu, 16 Mar 2006 14:31:24 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/54</guid>
@@ -3222,7 +3222,7 @@ suerte!]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Crónica: Javier de la Cueva en la Facultad de Informática</title>
-		<link>http://dramor.net/blog/archives/55</link>
+		<link>http://dramor.net/blog/2006/03/charla-de-javier-de-la-cueva-en-la-facultad-de-informatica/</link>
 		<pubDate>Sun, 19 Mar 2006 07:04:58 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/55</guid>
@@ -3303,7 +3303,7 @@ De todas formas, allá por el 96 dimos unas charlas sobre Linux en el mismo siti
 	</item>
 	<item>
 		<title>¿Se acabará el roaming en Europa?</title>
-		<link>http://dramor.net/blog/archives/56</link>
+		<link>http://dramor.net/blog/2006/03/%c2%bfse-acabara-el-roaming-en-europa/</link>
 		<pubDate>Wed, 29 Mar 2006 08:45:37 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/56</guid>
@@ -3330,7 +3330,7 @@ Pues bien, parece que Europa <a href="http://www.elmundo.es/mundodinero/2006/03/
 	</item>
 	<item>
 		<title>El nuevo portal</title>
-		<link>http://dramor.net/blog/archives/57</link>
+		<link>http://dramor.net/blog/2006/04/el-nuevo-portal/</link>
 		<pubDate>Sat, 01 Apr 2006 11:48:53 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/57</guid>
@@ -3411,7 +3411,7 @@ Lo dicho, me estoy haciendo viejo. O paseo por internet menos que vosotros :-P]]
 	</item>
 	<item>
 		<title>Hoy soy yo el que se aprovecha</title>
-		<link>http://dramor.net/blog/archives/58</link>
+		<link>http://dramor.net/blog/2006/04/hoy-soy-yo-el-que-se-aprovecha/</link>
 		<pubDate>Sun, 02 Apr 2006 07:08:35 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/58</guid>
@@ -3438,7 +3438,7 @@ Moraleja: si te gusta compartir tus fotos y quieres que lleguen a mucha gente, <
 	</item>
 	<item>
 		<title>Jornadas de GNOME-Hispano en la Universidad Rey Juan Carlos</title>
-		<link>http://dramor.net/blog/archives/59</link>
+		<link>http://dramor.net/blog/2006/04/jornadas-de-gnome-hispano-en-la-universidad-rey-juan-carlos/</link>
 		<pubDate>Sun, 09 Apr 2006 07:39:03 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/59</guid>
@@ -3476,7 +3476,7 @@ Salud...]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Roban una foto a Reclameitor</title>
-		<link>http://dramor.net/blog/archives/60</link>
+		<link>http://dramor.net/blog/2006/04/roban-una-foto-a-reclameitor/</link>
 		<pubDate>Wed, 26 Apr 2006 17:54:17 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/60</guid>
@@ -3516,7 +3516,7 @@ Salud...]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Reclamaciones europeas</title>
-		<link>http://dramor.net/blog/archives/61</link>
+		<link>http://dramor.net/blog/2006/05/reclamaciones-europeas/</link>
 		<pubDate>Sat, 13 May 2006 07:06:56 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/61</guid>
@@ -3837,7 +3837,7 @@ El derecho de petición está consagrado en la Constitución Política de Colomb
 	</item>
 	<item>
 		<title>Novedades en Wengo, la telefonía IP libre</title>
-		<link>http://dramor.net/blog/archives/63</link>
+		<link>http://dramor.net/blog/2006/05/novedades-en-wengo-la-telefonia-ip-libre/</link>
 		<pubDate>Sat, 20 May 2006 08:58:58 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/63</guid>
@@ -3877,7 +3877,7 @@ Yo llevo usándolo unos meses. Realmente a Wengo le falta algo para ser suficien
 	</item>
 	<item>
 		<title>Ilustrando noticias con Google Maps</title>
-		<link>http://dramor.net/blog/archives/64</link>
+		<link>http://dramor.net/blog/2006/05/ilustrando-noticias-con-google-maps/</link>
 		<pubDate>Sun, 28 May 2006 08:01:24 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/64</guid>
@@ -3915,7 +3915,7 @@ Yo llevo usándolo unos meses. Realmente a Wengo le falta algo para ser suficien
 	</item>
 	<item>
 		<title>Picasa y la apuesta de Google por el escritorio Linux</title>
-		<link>http://dramor.net/blog/archives/65</link>
+		<link>http://dramor.net/blog/2006/05/picasa-y-la-apuesta-de-google-por-el-escritorio-linux/</link>
 		<pubDate>Mon, 29 May 2006 07:10:53 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/65</guid>
@@ -3971,7 +3971,7 @@ En mi opinión es un error basar en Wine estas aplicaciones para que corran en L
 	</item>
 	<item>
 		<title>Fisgando en el menéame</title>
-		<link>http://dramor.net/blog/archives/66</link>
+		<link>http://dramor.net/blog/2006/06/fisgando-en-el-meneame/</link>
 		<pubDate>Thu, 01 Jun 2006 08:13:12 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/66</guid>
@@ -4207,7 +4207,7 @@ Creo que Menéame promete, desde luego.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Ya tenemos Ubuntu nueva</title>
-		<link>http://dramor.net/blog/archives/67</link>
+		<link>http://dramor.net/blog/2006/06/ya-tenemos-ubuntu-nueva/</link>
 		<pubDate>Thu, 01 Jun 2006 12:21:05 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/67</guid>
@@ -4231,7 +4231,7 @@ Creo que Menéame promete, desde luego.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Telefónica lleva su negocio al espacio ;-)</title>
-		<link>http://dramor.net/blog/archives/70</link>
+		<link>http://dramor.net/blog/2006/06/telefonica-lleva-su-negocio-al-espacio/</link>
 		<pubDate>Fri, 16 Jun 2006 09:59:18 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/70</guid>
@@ -4272,7 +4272,7 @@ Lo pongo aquí antes de que lo quiten (pinchen en la foto). A ver lo que dura <a
 	</item>
 	<item>
 		<title>Google Earth, también en Linux</title>
-		<link>http://dramor.net/blog/archives/69</link>
+		<link>http://dramor.net/blog/2006/06/google-earth-tambien-en-linux/</link>
 		<pubDate>Sun, 18 Jun 2006 14:18:59 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/69</guid>
@@ -4308,7 +4308,7 @@ Por lo demás, el programa va muy bien: en primer lugar, no lanza un Wine indepe
 	</item>
 	<item>
 		<title>Meneos raros: Terra se une (administrativamente) a Telefónica y a nadie le interesa</title>
-		<link>http://dramor.net/blog/archives/72</link>
+		<link>http://dramor.net/blog/2006/06/meneos-raros-terra-se-une-administrativamente-a-telefonica-y-a-nadie-le-interesa/</link>
 		<pubDate>Mon, 19 Jun 2006 00:42:29 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/72</guid>
@@ -4372,7 +4372,7 @@ En fin, parece que esto de la "web 2.0" (beta), o la  "web controlada por la com
 	</item>
 	<item>
 		<title>Mañana empieza la GUADEC</title>
-		<link>http://dramor.net/blog/archives/73</link>
+		<link>http://dramor.net/blog/2006/06/manana-empieza-la-guadec/</link>
 		<pubDate>Fri, 23 Jun 2006 10:05:12 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/73</guid>
@@ -4401,7 +4401,7 @@ He dejado <a href="http://barrapunto.com/article.pl?sid=06/06/22/1015240">en Bar
 	</item>
 	<item>
 		<title>Paso fugaz por la GUADEC</title>
-		<link>http://dramor.net/blog/archives/74</link>
+		<link>http://dramor.net/blog/2006/06/paso-fugaz-por-la-guadec/</link>
 		<pubDate>Tue, 27 Jun 2006 13:54:12 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/74</guid>
@@ -4425,7 +4425,7 @@ He dejado <a href="http://barrapunto.com/article.pl?sid=06/06/22/1015240">en Bar
 	</item>
 	<item>
 		<title>El Interventor</title>
-		<link>http://dramor.net/blog/archives/75</link>
+		<link>http://dramor.net/blog/2006/06/el-interventor/</link>
 		<pubDate>Wed, 28 Jun 2006 21:36:32 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/75</guid>
@@ -4526,7 +4526,7 @@ And of course, I'm still Reclameitor ;-)]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Probando un sintonizador TDT USB en Linux</title>
-		<link>http://dramor.net/blog/archives/76</link>
+		<link>http://dramor.net/blog/2006/07/probando-un-sintonizador-tdt-usb-en-linux/</link>
 		<pubDate>Fri, 07 Jul 2006 07:36:59 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/76</guid>
@@ -4805,7 +4805,7 @@ http://www.avermedia.com/cgi-bin/support_driverbympdpro.asp?category=TV%20USB%20
 	</item>
 	<item>
 		<title>Un libro más que recomendable</title>
-		<link>http://dramor.net/blog/archives/77</link>
+		<link>http://dramor.net/blog/2006/07/un-libro-mas-que-recomendable/</link>
 		<pubDate>Sat, 08 Jul 2006 10:54:59 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/77</guid>
@@ -4846,7 +4846,7 @@ Y entre que leer en papel sigue siendo hoy por hoy más cómodo en casi cualquie
 	</item>
 	<item>
 		<title>No me lo puedo creer</title>
-		<link>http://dramor.net/blog/archives/79</link>
+		<link>http://dramor.net/blog/2006/07/no-me-lo-puedo-creer/</link>
 		<pubDate>Sun, 30 Jul 2006 09:54:15 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/79</guid>
@@ -4897,7 +4897,7 @@ Y entre que leer en papel sigue siendo hoy por hoy más cómodo en casi cualquie
 	</item>
 	<item>
 		<title>Configuración del winmodem en la Ubuntu Dapper</title>
-		<link>http://dramor.net/blog/archives/80</link>
+		<link>http://dramor.net/blog/2006/08/configuracion-del-winmodem-en-la-ubuntu-dapper/</link>
 		<pubDate>Sun, 20 Aug 2006 19:23:19 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/80</guid>
@@ -5102,7 +5102,7 @@ http://www.sinuh.org/content/view/113/27/]]></wp:comment_content>
 	</item>
 	<item>
 		<title>La CMT</title>
-		<link>http://dramor.net/blog/archives/81</link>
+		<link>http://dramor.net/blog/2006/08/la-cmt/</link>
 		<pubDate>Mon, 21 Aug 2006 10:39:41 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/81</guid>
@@ -5126,7 +5126,7 @@ http://www.sinuh.org/content/view/113/27/]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Opensolaris, ¿podré sacar tiempo para ponerme al día?</title>
-		<link>http://dramor.net/blog/archives/82</link>
+		<link>http://dramor.net/blog/2006/08/opensolaris-%c2%bfpodre-sacar-tiempo-para-ponerme/</link>
 		<pubDate>Sat, 26 Aug 2006 11:44:12 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/82</guid>
@@ -5151,7 +5151,7 @@ http://www.sinuh.org/content/view/113/27/]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Mi blog está medio roto (o eso creo)</title>
-		<link>http://dramor.net/blog/archives/83</link>
+		<link>http://dramor.net/blog/2006/08/mi-blog-esta-medio-roto-o-eso-creo/</link>
 		<pubDate>Tue, 22 Aug 2006 13:35:08 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/83</guid>
@@ -5235,7 +5235,7 @@ Es curioso, porque aunque desactivase el plugin, el problema seguía ahí. Se ve
 	</item>
 	<item>
 		<title>¿Cuánto quieres ganar?</title>
-		<link>http://dramor.net/blog/archives/84</link>
+		<link>http://dramor.net/blog/2006/08/%c2%bfcuanto-quieres-ganar/</link>
 		<pubDate>Thu, 24 Aug 2006 11:45:39 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/84</guid>
@@ -5280,7 +5280,7 @@ Imaginad que estáis buscando un nuevo trabajo. Y llegan las entrevistas. A vece
 	</item>
 	<item>
 		<title>¿Jubilamos el viejo y ruidoso servidor?</title>
-		<link>http://dramor.net/blog/archives/85</link>
+		<link>http://dramor.net/blog/2006/08/%c2%bfse-acerca-un-cambio-en-la-infraestructura/</link>
 		<pubDate>Tue, 29 Aug 2006 12:03:44 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/85</guid>
@@ -5363,7 +5363,7 @@ http://www.optize.es/servlet/ROUTER_DE_BANDA_ANCHA_ASUS_WL-700GE_CON__307531_opt
 	</item>
 	<item>
 		<title>¡Vacaciones!</title>
-		<link>http://dramor.net/blog/archives/86</link>
+		<link>http://dramor.net/blog/2006/09/%c2%a1vacaciones/</link>
 		<pubDate>Wed, 06 Sep 2006 09:02:02 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/86</guid>
@@ -5416,7 +5416,7 @@ Un besazo]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Vuelta al trabajo</title>
-		<link>http://dramor.net/blog/archives/87</link>
+		<link>http://dramor.net/blog/2006/09/vuelta-al-trabajo/</link>
 		<pubDate>Sat, 23 Sep 2006 07:24:20 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/87</guid>
@@ -5505,7 +5505,7 @@ Besos]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Reunión de desarrolladores de GNOME en Zaragoza</title>
-		<link>http://dramor.net/blog/archives/88</link>
+		<link>http://dramor.net/blog/2006/10/reunion-de-desarrolladores-de-gnome-en-zaragoza/</link>
 		<pubDate>Tue, 03 Oct 2006 14:12:58 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/88</guid>
@@ -5531,7 +5531,7 @@ Además, mi amiga Despo y yo hemos tenido la oportunidad de hacer un poco de tur
 	</item>
 	<item>
 		<title>Nightnoise</title>
-		<link>http://dramor.net/blog/archives/89</link>
+		<link>http://dramor.net/blog/2006/12/nightnoise/</link>
 		<pubDate>Sun, 10 Dec 2006 20:40:03 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/89</guid>
@@ -5628,7 +5628,7 @@ Yo el álbum "Something of Time" no lo conseguí original en su día, pero tengo
 	</item>
 	<item>
 		<title>Hallucii: vuelve Escher</title>
-		<link>http://dramor.net/blog/archives/93</link>
+		<link>http://dramor.net/blog/2006/12/93/</link>
 		<pubDate>Sat, 16 Dec 2006 09:36:13 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/93</guid>
@@ -5709,7 +5709,7 @@ www.TodoBI.com]]></wp:comment_content>
 	<item>
 		<title>Informe sobre el impacto del software libre en la innovación y la competitividad en Europa
 </title>
-		<link>http://dramor.net/blog/archives/94</link>
+		<link>http://dramor.net/blog/2007/01/informe-sobre-el-impacto-del-software-libre-en-la-innovacion-y-la-competitividad-en-europa/</link>
 		<pubDate>Fri, 12 Jan 2007 18:27:50 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/94</guid>
@@ -5760,7 +5760,7 @@ www.TodoBI.com]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Ya tenemos Debian 4.0</title>
-		<link>http://dramor.net/blog/archives/95</link>
+		<link>http://dramor.net/blog/2007/04/ya-tenemos-debian-40/</link>
 		<pubDate>Sun, 08 Apr 2007 18:01:54 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/95</guid>
@@ -5815,7 +5815,7 @@ http://danicafe.extreblog.com/Comentarios_200704167144_Gnome-218-for-Debian-Etch
 	</item>
 	<item>
 		<title>Tu última oportunidad</title>
-		<link>http://dramor.net/blog/archives/96</link>
+		<link>http://dramor.net/blog/2007/04/tu-ultima-oportunidad/</link>
 		<pubDate>Mon, 09 Apr 2007 09:41:48 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/96</guid>
@@ -5854,7 +5854,7 @@ Yo babeé a litros :) Y por cierto, me quedé con ganas de haberme comprado el p
 	</item>
 	<item>
 		<title>Mañana, a la Linux World Summit</title>
-		<link>http://dramor.net/blog/archives/97</link>
+		<link>http://dramor.net/blog/2007/04/manana-a-la-linux-world-summit/</link>
 		<pubDate>Wed, 18 Apr 2007 07:28:32 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/97</guid>
@@ -5877,7 +5877,7 @@ Yo babeé a litros :) Y por cierto, me quedé con ganas de haberme comprado el p
 	</item>
 	<item>
 		<title>El tarifazo del Metro de Madrid</title>
-		<link>http://dramor.net/blog/archives/98</link>
+		<link>http://dramor.net/blog/2007/06/el-tarifazo-del-metro-de-madrid/</link>
 		<pubDate>Mon, 11 Jun 2007 13:26:36 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/98</guid>
@@ -5916,7 +5916,7 @@ Actualmente parece que Metro de Madrid ha decidido pasar de cumplir la ley y ya 
 	</item>
 	<item>
 		<title>Viajes en Mayo</title>
-		<link>http://dramor.net/blog/archives/99</link>
+		<link>http://dramor.net/blog/2007/05/viajes-en-mayo/</link>
 		<pubDate>Wed, 16 May 2007 10:17:00 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/99</guid>
@@ -5939,7 +5939,7 @@ Actualmente parece que Metro de Madrid ha decidido pasar de cumplir la ley y ya 
 	</item>
 	<item>
 		<title>Y al final ... sí, Dell venderá PCs con Ubuntu</title>
-		<link>http://dramor.net/blog/archives/100</link>
+		<link>http://dramor.net/blog/2007/05/y-al-final-si-dell-vendera-pcs-con-ubuntu/</link>
 		<pubDate>Thu, 24 May 2007 13:37:08 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/100</guid>
@@ -5962,7 +5962,7 @@ Actualmente parece que Metro de Madrid ha decidido pasar de cumplir la ley y ya 
 	</item>
 	<item>
 		<title>Nos vemos en el Open Solaris Day</title>
-		<link>http://dramor.net/blog/archives/101</link>
+		<link>http://dramor.net/blog/2007/05/nos-vemos-en-el-open-solaris-day/</link>
 		<pubDate>Fri, 25 May 2007 13:53:55 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/101</guid>
@@ -6001,7 +6001,7 @@ Actualmente parece que Metro de Madrid ha decidido pasar de cumplir la ley y ya 
 	</item>
 	<item>
 		<title>Sabemos de qué pie cojea Menéame</title>
-		<link>http://dramor.net/blog/archives/102</link>
+		<link>http://dramor.net/blog/2007/05/meneame-titular-provisional/</link>
 		<pubDate>Sat, 26 May 2007 11:29:54 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/102</guid>
@@ -6074,7 +6074,7 @@ Saludos, y caña al OpenSolaris :-)]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Solaris Express en mi (ya vejete) Dell D600</title>
-		<link>http://dramor.net/blog/archives/103</link>
+		<link>http://dramor.net/blog/2007/05/solaris-express-en-mi-ya-vejete-dell-d600/</link>
 		<pubDate>Mon, 28 May 2007 21:15:12 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/103</guid>
@@ -6122,7 +6122,7 @@ Creo que con esto ya tengo mi portátil preparado para el <a href="http://www.op
 	</item>
 	<item>
 		<title>Sun Cluster ya es software libre</title>
-		<link>http://dramor.net/blog/archives/104</link>
+		<link>http://dramor.net/blog/2007/07/sun-cluster-sera-libre/</link>
 		<pubDate>Tue, 17 Jul 2007 11:12:25 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/104</guid>
@@ -6147,7 +6147,7 @@ Creo que con esto ya tengo mi portátil preparado para el <a href="http://www.op
 	</item>
 	<item>
 		<title>Sin duda, gran destititución. Pero no sé si será solución...</title>
-		<link>http://dramor.net/blog/archives/105</link>
+		<link>http://dramor.net/blog/2007/07/sin-duda-gran-destititucion-pero-no-se-si-sera-solucion/</link>
 		<pubDate>Sat, 07 Jul 2007 10:56:57 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/105</guid>
@@ -6184,7 +6184,7 @@ Creo que con esto ya tengo mi portátil preparado para el <a href="http://www.op
 	</item>
 	<item>
 		<title>Homenaje</title>
-		<link>http://dramor.net/blog/archives/106</link>
+		<link>http://dramor.net/blog/2007/08/homenaje/</link>
 		<pubDate>Sun, 05 Aug 2007 21:14:00 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/106</guid>
@@ -6329,7 +6329,7 @@ No tenía ni idea. Lo siento mucho y te mando un abrazo. Olvida mi llamada de es
 	</item>
 	<item>
 		<title>Hospedaje de dominios con Google Apps</title>
-		<link>http://dramor.net/blog/archives/107</link>
+		<link>http://dramor.net/blog/2007/09/hospedaje-de-dominios-con-google-apps/</link>
 		<pubDate>Sat, 15 Sep 2007 10:39:47 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/107</guid>
@@ -6370,7 +6370,7 @@ No es mucho pero para ser gratis merece la pena, mucho mejor que muchos <em>host
 	</item>
 	<item>
 		<title>Mi paso por Guadalajara, México</title>
-		<link>http://dramor.net/blog/archives/108</link>
+		<link>http://dramor.net/blog/2007/11/mi-paso-por-guadalajara-mexico/</link>
 		<pubDate>Tue, 13 Nov 2007 20:24:15 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/108</guid>
@@ -6444,7 +6444,7 @@ Como siempre, hice algunas fotos; y de éstas, dejé una <a href="http://fotos.d
 	</item>
 	<item>
 		<title>Seré usuario del Nokia N810</title>
-		<link>http://dramor.net/blog/archives/109</link>
+		<link>http://dramor.net/blog/2007/11/sere-usuario-del-nokia-n810/</link>
 		<pubDate>Wed, 14 Nov 2007 21:42:15 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/109</guid>
@@ -6483,7 +6483,7 @@ Como siempre, hice algunas fotos; y de éstas, dejé una <a href="http://fotos.d
 	</item>
 	<item>
 		<title>Dos colecciones de fotos pendientes</title>
-		<link>http://dramor.net/blog/archives/110</link>
+		<link>http://dramor.net/blog/2007/11/dos-colecciones-de-fotos-pendientes/</link>
 		<pubDate>Thu, 22 Nov 2007 20:13:38 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/110</guid>
@@ -6506,7 +6506,7 @@ Como siempre, hice algunas fotos; y de éstas, dejé una <a href="http://fotos.d
 	</item>
 	<item>
 		<title>Y el canon encontró un obstáculo inesperado...</title>
-		<link>http://dramor.net/blog/archives/111</link>
+		<link>http://dramor.net/blog/2007/12/y-el-canon-encontro-un-obstaculo-inesperado/</link>
 		<pubDate>Fri, 14 Dec 2007 19:16:10 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/111</guid>
@@ -6529,7 +6529,7 @@ Como siempre, hice algunas fotos; y de éstas, dejé una <a href="http://fotos.d
 	</item>
 	<item>
 		<title>Habrá canon, pero no nos quedaremos callados</title>
-		<link>http://dramor.net/blog/archives/112</link>
+		<link>http://dramor.net/blog/2007/12/habra-canon-pero-no-nos-quedaremos-callados/</link>
 		<pubDate>Thu, 27 Dec 2007 08:31:17 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/112</guid>
@@ -6555,7 +6555,7 @@ Como siempre, hice algunas fotos; y de éstas, dejé una <a href="http://fotos.d
 	</item>
 	<item>
 		<title>¡Estamos contratando! Tecnologías web, administración de sistemas Debian, investigadores...</title>
-		<link>http://dramor.net/blog/archives/113</link>
+		<link>http://dramor.net/blog/2007/12/%c2%a1estamos-contratando-tecnologias-web-administracion-de-sistemas-debian-investigadores/</link>
 		<pubDate>Fri, 28 Dec 2007 23:17:47 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/113</guid>
@@ -6578,7 +6578,7 @@ Como siempre, hice algunas fotos; y de éstas, dejé una <a href="http://fotos.d
 	</item>
 	<item>
 		<title>Primeras horas con la n810</title>
-		<link>http://dramor.net/blog/archives/114</link>
+		<link>http://dramor.net/blog/2008/02/primeras-horas-con-la-n810/</link>
 		<pubDate>Sun, 03 Feb 2008 15:11:49 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/114</guid>
@@ -6659,7 +6659,7 @@ Y que funciona con Tinymail.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>La música en la Nokia n810</title>
-		<link>http://dramor.net/blog/archives/115</link>
+		<link>http://dramor.net/blog/2008/02/la-musica-en-la-nokia-n810/</link>
 		<pubDate>Sun, 10 Feb 2008 09:03:20 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/115</guid>
@@ -6698,7 +6698,7 @@ Y que funciona con Tinymail.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Proyecto Indiana: acercando Opensolaris a los usuarios</title>
-		<link>http://dramor.net/blog/archives/116</link>
+		<link>http://dramor.net/blog/2008/02/proyecto-indiana-acercando-opensolaris-a-los-usuarios/</link>
 		<pubDate>Sat, 16 Feb 2008 21:00:56 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/116</guid>
@@ -6746,7 +6746,7 @@ En definitiva, un proyecto interesante que demuestra el movimiento de la comunid
 	</item>
 	<item>
 		<title>PADRE 2007: La primera en la frente</title>
-		<link>http://dramor.net/blog/archives/117</link>
+		<link>http://dramor.net/blog/2008/04/padre-2007-la-primera-en-la-frente/</link>
 		<pubDate>Sun, 27 Apr 2008 17:31:01 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/117</guid>
@@ -6799,7 +6799,7 @@ Será por tener unas inversioncillas de nada. Ahora entiendo por qué algunos no
 	</item>
 	<item>
 		<title>¡Estamos contratando! Administradores Debian y programadores de servicios web</title>
-		<link>http://dramor.net/blog/archives/118</link>
+		<link>http://dramor.net/blog/2008/05/%c2%a1estamos-contratando-administradores-debian-y-programadores-de-servicios-web/</link>
 		<pubDate>Fri, 09 May 2008 13:26:28 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/118</guid>
@@ -6822,7 +6822,7 @@ Será por tener unas inversioncillas de nada. Ahora entiendo por qué algunos no
 	</item>
 	<item>
 		<title>Una semana en New York</title>
-		<link>http://dramor.net/blog/archives/119</link>
+		<link>http://dramor.net/blog/2008/06/una-semana-en-new-york/</link>
 		<pubDate>Sun, 29 Jun 2008 20:56:10 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/119</guid>
@@ -6845,7 +6845,7 @@ Será por tener unas inversioncillas de nada. Ahora entiendo por qué algunos no
 	</item>
 	<item>
 		<title>Jugando con el EEEPC</title>
-		<link>http://dramor.net/blog/archives/120</link>
+		<link>http://dramor.net/blog/2008/06/jugando-con-el-eeepc/</link>
 		<pubDate>Mon, 30 Jun 2008 11:20:08 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/120</guid>
@@ -6877,7 +6877,7 @@ Lo único malo es que justo una semana después de estar en NYC, empezó a haber
 	</item>
 	<item>
 		<title>Disco de rescate USB: receta rápida</title>
-		<link>http://dramor.net/blog/archives/121</link>
+		<link>http://dramor.net/blog/2008/07/disco-de-rescate-usb-receta-rapida/</link>
 		<pubDate>Mon, 07 Jul 2008 17:45:58 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/121</guid>
@@ -6941,7 +6941,7 @@ Lo único malo es que justo una semana después de estar en NYC, empezó a haber
 	</item>
 	<item>
 		<title>Africa comienza en los Pirineos</title>
-		<link>http://dramor.net/blog/archives/122</link>
+		<link>http://dramor.net/blog/2008/08/africa-comienza-en-los-pirineos/</link>
 		<pubDate>Tue, 12 Aug 2008 08:12:35 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/122</guid>
@@ -6996,7 +6996,7 @@ La figura superior muestra el continente al que pertenece España si seleccionam
 	</item>
 	<item>
 		<title>Un paseo por Perú (de cuatro semanas)</title>
-		<link>http://dramor.net/blog/archives/123</link>
+		<link>http://dramor.net/blog/2008/10/un-paseo-por-peru-de-cuatro-semanas/</link>
 		<pubDate>Thu, 02 Oct 2008 11:03:25 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/123</guid>
@@ -7108,7 +7108,7 @@ Lo mejor de todo esto es que te convertido en otro adicto a la comida peruana: e
 	</item>
 	<item>
 		<title>Presentación del proyecto OSOR</title>
-		<link>http://dramor.net/blog/archives/124</link>
+		<link>http://dramor.net/blog/2008/10/presentacion-del-proyecto-osor/</link>
 		<pubDate>Wed, 15 Oct 2008 09:00:30 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/124</guid>
@@ -7147,7 +7147,7 @@ Puesto que ya es inminente conviene recordarlo. Juanjo nos ofrece unos cuantos e
 	</item>
 	<item>
 		<title>¡Nos vemos en la OSWC 2008!</title>
-		<link>http://dramor.net/blog/archives/125</link>
+		<link>http://dramor.net/blog/2008/10/%c2%a1nos-vemos-en-la-oswc-2008/</link>
 		<pubDate>Sat, 18 Oct 2008 09:51:23 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/125</guid>
@@ -7176,7 +7176,7 @@ Mañana por la tarde saldré en AVE a Málaga, invitado por <a href="http://libr
 	</item>
 	<item>
 		<title>OSWC de Málaga: Éxito en medio de la crisis</title>
-		<link>http://dramor.net/blog/archives/126</link>
+		<link>http://dramor.net/blog/2008/10/oswc-de-malaga-exito-en-medio-de-la-crisis/</link>
 		<pubDate>Thu, 23 Oct 2008 08:57:34 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/126</guid>
@@ -7205,7 +7205,7 @@ Y salas de presentaciones también repletas, como es el caso de la presentación
 	</item>
 	<item>
 		<title>DNI electrónico</title>
-		<link>http://dramor.net/blog/archives/128</link>
+		<link>http://dramor.net/blog/2008/11/dni-electronico/</link>
 		<pubDate>Tue, 25 Nov 2008 13:43:02 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/128</guid>
@@ -7491,7 +7491,7 @@ Sin embargo, como la decisión sobre si se firma o no, corresponde al software d
 	</item>
 	<item>
 		<title>Mozuela!</title>
-		<link>http://dramor.net/blog/archives/129</link>
+		<link>http://dramor.net/blog/2008/11/mozuela/</link>
 		<pubDate>Thu, 27 Nov 2008 18:41:59 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/129</guid>
@@ -7776,7 +7776,7 @@ Si fuera un documento privado, una carta ... pero un libro de texto, es que tien
 	</item>
 	<item>
 		<title>¿Quién es legal?</title>
-		<link>http://dramor.net/blog/archives/130</link>
+		<link>http://dramor.net/blog/2009/01/%c2%bfquien-es-legal/</link>
 		<pubDate>Wed, 07 Jan 2009 12:35:54 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/130</guid>
@@ -7833,7 +7833,7 @@ Saludos]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Reunión de firmas de criptografía de clave pública (PGP, CACERT)</title>
-		<link>http://dramor.net/blog/archives/131</link>
+		<link>http://dramor.net/blog/2009/01/reunion-de-firmas-de-criptografia-publica-pgp-cacert/</link>
 		<pubDate>Wed, 07 Jan 2009 17:36:02 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/131</guid>
@@ -7939,7 +7939,7 @@ Sobre la gratuidad, decirte que las certificaciones cacert se hacen sin ánimo d
 	</item>
 	<item>
 		<title>¿Qué escuchan los internautas?</title>
-		<link>http://dramor.net/blog/archives/132</link>
+		<link>http://dramor.net/blog/2009/01/%c2%bfque-escuchan-los-internautas/</link>
 		<pubDate>Mon, 12 Jan 2009 10:15:51 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/132</guid>
@@ -8031,7 +8031,7 @@ Lester]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Spotify y los derechos de autor: se acabó.</title>
-		<link>http://dramor.net/blog/archives/133</link>
+		<link>http://dramor.net/blog/2009/03/spotify-y-los-derechos-de-autor-se-acabo/</link>
 		<pubDate>Wed, 04 Mar 2009 22:23:05 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/133</guid>
@@ -8088,7 +8088,7 @@ Veo que continuas dando guerra. Ahora se está hablando mucho sobre estos temas,
 	</item>
 	<item>
 		<title>Un reclameitor en Perú</title>
-		<link>http://dramor.net/blog/archives/134</link>
+		<link>http://dramor.net/blog/2009/05/un-reclameitor-en-peru/</link>
 		<pubDate>Tue, 26 May 2009 02:22:14 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/134</guid>
@@ -8159,7 +8159,7 @@ pd: la cerveza cristal sube muy rapido...]]></wp:comment_content>
 	</item>
 	<item>
 		<title>El nuevo spam dirigido (a mi blog)</title>
-		<link>http://dramor.net/blog/archives/135</link>
+		<link>http://dramor.net/blog/2009/05/el-nuevo-spam-dirigido-a-mi-blog/</link>
 		<pubDate>Tue, 26 May 2009 18:16:18 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/archives/135</guid>
@@ -8210,7 +8210,7 @@ pd: la cerveza cristal sube muy rapido...]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Reclameitor se casa en Perú: preparativos desde España</title>
-		<link>http://dramor.net/blog/archives/136</link>
+		<link>http://dramor.net/blog/2009/05/reclameitor-se-casa-en-peru-preparativos-desde-espana/</link>
 		<pubDate>Tue, 26 May 2009 21:55:40 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=136</guid>
@@ -8359,7 +8359,7 @@ Pero sí, tuve que pedir cita y todo. Por suerte, al ir bien instruido por el fo
 	</item>
 	<item>
 		<title>Nos publicaron un artículo sobre Debian</title>
-		<link>http://dramor.net/blog/archives/142</link>
+		<link>http://dramor.net/blog/2009/06/nos-publicaron-un-articulo-sobre-debian/</link>
 		<pubDate>Sun, 21 Jun 2009 03:08:37 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=142</guid>
@@ -8390,7 +8390,7 @@ Pero sí, tuve que pedir cita y todo. Por suerte, al ir bien instruido por el fo
 	</item>
 	<item>
 		<title>Reclameitor se casa en Perú: la boda civil en Lima</title>
-		<link>http://dramor.net/blog/archives/145</link>
+		<link>http://dramor.net/blog/2009/06/reclameitor-se-casa-en-peru-la-boda-civil-en-lima/</link>
 		<pubDate>Sun, 21 Jun 2009 17:45:29 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=145</guid>
@@ -8679,7 +8679,7 @@ Si tú no has registrado tu matrimonio en España, desconozco si es suficiente s
 	</item>
 	<item>
 		<title>&quot;Secuestro DNS&quot; que practica Telefónica en América Latina</title>
-		<link>http://dramor.net/blog/archives/155</link>
+		<link>http://dramor.net/blog/2009/07/secuestro-dns-que-practica-telefonica-en-america-latina/</link>
 		<pubDate>Fri, 10 Jul 2009 21:28:09 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=155</guid>
@@ -8783,7 +8783,7 @@ Es decir, opendns.net nos espía, gracias a la interceptación, nuestra navegaci
 	</item>
 	<item>
 		<title>El 15 de agosto hablaremos de Opensolaris en Lima</title>
-		<link>http://dramor.net/blog/archives/159</link>
+		<link>http://dramor.net/blog/2009/08/el-15-de-agosto-hablaremos-de-opensolaris-en-lima/</link>
 		<pubDate>Sat, 01 Aug 2009 09:15:42 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=159</guid>
@@ -8817,7 +8817,7 @@ Aprovecharé mi estancia en Lima para participar el próximo 15 de agosto en el 
 	</item>
 	<item>
 		<title>Opensolaris: montar ISOs y UFSs desde fichero</title>
-		<link>http://dramor.net/blog/archives/165</link>
+		<link>http://dramor.net/blog/2009/07/opensolaris-montar-isos-y-ufss-desde-fichero/</link>
 		<pubDate>Fri, 24 Jul 2009 23:06:43 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=165</guid>
@@ -8854,7 +8854,7 @@ El procedimiento es de sobra conocido en distribuciones GNU/Linux. Para el caso 
 	</item>
 	<item>
 		<title>Solaris: Espejado total con Volume Manager</title>
-		<link>http://dramor.net/blog/archives/168</link>
+		<link>http://dramor.net/blog/2009/07/solaris-espejado-total-con-volume-manager/</link>
 		<pubDate>Wed, 29 Jul 2009 14:07:19 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=168</guid>
@@ -8983,7 +8983,7 @@ Un abrazo.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Presentación en el PLUG</title>
-		<link>http://dramor.net/blog/archives/179</link>
+		<link>http://dramor.net/blog/2009/08/presentacion-en-el-plug/</link>
 		<pubDate>Mon, 03 Aug 2009 04:03:42 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=179</guid>
@@ -9014,7 +9014,7 @@ Un abrazo.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>ZFS, probablemente la panacea en sistemas de ficheros</title>
-		<link>http://dramor.net/blog/archives/183</link>
+		<link>http://dramor.net/blog/2009/08/zfs-probablemente-la-panacea-en-sistemas-de-ficheros/</link>
 		<pubDate>Fri, 07 Aug 2009 03:30:05 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=183</guid>
@@ -9117,7 +9117,7 @@ Un abrazo.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Plantilla para presentaciones Opensolaris</title>
-		<link>http://dramor.net/blog/archives/188</link>
+		<link>http://dramor.net/blog/2009/08/plantilla-para-presentaciones-opensolaris/</link>
 		<pubDate>Mon, 03 Aug 2009 04:21:23 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=188</guid>
@@ -9313,7 +9313,7 @@ Un saludo!!
 	</item>
 	<item>
 		<title>Crear &quot;USB live&quot; con Opensolaris es sencillísimo</title>
-		<link>http://dramor.net/blog/archives/195</link>
+		<link>http://dramor.net/blog/2009/08/crear-usb-live-con-opensolaris-es-sencillisimo/</link>
 		<pubDate>Wed, 05 Aug 2009 10:44:46 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=195</guid>
@@ -9388,7 +9388,7 @@ Hoy llevamos a <a href="http://tech.libresoft.es/doku.php/liveusb">tech.libresof
 	</item>
 	<item>
 		<title>Instalación de Opensolaris 2009.06 en un servidor Sparc</title>
-		<link>http://dramor.net/blog/archives/200</link>
+		<link>http://dramor.net/blog/2009/08/instalacion-de-opensolaris-2009-06-en-un-servidor-sparc/</link>
 		<pubDate>Wed, 12 Aug 2009 09:29:08 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=200</guid>
@@ -9446,7 +9446,7 @@ Os animo a seguir asi, en serio ;-)]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Presentación sobre Opensolaris en Lima</title>
-		<link>http://dramor.net/blog/archives/206</link>
+		<link>http://dramor.net/blog/2009/08/presentacion-sobre-opensolaris-en-lima/</link>
 		<pubDate>Sat, 15 Aug 2009 21:37:36 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=206</guid>
@@ -9514,7 +9514,7 @@ Un saludo.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Más problemas con el DNI electrónico</title>
-		<link>http://dramor.net/blog/archives/213</link>
+		<link>http://dramor.net/blog/2009/08/mas-problemas-con-el-dni-electronico/</link>
 		<pubDate>Thu, 27 Aug 2009 17:42:30 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=213</guid>
@@ -9543,7 +9543,7 @@ Un saludo.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Reclameitor se casa en Perú: después de la boda civil en Lima</title>
-		<link>http://dramor.net/blog/archives/215</link>
+		<link>http://dramor.net/blog/2009/09/reclameitor-se-casa-en-peru-despues-de-la-boda-civil-en-lima/</link>
 		<pubDate>Tue, 01 Sep 2009 01:22:50 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=215</guid>
@@ -9651,7 +9651,7 @@ Y decían que era sencillo casarse en el extranjero! :D]]></wp:comment_content>
 	</item>
 	<item>
 		<title>The size of Debian Lenny</title>
-		<link>http://dramor.net/blog/archives/222</link>
+		<link>http://dramor.net/blog/2009/09/el-tamano-de-debian-lenny/</link>
 		<pubDate>Thu, 03 Sep 2009 09:37:52 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=222</guid>
@@ -9708,7 +9708,7 @@ Y decían que era sencillo casarse en el extranjero! :D]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Oracle habla de su (próxima) adquisición: Sun</title>
-		<link>http://dramor.net/blog/archives/227</link>
+		<link>http://dramor.net/blog/2009/09/oracle-habla-de-su-proxima-adquisicion-sun/</link>
 		<pubDate>Sat, 12 Sep 2009 18:52:06 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=227</guid>
@@ -9749,7 +9749,7 @@ La mayoría de estos blogs tienen opiniones muy interesantes y profundizan basta
 	</item>
 	<item>
 		<title>Software Freedom Day 2009</title>
-		<link>http://dramor.net/blog/archives/235</link>
+		<link>http://dramor.net/blog/2009/09/software-freedom-day-2009/</link>
 		<pubDate>Sat, 19 Sep 2009 03:53:49 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=235</guid>
@@ -9780,7 +9780,7 @@ La mayoría de estos blogs tienen opiniones muy interesantes y profundizan basta
 	</item>
 	<item>
 		<title>Presentación sobre Opensolaris y LDOMs en el Software Freedom Day</title>
-		<link>http://dramor.net/blog/archives/240</link>
+		<link>http://dramor.net/blog/2009/09/presentacion-sobre-opensolaris-y-ldoms-en-el-software-freedom-day/</link>
 		<pubDate>Sun, 20 Sep 2009 01:09:03 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=240</guid>
@@ -9828,7 +9828,7 @@ La mayoría de estos blogs tienen opiniones muy interesantes y profundizan basta
 	</item>
 	<item>
 		<title>Algunas experiencias con LDOMs</title>
-		<link>http://dramor.net/blog/archives/243</link>
+		<link>http://dramor.net/blog/2009/09/algunas-experiencias-con-ldoms/</link>
 		<pubDate>Tue, 22 Sep 2009 23:47:57 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=243</guid>
@@ -9868,7 +9868,7 @@ Como conclusiones, la tecnología LDOMs realmente me parece interesante y merece
 	</item>
 	<item>
 		<title>Installing Debian as guest OS with Opensolaris LDOMs</title>
-		<link>http://dramor.net/blog/archives/250</link>
+		<link>http://dramor.net/blog/2009/09/installing-debian-as-guest-os-with-opensolaris-ldoms/</link>
 		<pubDate>Wed, 23 Sep 2009 17:31:40 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=250</guid>
@@ -9917,7 +9917,7 @@ Thanks for this comprehensive procedure!  I've linked to it from http://blogs.su
 	</item>
 	<item>
 		<title>Proximo evento en Lima</title>
-		<link>http://dramor.net/blog/archives/257</link>
+		<link>http://dramor.net/blog/2009/10/proximo-evento-en-lima/</link>
 		<pubDate>Fri, 16 Oct 2009 19:25:08 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=257</guid>
@@ -9952,7 +9952,7 @@ Dentro de, aproximadamente, un mes, tendrá lugar en Lima el <a href="http://fes
 	</item>
 	<item>
 		<title>Google wave invitations</title>
-		<link>http://dramor.net/blog/archives/260</link>
+		<link>http://dramor.net/blog/2009/11/invitaciones-para-google-wave/</link>
 		<pubDate>Wed, 11 Nov 2009 15:15:52 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=260</guid>
@@ -10087,7 +10087,7 @@ Gracias por vuestro interés. Se me acabaron las invitaciones por ahora :-)]]></
 	</item>
 	<item>
 		<title>Presentación sobre Morfeo y OSOR en Lima</title>
-		<link>http://dramor.net/blog/archives/265</link>
+		<link>http://dramor.net/blog/2009/11/presentacion-sobre-morfeo-y-osor-en-lima/</link>
 		<pubDate>Sat, 14 Nov 2009 19:33:01 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=265</guid>
@@ -10119,7 +10119,7 @@ Gracias por vuestro interés. Se me acabaron las invitaciones por ahora :-)]]></
 	</item>
 	<item>
 		<title>En defensa de los derechos fundamentales</title>
-		<link>http://dramor.net/blog/archives/271</link>
+		<link>http://dramor.net/blog/2009/12/en-defensa-de-los-derechos-fundamentales/</link>
 		<pubDate>Wed, 02 Dec 2009 16:09:11 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=271</guid>
@@ -10171,7 +10171,7 @@ Ante la inclusión en el Anteproyecto de Ley de Economía sostenible de modifica
 	</item>
 	<item>
 		<title>Presentación en Cáceres sobre la migración a OpenSolaris para Gnome-Hispano</title>
-		<link>http://dramor.net/blog/archives/277</link>
+		<link>http://dramor.net/blog/2009/12/presentacion-sobre-opensolaris-en-gnome-hispano-en-caceces/</link>
 		<pubDate>Fri, 04 Dec 2009 20:46:13 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=277</guid>
@@ -10222,7 +10222,7 @@ http://gsyc.es/~mvidal/images/gaceta_osol.jpg]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Un buscador de torrents muy rápido</title>
-		<link>http://dramor.net/blog/archives/285</link>
+		<link>http://dramor.net/blog/2009/12/un-buscador-de-torrents-muy-rapido/</link>
 		<pubDate>Sun, 13 Dec 2009 03:53:48 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=285</guid>
@@ -10294,7 +10294,7 @@ Un saludo.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Reclameitor se casa en Perú: la reagrupación familiar</title>
-		<link>http://dramor.net/blog/archives/303</link>
+		<link>http://dramor.net/blog/2010/01/reclameitor-se-casa-en-peru-la-reagrupacion-familiar/</link>
 		<pubDate>Tue, 12 Jan 2010 14:35:03 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=303</guid>
@@ -11450,7 +11450,7 @@ espero que me ayudes  gracias]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Reclameitor se casa en Perú: la cancelación de la residencia</title>
-		<link>http://dramor.net/blog/archives/306</link>
+		<link>http://dramor.net/blog/2010/01/reclameitor-se-casa-en-peru-la-cancelacion-de-la-residencia/</link>
 		<pubDate>Tue, 12 Jan 2010 14:35:50 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=306</guid>
@@ -11541,7 +11541,7 @@ David]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Red SOStenible: desde hoy, Red y Libertad</title>
-		<link>http://dramor.net/blog/archives/311</link>
+		<link>http://dramor.net/blog/2010/01/red-sostenible-desde-hoy-red-y-libertad/</link>
 		<pubDate>Tue, 12 Jan 2010 14:41:00 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=311</guid>
@@ -11622,7 +11622,7 @@ La Red Sostenible somos todos. Si quieres adherirte a este texto, cópialo, blog
 	</item>
 	<item>
 		<title>Carta abierta a la judicatura, de parte de Red SOStenible</title>
-		<link>http://dramor.net/blog/archives/315</link>
+		<link>http://dramor.net/blog/2010/01/carta-abierta-a-la-judicatura-de-parte-de-red-sostenible/</link>
 		<pubDate>Wed, 27 Jan 2010 14:09:17 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=315</guid>
@@ -11687,7 +11687,7 @@ La Red Sostenible somos todos. Si quieres adherirte a este texto, cópialo, blog
 	</item>
 	<item>
 		<title>Encuentro de comunidad local de Opensolaris en Madrid</title>
-		<link>http://dramor.net/blog/archives/317</link>
+		<link>http://dramor.net/blog/2010/02/encuentro-de-comunidad-local-de-opensolaris-en-madrid/</link>
 		<pubDate>Wed, 10 Feb 2010 08:53:47 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=317</guid>
@@ -11771,7 +11771,7 @@ Universitaria, junto al metro Metropolitano. [2]
 	</item>
 	<item>
 		<title>Sobre malwares, redes y USB</title>
-		<link>http://dramor.net/blog/archives/320</link>
+		<link>http://dramor.net/blog/2010/03/sobre-malwares-redes-y-usb/</link>
 		<pubDate>Wed, 10 Mar 2010 11:45:29 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=320</guid>
@@ -11817,7 +11817,7 @@ ___
 	</item>
 	<item>
 		<title>Nueva reunión del grupo de Opensolaris Madrid</title>
-		<link>http://dramor.net/blog/archives/322</link>
+		<link>http://dramor.net/blog/2010/03/nueva-reunion-del-grupo-de-opensolaris-madrid/</link>
 		<pubDate>Tue, 09 Mar 2010 19:39:39 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=322</guid>
@@ -11878,7 +11878,7 @@ Saludos,
 	</item>
 	<item>
 		<title>Opensolaris, a salvo (o eso parece)</title>
-		<link>http://dramor.net/blog/archives/328</link>
+		<link>http://dramor.net/blog/2010/03/opensolaris-a-salvo-o-eso-parece/</link>
 		<pubDate>Wed, 10 Mar 2010 11:47:16 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=328</guid>
@@ -11939,7 +11939,7 @@ Urko]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Como cambié mi clave GPG a 4096 bits</title>
-		<link>http://dramor.net/blog/archives/338</link>
+		<link>http://dramor.net/blog/2010/03/como-cambie-mi-clave-gpg-a-4096-bits/</link>
 		<pubDate>Tue, 23 Mar 2010 09:38:20 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=338</guid>
@@ -12085,7 +12085,7 @@ Sobre lo de cuando empezar a usar la nueva clave, depende mucho del uso que le d
 	</item>
 	<item>
 		<title>Renta 2009, por fin multiplataforma</title>
-		<link>http://dramor.net/blog/archives/351</link>
+		<link>http://dramor.net/blog/2010/04/renta-2009-por-fin-multiplataforma/</link>
 		<pubDate>Sat, 10 Apr 2010 16:38:46 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=351</guid>
@@ -12170,7 +12170,7 @@ http://www.eqsoft.net/blog/index.php?/archives/1591-Muchos-Libros-de-como-progra
 	</item>
 	<item>
 		<title>Se acerca, por fin, una nueva versión de Opensolaris</title>
-		<link>http://dramor.net/blog/archives/357</link>
+		<link>http://dramor.net/blog/2010/04/se-acerca-por-fin-una-nueva-version-de-opensolaris/</link>
 		<pubDate>Tue, 27 Apr 2010 15:02:24 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=357</guid>
@@ -12206,7 +12206,7 @@ ___
 	</item>
 	<item>
 		<title>Europa duda de la legalidad del canon digital en España</title>
-		<link>http://dramor.net/blog/archives/362</link>
+		<link>http://dramor.net/blog/2010/05/europa-duda-de-la-legalidad-del-canon-digital-en-espana/</link>
 		<pubDate>Tue, 11 May 2010 17:06:14 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=362</guid>
@@ -12259,7 +12259,7 @@ ___
 	</item>
 	<item>
 		<title>Fuentes del código del DNI electrónico en Linux</title>
-		<link>http://dramor.net/blog/archives/367</link>
+		<link>http://dramor.net/blog/2010/06/fuentes-del-codigo-del-dni-electronico-en-linux/</link>
 		<pubDate>Wed, 23 Jun 2010 07:12:12 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=367</guid>
@@ -12308,7 +12308,7 @@ ___
 	</item>
 	<item>
 		<title>¿compromiso móvil gratis?</title>
-		<link>http://dramor.net/blog/archives/376</link>
+		<link>http://dramor.net/blog/2010/06/%c2%bfcompromiso-movil-gratis/</link>
 		<pubDate>Sat, 26 Jun 2010 11:08:50 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=376</guid>
@@ -12346,7 +12346,7 @@ ___
 	</item>
 	<item>
 		<title>El desprecio a los clientes, via e-mail</title>
-		<link>http://dramor.net/blog/archives/379</link>
+		<link>http://dramor.net/blog/2010/07/el-desprecio-a-los-clientes-via-e-mail/</link>
 		<pubDate>Thu, 29 Jul 2010 18:25:09 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=379</guid>
@@ -12388,7 +12388,7 @@ ___
 	</item>
 	<item>
 		<title>El socorrido contrato de permanencia</title>
-		<link>http://dramor.net/blog/archives/387</link>
+		<link>http://dramor.net/blog/2010/07/el-socorrido-contrato-de-permanencia/</link>
 		<pubDate>Fri, 30 Jul 2010 15:35:03 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=387</guid>
@@ -12462,7 +12462,7 @@ eso eran los primeros 3 meses y cuando tenía 128kb, pero funciona! (ahora la pr
 	</item>
 	<item>
 		<title>Illumos: expectación ante posible fork de Opensolaris</title>
-		<link>http://dramor.net/blog/archives/395</link>
+		<link>http://dramor.net/blog/2010/08/illumos-expectacion-ante-posible-fork-de-opensolaris/</link>
 		<pubDate>Mon, 02 Aug 2010 18:00:38 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=395</guid>
@@ -12588,7 +12588,7 @@ Es cierto lo que dices, es alucinante el tremendo "hype" que ha sabido crear tu 
 	</item>
 	<item>
 		<title>Presentaron Illumos: proyecto basado en Opensolaris</title>
-		<link>http://dramor.net/blog/archives/400</link>
+		<link>http://dramor.net/blog/2010/08/presentaron-illumos-proyecto-basado-en-opensolaris/</link>
 		<pubDate>Tue, 03 Aug 2010 21:15:12 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=400</guid>
@@ -12647,7 +12647,7 @@ ___
 	</item>
 	<item>
 		<title>¿Qué ha pasado con Opensolaris?</title>
-		<link>http://dramor.net/blog/archives/404</link>
+		<link>http://dramor.net/blog/2010/08/%c2%bfque-ha-pasado-con-opensolaris/</link>
 		<pubDate>Mon, 16 Aug 2010 09:48:48 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=404</guid>
@@ -12741,7 +12741,7 @@ La historia de OpenSolaris termina aquí, me temo.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Dimisión del Opensolaris Governing Board</title>
-		<link>http://dramor.net/blog/archives/417</link>
+		<link>http://dramor.net/blog/2010/08/dimision-del-opensolaris-governing-board/</link>
 		<pubDate>Mon, 23 Aug 2010 19:13:25 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=417</guid>
@@ -12782,7 +12782,7 @@ ___
 	</item>
 	<item>
 		<title>La salsa huancaína</title>
-		<link>http://dramor.net/blog/archives/420</link>
+		<link>http://dramor.net/blog/2010/08/la-salsa-huancaina/</link>
 		<pubDate>Wed, 25 Aug 2010 18:24:28 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=420</guid>
@@ -12953,7 +12953,7 @@ Saludos y buena pinta tiene.]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Indiana también tendrá un sucesor</title>
-		<link>http://dramor.net/blog/archives/429</link>
+		<link>http://dramor.net/blog/2010/09/indiana-tambien-tendra-un-sucesor/</link>
 		<pubDate>Sun, 12 Sep 2010 19:26:32 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=429</guid>
@@ -13022,7 +13022,7 @@ ___
 	</item>
 	<item>
 		<title>Llega Openindiana, la nueva distribución de software libre basada en Opensolaris</title>
-		<link>http://dramor.net/blog/archives/432</link>
+		<link>http://dramor.net/blog/2010/09/llega-openindiana-la-nueva-distribucion-de-software-libre-basada-en-opensolaris/</link>
 		<pubDate>Tue, 14 Sep 2010 19:29:53 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=432</guid>
@@ -13088,7 +13088,7 @@ ___
 	</item>
 	<item>
 		<title>Retrospectiva</title>
-		<link>http://dramor.net/blog/archives/437</link>
+		<link>http://dramor.net/blog/2010/10/retrospectiva/</link>
 		<pubDate>Sun, 17 Oct 2010 15:03:35 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=437</guid>
@@ -13160,7 +13160,7 @@ ___
 	</item>
 	<item>
 		<title>Solaris 11 express disponible... y nada más</title>
-		<link>http://dramor.net/blog/archives/441</link>
+		<link>http://dramor.net/blog/2010/11/solaris-11-express-disponible-y-nada-mas/</link>
 		<pubDate>Mon, 15 Nov 2010 19:30:28 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=441</guid>
@@ -13222,7 +13222,7 @@ ___
 	</item>
 	<item>
 		<title>Oferta de beca: sysadmin en Opensistemas</title>
-		<link>http://dramor.net/blog/archives/444</link>
+		<link>http://dramor.net/blog/2010/11/oferta-de-beca-sysadmin-en-opensistemas/</link>
 		<pubDate>Tue, 16 Nov 2010 09:36:47 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=444</guid>
@@ -13297,7 +13297,7 @@ ___
 	</item>
 	<item>
 		<title>Termina 2010, año divertido como pocos</title>
-		<link>http://dramor.net/blog/archives/448</link>
+		<link>http://dramor.net/blog/2010/12/termina-2010-ano-divertido-como-pocos/</link>
 		<pubDate>Fri, 31 Dec 2010 13:25:32 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=448</guid>
@@ -13381,7 +13381,7 @@ La oficina de consumo, muy majos ellos, se dedicaron a constatar que HP y yo est
 	</item>
 	<item>
 		<title>Dejándonos ver</title>
-		<link>http://dramor.net/blog/archives/454</link>
+		<link>http://dramor.net/blog/2011/04/dejandonos-ver/</link>
 		<pubDate>Tue, 12 Apr 2011 07:48:08 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=454</guid>
@@ -13421,7 +13421,7 @@ ___
 	</item>
 	<item>
 		<title>Ultimas charlas impartidas</title>
-		<link>http://dramor.net/blog/archives/459</link>
+		<link>http://dramor.net/blog/2011/05/ultimas-charlas-impartidas/</link>
 		<pubDate>Tue, 03 May 2011 10:46:09 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=459</guid>
@@ -13465,7 +13465,7 @@ ___
 	</item>
 	<item>
 		<title>Se acerca el 22-M, y la clave es: #nolesvotes</title>
-		<link>http://dramor.net/blog/archives/463</link>
+		<link>http://dramor.net/blog/2011/05/se-acerca-el-22-m-y-la-clave-es-nolesvotes/</link>
 		<pubDate>Sat, 14 May 2011 09:36:00 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=463</guid>
@@ -13544,7 +13544,7 @@ The Wizard]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Becas en Open Sistemas</title>
-		<link>http://dramor.net/blog/archives/469</link>
+		<link>http://dramor.net/blog/2011/06/becas-en-open-sistemas/</link>
 		<pubDate>Fri, 03 Jun 2011 07:23:29 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=469</guid>
@@ -13624,7 +13624,7 @@ ___
 	</item>
 	<item>
 		<title>Ya estamos en google+</title>
-		<link>http://dramor.net/blog/archives/476</link>
+		<link>http://dramor.net/blog/2011/07/ya-estamos-en-google/</link>
 		<pubDate>Tue, 05 Jul 2011 07:42:54 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=476</guid>
@@ -13678,7 +13678,7 @@ Saludos]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Publicado CentOS 6</title>
-		<link>http://dramor.net/blog/archives/481</link>
+		<link>http://dramor.net/blog/2011/07/publicado-centos-6/</link>
 		<pubDate>Sun, 10 Jul 2011 19:08:03 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=481</guid>
@@ -13801,7 +13801,7 @@ Muchas gracias]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Publicado CentOS 6 &quot;live CD&quot;</title>
-		<link>http://dramor.net/blog/archives/491</link>
+		<link>http://dramor.net/blog/2011/07/publicado-centos-6-live-cd/</link>
 		<pubDate>Tue, 26 Jul 2011 21:22:10 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=491</guid>
@@ -13842,7 +13842,7 @@ ___
 	</item>
 	<item>
 		<title>La DMCA acongoja a Google</title>
-		<link>http://dramor.net/blog/archives/497</link>
+		<link>http://dramor.net/blog/2011/07/la-dmca-acongoja-a-google/</link>
 		<pubDate>Fri, 29 Jul 2011 22:39:33 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=497</guid>
@@ -13883,7 +13883,7 @@ ___
 	</item>
 	<item>
 		<title>Llamadas telefónicas desde google</title>
-		<link>http://dramor.net/blog/archives/499</link>
+		<link>http://dramor.net/blog/2011/08/llamadas-telefonicas-desde-google/</link>
 		<pubDate>Fri, 05 Aug 2011 07:22:23 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=499</guid>
@@ -13940,7 +13940,7 @@ In all honesty, I can't wait to see where this competition heads.]]></wp:comment
 	</item>
 	<item>
 		<title>Invitaciones para Google+</title>
-		<link>http://dramor.net/blog/archives/502</link>
+		<link>http://dramor.net/blog/2011/08/invitaciones-para-google/</link>
 		<pubDate>Sun, 07 Aug 2011 10:03:07 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=502</guid>
@@ -14006,7 +14006,7 @@ ___
 	</item>
 	<item>
 		<title>El botón &quot;+1&quot; de Google+</title>
-		<link>http://dramor.net/blog/archives/506</link>
+		<link>http://dramor.net/blog/2011/08/el-boton-1-de-google/</link>
 		<pubDate>Wed, 24 Aug 2011 21:01:46 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=506</guid>
@@ -14046,7 +14046,7 @@ ___
 	</item>
 	<item>
 		<title>Clase sobre &quot;Líderes FLOSS&quot; en el Master de Software Libre</title>
-		<link>http://dramor.net/blog/archives/515</link>
+		<link>http://dramor.net/blog/2011/10/clase-sobre-lideres-floss-en-el-master-de-software-libre/</link>
 		<pubDate>Sun, 30 Oct 2011 20:15:46 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=515</guid>
@@ -14085,7 +14085,7 @@ ___
 	</item>
 	<item>
 		<title>Este 20N, No Les Votes</title>
-		<link>http://dramor.net/blog/archives/518</link>
+		<link>http://dramor.net/blog/2011/11/este-20n-no-les-votes/</link>
 		<pubDate>Fri, 18 Nov 2011 21:27:03 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=518</guid>
@@ -14120,7 +14120,7 @@ ___
 	</item>
 	<item>
 		<title>Un Gobierno en funciones no puede aprobar la ‘Ley Sinde’</title>
-		<link>http://dramor.net/blog/archives/522</link>
+		<link>http://dramor.net/blog/2011/12/un-gobierno-en-funciones-no-puede-aprobar-la-%e2%80%98ley-sinde%e2%80%99/</link>
 		<pubDate>Fri, 02 Dec 2011 08:28:39 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=522</guid>
@@ -14211,7 +14211,7 @@ Hay puntos intereantes, otros no tienen sentido IMHO :(]]></wp:comment_content>
 	</item>
 	<item>
 		<title>Signing-party CACert y PGP en Madrid</title>
-		<link>http://dramor.net/blog/archives/525</link>
+		<link>http://dramor.net/blog/2012/03/signing-party-cacert-y-pgp-en-madrid/</link>
 		<pubDate>Sat, 17 Mar 2012 18:22:50 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=525</guid>
@@ -14247,7 +14247,7 @@ El próximo 26 de marzo, a las 13h, tendrá lugar en el IES Clara del Rey de Mad
 	</item>
 	<item>
 		<title>Google Drive frente a DropBox</title>
-		<link>http://dramor.net/blog/archives/530</link>
+		<link>http://dramor.net/blog/2012/04/google-drive-frente-a-dropbox/</link>
 		<pubDate>Wed, 25 Apr 2012 12:01:25 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=530</guid>
@@ -14330,7 +14330,7 @@ Y respecto a no almacenar documentos privados en la nube no es una cuestión de 
 	</item>
 	<item>
 		<title>160 caracteres</title>
-		<link>http://dramor.net/blog/archives/533</link>
+		<link>http://dramor.net/blog/2012/07/160-caracteres/</link>
 		<pubDate>Tue, 03 Jul 2012 11:15:27 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=533</guid>
@@ -14367,7 +14367,7 @@ Y respecto a no almacenar documentos privados en la nube no es una cuestión de 
 	</item>
 	<item>
 		<title>Vacaciones en Perú</title>
-		<link>http://dramor.net/blog/archives/539</link>
+		<link>http://dramor.net/blog/2012/08/vacaciones-en-peru/</link>
 		<pubDate>Fri, 17 Aug 2012 12:42:10 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=539</guid>
@@ -14506,7 +14506,7 @@ Ya en Madrid, en la cruda realidad, me conformaré con visitar de tanto en tanto
 	</item>
 	<item>
 		<title>Ya tenemos root en el Xperia</title>
-		<link>http://dramor.net/blog/archives/545</link>
+		<link>http://dramor.net/blog/2012/09/ya-tenemos-root-en-el-xperia/</link>
 		<pubDate>Sat, 15 Sep 2012 18:56:34 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=545</guid>
@@ -14539,7 +14539,7 @@ Ya en Madrid, en la cruda realidad, me conformaré con visitar de tanto en tanto
 	</item>
 	<item>
 		<title>Hosting web &quot;bueno, bonito y barato&quot;</title>
-		<link>http://dramor.net/blog/archives/562</link>
+		<link>http://dramor.net/blog/2013/06/hosting-web-bueno-bonito-y-barato/</link>
 		<pubDate>Wed, 26 Jun 2013 10:45:24 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=562</guid>
@@ -14577,7 +14577,7 @@ Además, si te das de <a href="http://www.dreamhost.com/r.cgi?119384">alta este 
 	</item>
 	<item>
 		<title>Los calendarios de gmail y Google+</title>
-		<link>http://dramor.net/blog/archives/571</link>
+		<link>http://dramor.net/blog/2013/08/los-calendarios-de-gmail-y-google/</link>
 		<pubDate>Tue, 27 Aug 2013 17:51:39 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=571</guid>
@@ -14628,7 +14628,7 @@ Por si a alguien le interesa, la forma de desactivar la integración entre event
 	</item>
 	<item>
 		<title>El spam en los calendarios de Gmail</title>
-		<link>http://dramor.net/blog/archives/577</link>
+		<link>http://dramor.net/blog/2013/08/el-spam-en-los-calendarios-de-gmail/</link>
 		<pubDate>Thu, 29 Aug 2013 19:42:04 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=577</guid>
@@ -14663,7 +14663,7 @@ Este truco ha sido fácil (más que el de <a href="http://dramor.net/blog/archiv
 	</item>
 	<item>
 		<title>Software Freedom Day</title>
-		<link>http://dramor.net/blog/archives/583</link>
+		<link>http://dramor.net/blog/2013/09/software-freedom-day-2/</link>
 		<pubDate>Sat, 21 Sep 2013 16:14:56 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=583</guid>
@@ -14694,7 +14694,7 @@ Este truco ha sido fácil (más que el de <a href="http://dramor.net/blog/archiv
 	</item>
 	<item>
 		<title>Cómo desactivar el uso de tu nombre y tu foto en la publicidad de Google</title>
-		<link>http://dramor.net/blog/archives/587</link>
+		<link>http://dramor.net/blog/2013/10/como-desactivar-el-uso-de-tu-nombre-y-tu-foto-en-la-publicidad-de-google/</link>
 		<pubDate>Sun, 13 Oct 2013 13:17:17 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=587</guid>
@@ -14732,7 +14732,7 @@ http://youtu.be/q7megRBYU4o]]></content:encoded>
 	</item>
 	<item>
 		<title>Como el blog ha muerto, escribo esto</title>
-		<link>http://dramor.net/blog/archives/595</link>
+		<link>http://dramor.net/blog/2013/12/como-el-blog-ha-muerto-escribo-esto/</link>
 		<pubDate>Mon, 23 Dec 2013 14:20:41 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=595</guid>
@@ -14773,7 +14773,7 @@ Y bueno, para demostrar que el blog no ha muerto, aprovecho para felicitaros las
 	</item>
 	<item>
 		<title>Telegram</title>
-		<link>http://dramor.net/blog/archives/601</link>
+		<link>http://dramor.net/blog/2014/01/telegram/</link>
 		<pubDate>Fri, 31 Jan 2014 15:36:58 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=601</guid>
@@ -14977,7 +14977,7 @@ Remitido en origen por: [your-name] [your-email]";s:9:"recipient";s:16:"jjamorNO
 	</item>
 	<item>
 		<title>Creación de Directorio Activo con Samba 4 en CentOS 6</title>
-		<link>http://dramor.net/blog/archives/606</link>
+		<link>http://dramor.net/blog/2014/02/creacion-de-directorio-activo-con-samba-4-en-centos-6/</link>
 		<pubDate>Sun, 02 Feb 2014 09:19:49 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=606</guid>
@@ -15246,7 +15246,7 @@ El lector interesado puede, una vez conseguida la función básica mediante este
 	</item>
 	<item>
 		<title>Adición de un controlador de dominio (DC) con Samba 4</title>
-		<link>http://dramor.net/blog/archives/618</link>
+		<link>http://dramor.net/blog/2014/02/adicion-de-un-controlador-de-dominio-dc-con-samba-4/</link>
 		<pubDate>Sun, 09 Feb 2014 13:50:32 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=618</guid>
@@ -15465,7 +15465,7 @@ También nos fallará el backend DNS BIND_DLZ, si el servidor es Windows 2003. E
 	</item>
 	<item>
 		<title>La caída de whatsapp... y los fallos de Telegram</title>
-		<link>http://dramor.net/blog/archives/624</link>
+		<link>http://dramor.net/blog/2014/02/la-caida-de-whatsapp-y-los-fallos-de-telegram/</link>
 		<pubDate>Sun, 23 Feb 2014 15:42:55 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=624</guid>
@@ -15515,7 +15515,7 @@ Por cierto, la crisis del Whatsapp me trajo ayer una pequeña avalancha de conta
 	</item>
 	<item>
 		<title>Primeros días con Ubuntu 14.04: problemas wifi y otros</title>
-		<link>http://dramor.net/blog/archives/632</link>
+		<link>http://dramor.net/blog/2014/03/primeros-dias-con-ubuntu-14-04-problemas-wifi-y-otros/</link>
 		<pubDate>Sun, 30 Mar 2014 14:42:49 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=632</guid>
@@ -15575,7 +15575,7 @@ Después de hacer estos cambios, se puede decir que ya disfruto de mi nuevo Ubun
 	</item>
 	<item>
 		<title>Bloqueando el seguimiento de Facebook con Adblock Plus</title>
-		<link>http://dramor.net/blog/archives/645</link>
+		<link>http://dramor.net/blog/2014/07/bloqueando-el-seguimiento-de-facebook-con-adblock-plus/</link>
 		<pubDate>Sun, 06 Jul 2014 14:05:30 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=645</guid>
@@ -15631,7 +15631,7 @@ PD: Si te ha gustado este artículo, haz "Me gusta" ya puestos X-))
 	</item>
 	<item>
 		<title>Lavado de cara a la web del Dr Amor :-)</title>
-		<link>http://dramor.net/blog/archives/657</link>
+		<link>http://dramor.net/blog/2015/04/lavado-de-cara-a-la-web-del-dr-amor/</link>
 		<pubDate>Sun, 26 Apr 2015 09:06:43 +0000</pubDate>
 		<dc:creator><![CDATA[Juanjo]]></dc:creator>
 		<guid isPermaLink="false">http://dramor.net/blog/?p=657</guid>
