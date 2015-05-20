@@ -1,0 +1,56 @@
+---
+layout: post
+title: Phising con Skype
+date: 2006-01-01 12:35:54.000000000 +00:00
+categories:
+- Boring Stories
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _oembed_7d45a65e62a6d03323505a9d72c2ed13: "{{unknown}}"
+  _oembed_b184e04e373cd7d3a92e8da6f90846ed: "{{unknown}}"
+  _oembed_6acdc4c939e92537bc27bac63b35b8cf: "{{unknown}}"
+  _oembed_d28135c56297424356e6f2786375df68: "{{unknown}}"
+  _oembed_252c1359ccba4c9bbbbb7a496ea36f77: "{{unknown}}"
+  _oembed_921f1ba6ca2db9d436c14e2b48ac6c45: "{{unknown}}"
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Con la llegada del nuevo año, no vamos a recibir solo los típicos <em>phising</em> bancarios. Ahora también nos intentarán engañar con servicios que a veces nos podrían llegar a despistar. Por ejemplo, hoy he recibido el siguiente mensaje:</p>
+<pre><code>
+========================================================================
+============== THIS IS AN AUTOMATED MESSAGE, DO NOT REPLY ==============
+========================================================================
+
+Dear Customer
+
+Thank you for taking the time to register, but now we need to know
+that you still use your mailbox that is registered with your
+skype account.
+
+
+To verify your email address, simply click the link below and login
+to your skype account.
+
+Click to verify:
+https://secure.skype.com/store/member/login.html 
+
+You only need to click this link once, and your account will be updated.
+
+You need to verify your email address within 4 days of receiving
+this mail. If more than 4 days pass, please request a new
+verification email like this one, by signing in to your account at
+http://www.skype.com/go/myaccount
+
+[...]
+</code></pre>
+<p>Como siempre, hay que tener mucho cuidado con estos correos. Si pinchamos en un enlace veremos que nos lleva a sitios como <em>http://littonlab.atl.calpoly.edu /media/www_skype_com.php</em> en lugar de <em>skype.com</em>.</p>
+<p>En mi caso, la instalación de <a href="http://www.sng.ecs.soton.ac.uk/mailscanner/">Mailscanner</a> ha servido para advertime de los enlaces fraudulentos, al insertar junto al enlace un comentario del tipo <em>mailscanner ha detectado un intento de fraude desde littonlab.atl.calpoly.edu</em>. No creo que fuera mala idea generalizar este tipo de advertencias automáticas en los servicios de correo que dan los proveedores.</p>

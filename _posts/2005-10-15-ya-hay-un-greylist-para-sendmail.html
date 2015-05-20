@@ -1,0 +1,12 @@
+---
+layout: post
+title: Ya hay un greylist para sendmail
+date: '2005-10-15T00:44:00.000+02:00'
+author: Juanjo
+tags: 
+modified_time: '2005-10-15T01:12:31.606+02:00'
+blogger_id: tag:blogger.com,1999:blog-8286711.post-112933074754420125
+blogger_orig_url: http://dramor.blogspot.com/2005/10/ya-hay-un-greylist-para-sendmail.html
+---
+
+</p><p align="left">Por fin un post <em>friki</em>. Ya tenemos un greylist para sendmail. Lo tengo en pruebas en casa y parece que funciona perfectamente, reteniendo el spam de forma muy eficaz (junto con los filtros <a href="http://www.spamassassin.org/">spamassassin</a> y los míos personales). En mi opinión, las <em>listas grises</em> sí son una solución para reducir el spam desde el MTA, mucho más inteligentes que las <em>listas negras</em> que tantos sitios usan. Para saber más de las listas grises, <a href="http://isg.ee.ethz.ch/tools/postgrey/">mirad aquí</a>. A continuación, los cuatro pasos seguidos para instalarlo con sendmail:<br><br />1. Obtener el código de <a href="http://smfs.sourceforge.net/smf-grey.html">smf-grey</a>.<br><br />2. Instalar, si no las tienes, la biblioteca de filtrado en sendmail (libmilter). En mi debian fue tan simple como escribir: <em>apt-get install libmilter-dev</em>.<br><br />3. Compilar e instalar el smf-grey (previamente a instalar, tal vez quieras modificar algún parámetro del archivo smf-config.h):<br /><em> make ; make install </em><br><br />4. Crear un script de arranque para smf-grey (puedes copiar y modificar el fichero /etc/init.d/skeleton poniendo /usr/local/sbin/smf-grey como ejecutable a lanzar) y ponerlo en los directorios <em>rc?.d</em> con el comando <em>update-rc.d smf-grey defaults</em>.<br><br />5. Modificar tu <em>/etc/mail/sendmail.mc</em> añadiendo las líneas correspondientes, es decir:<br /><pre>define(`confMILTER_MACROS_HELO', confMILTER_MACROS_HELO`, {verify}')<br />INPUT_MAIL_FILTER(`smf-grey', `S=unix:/var/spool/smf/smf-grey.sock, T=S:30s;R:1m')</pre><br><br />6. Arrancar el smf-grey, tecleando: <em>/etc/init.d/smf-grey start</em> y comprobar que el proceso se ha creado.<br><br />7. Reiniciar sendmail: <em>cd /etc/mail ; make ; /etc/init.d/sendmail reload</em>.<br><br /><br />Y ya está. De ahora en adelante, todo el correo entrante será retrasado para poner a prueba al MTA atacante. Espero que mi gráfica de spam recibido sea ahora parecida a esta:<br><br /><img alt="Grafica" src="http://isg.ee.ethz.ch/tools/postgrey/mailgraph_greylisting.png" width="450" align="center"/></p><p>

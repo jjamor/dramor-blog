@@ -1,0 +1,13 @@
+---
+layout: post
+title: Today's Stupid Trick (on Ubuntu)
+date: '2004-12-12T11:17:00.000+01:00'
+author: Juanjo
+tags: 
+modified_time: '2004-12-12T12:09:12.673+01:00'
+blogger_id: tag:blogger.com,1999:blog-8286711.post-110284851615117140
+blogger_orig_url: http://dramor.blogspot.com/2004/12/todays-stupid-trick-on-ubuntu.html
+---
+
+</P><P ALIGN="justify">On <A HREF="http://www.ubuntulinux.org/">Ubuntu Linux</A>, the <A HREF="http://www.easysw.com/cups/">CUPs</A> administrator comes with administration capabilities disabled. This issue should not be a problem, by using <A HREF="http://www.gnome.org/">GNOME</A> CUPS manager. However, this tool does not permit to specify a symbolic <em>name</em> of printer during creation. And for CUPS, symbolic names can not be changed later.</P><P ALIGN="justify"> So, the problem is when creating a printer, system assigns automatically a name based on printer model. For example, if your printer is a kind of Apple LaserWriter, name of printer could be "LaserWriter-IInt".</P><P ALIGN="justify">When your organisation has several printers, you cannot refer them with their symbolic name ("Pete") or location ("second floor", "Pete's Room") instead of printer model. So, you must remember models of all printers of your interest...</P><P ALIGN="justify">This issue justifies <A HREF="https://bugzilla.ubuntu.com/show_bug.cgi?id=1265">a bug on Ubuntu</A>, however this bug has been marked as "upstream" and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=158362">transferred to Gnome maintainers</A>. So, we cannot expect a fix on your favourite distro soon...</P><P ALIGN="justify">Ok, let's see the "Today's Stupid Trick": you only need to enable administration tasks on CUPS administrator. First, add cupsys user to shadow group: type as root «<em>adduser cupsys shadow</em>».</P><P ALIGN="justify">Then, remove and create again all your printers, but now using <A HREF="http://localhost:631/">the admin page</A>. Put on your printers the name you wish. Finally, remove cupsys from shadow access group by typing as root «<em>deluser cupsys shadow</em>».</P><P ALIGN="justify">Other admin tasks can be done without limitations using GNOME CUPS manager, so you don't need to maintain cupsys access to group shadow (which may be a security hole).
+<br /></P><P>

@@ -1,0 +1,24 @@
+---
+layout: post
+title: 'DomainKeys: si nos ponemos de acuerdo, reduciremos el spam'
+date: '2004-10-18T13:02:00.000+02:00'
+author: Juanjo
+tags: 
+modified_time: '2004-10-19T12:35:41.683+02:00'
+blogger_id: tag:blogger.com,1999:blog-8286711.post-109809546075715502
+blogger_orig_url: http://dramor.blogspot.com/2004/10/domainkeys-si-nos-ponemos-de-acuerdo.html
+---
+
+Parece que una tecnología sencilla, desarrollada por <a href="http://www.yahoo.com/">Yahoo</a>, y basada en <a href="http://en.wikipedia.org/wiki/Public_key_cryptography">criptografía de clave pública</a>, va a empezar a utilizarse en serio. No le daría mayor importancia si no fuera porque la ha adoptado <a href="http://gmail.google.com/">Gmail</a>, el revolucionario correo de <a href="http://www.google.com/">Google</a> (y no porque den un giga, que eso ya es moneda de uso corriente). Leyendo <a href="http://rvr.typepad.com/linotipo">el blog de rvr, Linotipo</a>, he visto una <a href="http://rvr.typepad.com/linotipo/2004/05/yahoo_publica_l.html">descripción clara</a> de cómo funciona <a href="http://antispam.yahoo.com/domainkeys">la tecnología, llamada DomainKeys</a>. Ni corto ni perezoso me he enviado un mensaje desde mi cuenta de Gmail para mirar sus cabeceras. Y aquí podemos ver la firma:
+<br />
+<br /><span style="font-weight: bold;font-size:85%;" ><span style="font-family:courier new;">DomainKey-Signature: a=rsa-sha1; c=nofws;</span>
+<br /><span style="font-family:courier new;">        s=beta; d=gmail.com;</span>
+<br /><span style="font-family:courier new;">h=received:message-id:date:from:reply-to:to:subject:mime-version:content-type:
+<br />      content-transfer-encoding;</span>
+<br /><span style="font-family:courier new;">b=qyrvpFDGb4ohyIdGXhdB0+UwhorEtwsDIquMt6PjEeNjVBJpvZdH+Sso [...]
+<br /></span></span>
+<br />Como vemos, han incluido una cabecera con un <span style="font-style: italic;">chorizo</span>, que he recortado para que no me rompa el diseño del blog, y es una firma creada con algoritmos de cifrado RSA/SHA1. La idea básica es, obtener mediante DNS la clave pública del firmante (el dominio indicado en la línea b, en este caso, gmail.com) y verificar que la firma es correcta. Según la <a href="http://www.ietf.org/internet-drafts/draft-delany-domainkeys-base-01.txt">propuesta de RFC</a>, entiendo que el contenido firmado serían las cabeceras indicadas en la línea h aparte del cuerpo del mensaje.
+<br />
+<br />Si el <a href="http://en.wikipedia.org/wiki/Mail_transfer_agent">MTA</a> verifica que la firma no es correcta, podría descartar el mensaje y cortar la conexión SMTP recibida del espámer. Si este sistema se adopta masivamente, se deberá forzar al MTA a rechazar todo mensaje que venga mal firmado o simplemente, sin firmar. De este modo, el espámer tendrá que craquear <a href="http://en.wikipedia.org/wiki/Dns">DNS</a> o robar claves privadas, para poder falsificar las firmas. O si quiere tener firmas auténticas, registrar y firmar cada dominio que quiera utilizar.
+<br />
+<br />No está mal el invento. Y no le pongo pegas técnicas, aunque sí tengo una advertencia: <a href="http://domainkeys.sourceforge.net/license/patentlicense1-0.html">Yahoo quiere patentarlo</a>. De todas formas, Yahoo aparenta buena voluntad, con la documentación aportada y su <a href="http://domainkeys.sourceforge.net/">implementación de referencia publicada en Sourceforge</a>. Se espera, además, una próxima versión de <a href="http://www.sendmail.org/">sendmail</a> que incorporará el sistema.

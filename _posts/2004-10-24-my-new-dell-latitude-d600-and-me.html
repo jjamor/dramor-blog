@@ -1,0 +1,32 @@
+---
+layout: post
+title: My new Dell Latitude D600 and me
+date: '2004-10-24T15:57:00.000+02:00'
+author: Juanjo
+tags: 
+modified_time: '2004-11-13T12:46:13.553+01:00'
+blogger_id: tag:blogger.com,1999:blog-8286711.post-109862932885396047
+blogger_orig_url: http://dramor.blogspot.com/2004/10/my-new-dell-latitude-d600-and-me.html
+---
+
+<IMG SRC="http://img.dell.com/images/global/products/latit/d600_45degree_131x145.jpg" align="right" alt="Dell D600" hspace="30" vspace="20" border="0"> My <a href="http://www.escet.urjc.es/">university</a> has bough  for  me a <a href="http://www1.us.dell.com/content/products/productdetails.aspx/latit_d600?c=us&cs=RC956904&amp;l=en&s=hied">Dell Latitude D600 laptop</a>. It will be my personal workstation. So, I'm now installing it the free software I need and also I'm migrating my documents from my own laptop (a Packard Bell). Finally, I decided to install <a href="http://www.ubuntulinux.org/">Ubuntu Linux</a>, because it is easy to install and configure but, fortunately, it is based in Debian and it includes all Sarge packages. And, now Gnome 2.8! I've left 30 Gb in hard disk for the <a href="http://www.wired.com/news/technology/0,1282,17452,00.html">mandatory Windows license</a> and 10 Gb for experimental installations or auxiliary data storage. The rest, 40 Gb, is assigned to Ubuntu Linux, with its default installation.
+<br />
+<br /><a href="http://www.ubuntulinux.org/download/">Ubuntu 4.10 PR</a> has detected correctly all hardware (including ATI Radeon 9000 card with hardware acceleration activated). Also supports dinamyc frecuencies in Centrino CPU (SpeedStep) and the wireless card (<a href="http://ipw2100.sourceforge.net/">ipw2100 driver</a>).  I've not needed to "hack " anything yet.
+<br />
+<br />ACPI appears to work ok, however <a href="http://www.linuxquestions.org/questions/showthread.php?postid=844779">the lid button ever hangs machine</a> :-( So I cannot close the display while running Ubuntu. I've tested that kernel 2.4.x does not hang (booting an older distro, for example), nor 2.6.3 included with my Fedora Core 2 Test 1.91 CDs. But 2.6.8 included with Ubuntu installation CD or the one installed in hard disk ever hangs the machine when closing LCD... if I boot with acpi=off, kernel ignores ACPI drivers, however when touching lid button system hangs inmediately.
+<br />
+<br />Searching for a solution, I've found some interesting sites about Dell D600:
+<br />
+<br /><ul>
+<br /><li> <a href="http://carlosgc.linups.org/general/latitude-d600.html">An article in Carlos' blog</a>.</li>
+<br /><li> <a href="http://www.cs.bath.ac.uk/%7Eocc/laptop/">Owen Cliffe</a> </li>
+<br /><li> <a href="http://www.marlow.dk/site.php/tech/dell_latitude_d600">Marlow</a> </li>
+<br /><li> <a href="http://www.hep.phy.cam.ac.uk/%7Eandersen/fedora2latitude600.html">Andersen</a> </li>
+<br /><li> <a href="http://www.entrelacs.net/home/linux/D600.html">Christian Mercat</a> </li>
+<br /><li> <a href="http://hea-www.harvard.edu/%7Edsteeghs/dell_d600.html">Danny Steeghs</a> </li>
+<br /><li> <a href="http://blogs.linux.ie/esos/2003/09/05/gentoo-on-dell-lattitude-d600/">This "anonymous" blog</a> </li><span class="down" style="display: block;" id="formatbar_CreateLink" title="Link" onmouseover="ButtonHoverOn(this);" onmouseout="ButtonHoverOff(this);" onmousedown="CheckFormatting(event);FormatbarButton('richeditorframe', this, 8);ButtonMouseDown(this);"></span><li> <a href="http://gabriel.fischer.free.fr/">Gabriel Fischer</a> </li>
+<br /><li> <a href="http://pont.net/linux/d600/">Pont.net</a> </li>
+<br /><li> <a href="http://mail-index.netbsd.org/port-i386/2003/05/22/0003.html">Alan Barret finds a similar problem when installing NetBSD</a> (however, with ACPI activated he doesn't have problems...) </li>
+<br /></ul><span class="down" style="display: block;" id="formatbar_CreateLink" title="Link" onmouseover="ButtonHoverOn(this);" onmouseout="ButtonHoverOff(this);" onmousedown="CheckFormatting(event);FormatbarButton('richeditorframe', this, 8);ButtonMouseDown(this);"></span>
+<br />None of them treats the 2.6 kernel crash, so I'll continue websearching for the solution :-/ First, I'll search for an <a href="http://acpi.sourceforge.net/dsdt/index.php">alternate DSDT</a> and test it...
+<br /><span class="down" style="display: block;" id="formatbar_CreateLink" title="Link" onmouseover="ButtonHoverOn(this);" onmouseout="ButtonHoverOff(this);" onmousedown="CheckFormatting(event);FormatbarButton('richeditorframe', this, 8);ButtonMouseDown(this);"></span>

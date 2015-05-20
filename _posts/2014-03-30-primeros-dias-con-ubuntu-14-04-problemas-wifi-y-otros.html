@@ -1,0 +1,52 @@
+---
+layout: post
+title: 'Primeros días con Ubuntu 14.04: problemas wifi y otros'
+date: 2014-03-30 15:42:49.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+teaser: Preparando Ubuntu 14.04 LTS 64 bits para que soporte aplicaciones de 32 bits. Y de paso, problemas Wi-Fi.
+---
+<p>Ya me pasé a <a href="http://releases.ubuntu.com/14.04/">Ubuntu 14.04 LTS</a> (Beta 2). Las mejoras no parecen de momento muy visibles frente a la versión que tenía (y yo trabajo siempre con la LTS, así que para dos años sin cambiar, creo que debería notarlo más). Finalmente deseché cambiar a <a href="http://cdimage.ubuntu.com/ubuntu-gnome/releases/14.04/beta-2/">Ubuntu Gnome</a> (aunque me pareció una muy buena alternativa) y me quedé con lo conocido.</p>
+<p>Eso sí, echo en falta el instalar cómodamente el soporte de 32 bits (antes se podía instalando el paquete <em>ia32-libs</em>). Actualmente, aun es posible hacerlo, pero me ha costado un poco averiguar el cómo. Ya sé que vivimos en un mundo de 64 bits, pero, hoy por hoy, muchos todavía tenemos que instalar, por razones de trabajo, pequeñas aplicaciones privativas que no las publican en 64 bits. En mi caso, para añadir el soporte de 32 bits que necesitaba primero añadí el soporte de instalación de paquetes de este tipo:</p>
+<pre>dpkg --add-architecture i386</pre>
+<p>y luego instalé lo que necesitaba en ese momento:</p>
+<pre>apt-get install nspluginwrapper lib32z1 libc6-i386 libxml2:i386 \
+  libstdc++6:i386 libxerces-c3.1:i386 libcanberra-gtk-module:i386 \
+  libcurl3:i386 libasound2-plugins:i386 libgstreamer-plugins-base0.10-0:i386</pre>
+<p>Esto me sirve para utilizar sin problemas cosas como Citrix Receiver o el Forticlient VPN SSL. Cosas de mi trabajo...</p>
+<p>Trabajando ya con el sistema, lo más molesto que me he encontrado es una inusual inestabilidad de la conexión Wifi. Continuamente se me reconectaba la wifi con mensajes en el sistema como éstos (reconectando a 1 Mbps con cierta frecuencia):</p>
+<pre>wlan0: Limiting TX power to 20 (20 - 0) dBm as advertised by xx:xx:xx:xx:xx:xx</pre>
+<pre>wlan0: deauthenticated from xx:xx:xx:xx:xx:xx (Reason: 6)
+Calling CRDA to update world regulatory domain
+cfg80211: World regulatory domain updated:
+cfg80211: (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+cfg80211: (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+...</pre>
+<p>Aunque apenas lo notaba, el verdadero problema es que en algún momento no era capaz de renegociar y me topaba con un:</p>
+<pre>IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready</pre>
+<p>y la única solución para seguir conectado era, desconectar y reconectar las funciones de radio (Fn-F2 en mi portátil, un Dell V131). Finalmente, examinando varios bugs de Ubuntu (marcados como <em>inválidos</em>, y pocas veces corregidos, como suele ocurrir: <a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1005832">ejemplo 1</a>, <a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1126495">ejemplo 2</a>) encontré la recomendación de algún usuario final: desactivar 802.11n. Gracias a esto, ya no se desconecta y siempre tengo 54 Mbps en la tarjeta. Para hacerlo, ver más abajo el fichero personal-opts.conf.</p>
+<p>Otro problema que he tenido, esta vez con el lector de tarjetas flash integrado, es que está continuamente enviando estos mensajes, los cuales ralentizan un poco el sistema:</p>
+<pre>sd 6:0:0:0: [sdb] Test WP failed, assume Write Enabled
+sd 6:0:0:0: [sdb] Asking for cache data failed
+sd 6:0:0:0: [sdb] Assuming drive cache: write through</pre>
+<p>Examinando <a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/925760">bugs</a> he encontrado que tal vez se podría solucionar cargando el módulo <em>ums_realtek</em> con la opción <em>ss_en=0</em>. Sin embargo, no es suficiente: en este caso lo que sucede es que aparentemente el dispositivo se conecta y desconecta continuamente al bus USB. Finalmente, lo que he tenido que hacer es ponerlo en la lista negra para evitar que cargue el driver. Total, para lo que uso el lector de tarjetas...</p>
+<p>Para dejar fijas ambas soluciones (entiendo que temporales, ya veremos) he creado un archivo /etc/modprobe.d/personal-opts.conf con el siguiente contenido:</p>
+<pre>options iwlwifi 11n_disable=1
+blacklist ums-realtek
+# options ums-realtek ss_en=0</pre>
+<p>Después de hacer estos cambios, se puede decir que ya disfruto de mi nuevo Ubuntu 14.04 LTS en 64 bits ;-)</p>

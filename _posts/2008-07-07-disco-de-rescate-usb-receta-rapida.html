@@ -1,0 +1,48 @@
+---
+layout: post
+title: 'Disco de rescate USB: receta rápida'
+date: 2008-07-07 18:45:58.000000000 +00:00
+categories:
+- Boring Stories
+- EeePC
+- Frikadas
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Esta es una receta típica, leída en mil sitios, que pongo aquí en resumidos pasos (<a href="http://d-i.alioth.debian.org/manual/en.i386/ch04s04.html">esta es la fuente</a>) y permite tener en un stick USB un sistema Debian que puede usarse como disco de rescate (yo lo utilizo para <a href="http://dramor.net/blog/archives/120">jugar con mi EeePC</a>):</p>
+<ol>
+<li>Instalar en el sistema host que vayamos a usar (Debian o basado en Debian) los paquetes <strong>mbr</strong> y <strong>syslinux</strong>.</li>
+<li>Usar un disco USB formateado con VFAT, que no hace falta que esté vacío (mucho mejor, así lo reutilizamos). Supongamos que es<strong> /dev/sdb</strong> y la partición VFAT, <strong>/dev/sdb1</strong></li>
+<li>Copiar en el directorio raíz del disco los siguientes archivos (se incluyen URLs de descarga):</li>
+<ul>
+<li><a href="http://http.us.debian.org/debian/dists/testing/main/installer-i386/current/images/hd-media/boot.img.gz">boot.img.gz</a></li>
+<li><a href="http://http.us.debian.org/debian/dists/testing/main/installer-i386/current/images/hd-media/initrd.gz">initrd.gz</a></li>
+<li><a href="http://http.us.debian.org/debian/dists/testing/main/installer-i386/current/images/hd-media/vmlinuz">vmlinuz</a></li>
+<li><a href="http://cdimage.debian.org/cdimage/lenny_di_beta2/i386/iso-cd/debian-LennyBeta2-i386-businesscard.iso">debian-businesscard.iso</a> (estoy usando la beta de Debian Lenny para aumentar el soporte de hardware, entre otras cosas)</li>
+</ul>
+<li>En el mismo directorio raíz, editar el fichero syslinux.cfg con el siguiente contenido:</li>
+<ul>
+<li>
+<pre class="screen">default vmlinuz</pre>
+<pre class="screen">append initrd=initrd.gz</pre>
+</li>
+</ul>
+<li>Desmontar el stick USB y ejecutar:</li>
+<ul>
+<li>
+<pre class="screen">syslinux /dev/sdb1 ; install-mbr /dev/sdb</pre>
+</li>
+</ul>
+<li>En teoría debe ser ya autoarrancable y servirnos como disco de rescate. Si no arranca cuando lo seleccionamos en la BIOS del equipo destino, asegurarse de que la partición /dev/sdb1 tiene puesto el flag de Boot (usar fdisk para ello).</li>
+</ol>

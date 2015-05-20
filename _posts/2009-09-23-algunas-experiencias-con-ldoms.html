@@ -1,0 +1,34 @@
+---
+layout: post
+title: Algunas experiencias con LDOMs
+date: 2009-09-23 00:47:57.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+- Opensolaris
+tags:
+- ldoms
+- Opensolaris
+- opensparc
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>He dedicado unos días a probar <a href="http://opensolaris.org/os/community/ldoms/">LDOMs</a> en un servidor <a href="http://www.sun.com/servers/coolthreads/t2000/">Sun Fire T2000</a>. Los resultados son bastante interesantes. Por un lado, aunque me he apoyado en la <a href="http://jjmora.es/solaris_configurando_ldoms_en_un_t1000/">experiencia de José Juan Mora</a>, en mi caso he trabajado en todo momento con Opensolaris 2009.06 y el paquete LDOMs integrado en esa distribución, en lugar de Solaris 10. El resultado, lo tenemos en <a href="http://tech.libresoft.es/doku.php/ldominstall">esta página de tech.libresoft.es</a>.</p>
+<p>Pero, la experiencia con LDOMs 1.2 bajo Opensolaris me ha permitido aportar algunas cosas más:</p>
+<ul>
+<li>Un sencillo procedimiento para <a href="http://tech.libresoft.es/doku.php/osolaitips#evitar_el_chequeo_de_12_gb">instalaciones por red de Opensolaris, con discos menores de 12 Gb</a>.</li>
+<li>Un sencillo procedimiento para <a href="http://tech.libresoft.es/doku.php/osolaitips#reducir_el_tamano_de_la_instalacion">reducir la instalación de Opensolaris 2009.06 a unos 600 Mb</a> de espacio, evitando paquetes innecesarios en la mayoría de los servidores.</li>
+<li><a href="http://tech.libresoft.es/doku.php/ldominstall#podemos_instalar_otro_sistema_operativo_que_no_sea_solaris_opensolaris_en_un_dominio_logico">Pruebas con Debian, Ubuntu y Martux/Natamar</a>, encontrando una forma de <a href="http://tech.libresoft.es/doku.php/debianontoldom">instalar Debian Lenny en un Dominio lógico</a>. Por supuesto, es complicada, pero no es nada que debiera asustar a un administrador experimentado.</li>
+</ul>
+<p>Como conclusiones, la tecnología LDOMs realmente me parece interesante y merece la pena apoyarlo en el proyecto Opensolaris. Al igual que la arquitectura que tiene detrás (un hardware abierto llamado <a href="http://www.opensparc.net/">Opensparc</a>). Lamentablemente, hoy por hoy <a href="http://www.sun.com/servers/coolthreads/overview/products.jsp">resulta demasiado caro para un entusiasta particular</a>, factor que, en mi opinión, ralentizará el crecimiento de la comunidad de desarrolladores de LDOMs.</p>

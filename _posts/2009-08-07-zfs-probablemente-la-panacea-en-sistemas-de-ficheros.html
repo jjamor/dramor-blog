@@ -1,0 +1,28 @@
+---
+layout: post
+title: ZFS, probablemente la panacea en sistemas de ficheros
+date: 2009-08-07 04:30:05.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+- Opensolaris
+tags:
+- Opensolaris
+- zfs
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Opensolaris incluye como sistema de ficheros principal, ZFS ("<em>zettabyte file system</em>"), que sustituye al UFS ("<em>unix file system</em>") utilizado hasta Solaris 10. ZFS se implementó estudiando las funcionalidades que demandaban los administradores, y como resultado se unió el concepto de "sistema de ficheros" con el de "gestión de volúmenes", simplificando mucho la administración de ambas funcionalidades. De esta forma, mediante comandos muy simples se puede crear un sistema de ficheros con prestaciones complejas tales como compresión de datos o espejado en dos discos. En <a href="http://tech.libresoft.es/doku.php/manejozfs">este artículo de tech.libresoft.es</a> hemos dejado un tutorial de comandos ZFS.</p>
+<p>ZFS sorprende a quien lo utiliza por la potencia y sencillez de uso. Una de las funciones que más interesan son los "<em>snapshots</em>", que permiten guardar una "<em>foto</em>" del contenido de un sistema de ficheros en un instante dado. El "snapshot" permite retroceder fácilmente a un estado anterior y ocupa muy poco espacio, ya que cuando hacemos una "foto" las modificaciones al sistema de ficheros se almacenan como "diferencias" con la foto.</p>
+<p>Los snapshots son muy interesantes en la mecánica de actualizaciones del sistema. Así, tras instalarlo, una foto llamada "install" nos permitiría retroceder al estado del sistema nada más instalarlo. También, el proceso de actualización de Opensolaris utiliza los snapshots para poder retroceder a un estado anterior a dicha actualización, proceso sobre el que nos dan <a href="http://opensolaris.org/jive/thread.jspa?messageID=399523">una pista aquí</a>.</p>

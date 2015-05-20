@@ -1,0 +1,200 @@
+---
+layout: post
+title: Adición de un controlador de dominio (DC) con Samba 4
+date: 2014-02-09 14:50:32.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+- RHEL
+tags:
+- active directory
+- centos 6
+- rhel 6
+- samba 4
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+  _yoast_wpseo_linkdex: '74'
+  _yoast_wpseo_focuskw: samba 4
+  _yoast_wpseo_metadesc: Cómo crear un controlador de dominio (DC) y añadirlo a un
+    directorio activo (AD) con Samba 4
+teaser: Cómo crear un controlador de dominio (DC) y añadirlo a un
+    directorio activo (AD) con Samba 4
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Continuando con el <a href="http://dramor.net/blog/archives/606">artículo anterior</a>, vamos a ver a continuación como añadir controladores de dominio adicionales a nuestra red con Samba 4. Partiremos de la existencia de al menos un controlador de dominio implementado preferiblemente con Samba 4, o con Windows Server en su defecto. Nuevamente, nuestro servidor contará con CentOS 6.x como sistema operativo y los paquetes de <a href="http://www.enterprisesamba.com/">Enterprise Samba</a>.</p>
+<p><!--more--></p>
+<h2>Requisitos</h2>
+<p>Debemos contar con un servidor con CentOS 6.x o Red Hat Enterprise Linux 6.x, y los paquetes de <a href="http://www.enterprisesamba.com/">Enterprise Samba</a> ya instalados; así como los paquetes de Bind modificados, de acuerdo a como indicamos en el <a href="http://dramor.net/blog/archives/606">artículo anterior</a>.</p>
+<h2>Disponibilidad del directorio activo</h2>
+<p>Para comprobar su disponibilidad, probaremos un login con Kerberos. Creamos un fichero /etc/krb5.conf como el siguiente:</p>
+<pre>[libdefaults]
+ default_realm = DRAMOR.INT
+ dns_lookup_realm = false
+ dns_lookup_kdc = true</pre>
+<p>También, verificaremos que el sistema tiene puesto como servidor DNS, el del otro controlador de dominio:</p>
+<pre># cat /etc/resolv.conf
+search dramor.int
+nameserver 192.168.56.10</pre>
+<p>Y trataremos de obtener un ticket:</p>
+<pre># kinit Administrador@DRAMOR.INT
+Password: xxxx
+Warning: Your password will expire in 41 days on Sun Mar 23 13:19:48 2014</pre>
+<p>Si todo ha ido correcto podremos conectarnos a algún recurso con ese usuario:</p>
+<pre># smbclient -k //centos6ad/netlogon
+Domain=[DRAMOR] OS=[Unix] Server=[Samba 4.1.4-SerNet-RedHat-7.el6]
+smb: <pre wp-pre-tag-3></pre>gt; quit</pre>
+<pre># klist
+Ticket cache: FILE:/tmp/krb5cc_0
+Default principal: Administrador@DRAMOR.INT</pre>
+<pre>Valid starting Expires Service principal
+02/08/14 23:43:38 02/09/14 09:43:41 krbtgt/DRAMOR.INT@DRAMOR.INT
+ renew until 02/09/14 23:43:38
+02/08/14 23:43:54 02/09/14 09:43:41 cifs/centos6ad@DRAMOR.INT</pre>
+<h2>Unión como controlador de dominio (DC)</h2>
+<p>Nos uniremos con la orden samba-tool. Nos pedirá la contraseña del administrador y a continuación se unirá mostrándonos información abundante sobre el proceso de replicación de datos:</p>
+<pre># samba-tool domain join dramor.int DC -UAdministrator --dns-backend=BIND9_DLZ</pre>
+<pre><strong>Finding a writeable DC for domain 'dramor.int'</strong>
+<strong>Found DC centos6ad.dramor.int</strong>
+<strong>Password for [DRAMOR\Administrator]:</strong>
+workgroup is DRAMOR
+realm is dramor.int
+checking sAMAccountName
+Adding CN=CENTOS6AD2,OU=Domain Controllers,DC=dramor,DC=int
+Adding CN=CENTOS6AD2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=dramor,DC=int
+Adding CN=NTDS Settings,CN=CENTOS6AD2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=dramor,DC=int
+Adding SPNs to CN=CENTOS6AD2,OU=Domain Controllers,DC=dramor,DC=int
+Setting account password for CENTOS6AD2$
+Enabling account
+Adding DNS account CN=dns-CENTOS6AD2,CN=Users,DC=dramor,DC=int with dns/ SPN
+Setting account password for dns-CENTOS6AD2
+Calling bare provision
+No IPv6 address will be assigned
+Provision OK for domain DN DC=dramor,DC=int
+Starting replication
+Schema-DN[CN=Schema,CN=Configuration,DC=dramor,DC=int] objects[402/1550] linked_values[0/0]
+Schema-DN[CN=Schema,CN=Configuration,DC=dramor,DC=int] objects[804/1550] linked_values[0/0]
+Schema-DN[CN=Schema,CN=Configuration,DC=dramor,DC=int] objects[1206/1550] linked_values[0/0]
+Schema-DN[CN=Schema,CN=Configuration,DC=dramor,DC=int] objects[1550/1550] linked_values[0/0]
+Analyze and apply schema objects
+Partition[CN=Configuration,DC=dramor,DC=int] objects[402/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=dramor,DC=int] objects[804/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=dramor,DC=int] objects[1206/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=dramor,DC=int] objects[1608/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=dramor,DC=int] objects[1620/1620] linked_values[28/0]
+Replicating critical objects from the base DN of the domain
+Partition[DC=dramor,DC=int] objects[98/98] linked_values[23/0]
+Partition[DC=dramor,DC=int] objects[313/215] linked_values[23/0]
+Done with always replicated NC (base, config, schema)
+Replicating DC=DomainDnsZones,DC=dramor,DC=int
+Partition[DC=DomainDnsZones,DC=dramor,DC=int] objects[41/41] linked_values[0/0]
+Replicating DC=ForestDnsZones,DC=dramor,DC=int
+Partition[DC=ForestDnsZones,DC=dramor,DC=int] objects[19/19] linked_values[0/0]
+Partition[DC=ForestDnsZones,DC=dramor,DC=int] objects[38/19] linked_values[0/0]
+Committing SAM database
+Sending DsReplicateUpdateRefs for all the replicated partitions
+Setting isSynchronized and dsServiceName
+Setting up secrets database
+Joined domain DRAMOR (SID S-1-5-21-2470081830-1300756272-1234487377) as a DC</pre>
+<p><span style="font-size: 1.5em; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; line-height: 1.5em;"> </span></p>
+<h2>Ajuste de entradas DNS</h2>
+<p>Comprobaremos si se creó una entrada DNS para el nuevo servidor en el servidor al que nos hemos unido. Para ello intentamos resolver:</p>
+<pre># host -t A centos6ad2.dramor.int.
+Host centos6ad2.dramor.int. not found: 3(NXDOMAIN)</pre>
+<p>Si nos da error, debemos dar de alta el registro DNS. Podemos hacerlo con samba-tool. Si la IP del servidor DNS es 192.168.56.20 y la del servidor que acabamos de unir (centos6ad) es 192.168.56.10 introduciríamos una orden como:</p>
+<pre># samba-tool dns add 192.168.56.30 dramor.int centos6ad2 a 192.168.56.10 -Uadministrador
+Password for [DRAMOR\administrador]:
+Record added successfully</pre>
+<p>Probamos de nuevo:</p>
+<pre># host -t A centos6ad2.dramor.int.
+centos6ad2.dramor.int has address 192.168.56.30</pre>
+<p>Tanto si hemos tenido que añadir este registro como si no, seguramente tendremos que añadir el GUID del servidor como registro CNAME del DNS. Comprobaremos si existe, en primer lugar obteniendo el GUID:</p>
+<pre># ldbsearch -H /var/lib/samba/private/sam.ldb '(invocationid=*)' --cross-ncs objectguid
+# record 1
+dn: CN=NTDS Settings,CN=<strong>CENTOS6AD2</strong>,CN=Servers,CN=Nombre-predeterminado-primer-sitio,CN=Sites,CN=Configuration,DC=dramor,DC=int
+objectGUID: <strong>99889a59-e3b6-4c9d-a005-dc61fa238cad</strong>
+...</pre>
+<p>Buscamos el registro:</p>
+<pre># host -t CNAME 99889a59-e3b6-4c9d-a005-dc61fa238cad._msdcs.dramor.int.
+Host 99889a59-e3b6-4c9d-a005-dc61fa238cad._msdcs.dramor.int. not found: 3(NXDOMAIN)</pre>
+<p>Si nos da este error, lo creamos:</p>
+<pre># samba-tool dns add 192.168.56.20 _msdcs.dramor.int 99889a59-e3b6-4c9d-a005-dc61fa238cad CNAME centos6ad2.dramor.int -Uadministrador
+Password for [DRAMOR\administrador]:
+Record added successfully</pre>
+<p>Y probamos de nuevo:</p>
+<pre># host -t CNAME 99889a59-e3b6-4c9d-a005-dc61fa238cad._msdcs.dramor.int.
+99889a59-e3b6-4c9d-a005-dc61fa238cad._msdcs.dramor.int is an alias for centos6ad2.dramor.int.</pre>
+<h2>Configuración de BIND</h2>
+<p>Para configurar y arrancar el servicio DNS tenemos que realizar las mismas configuraciones y posteriores revisiones de permisos de ficheros que hicimos con el primer controlador de dominio (ver <a href="http://dramor.net/blog/archives/606">artículo anterior</a>).</p>
+<p>Una vez arrancado podemos probar con dig que es capaz de resolver cualesquiera de los equipos de la red, por ejemplo, los dos servidores DC configurados hasta ahora (centos6ad y centos6ad2):</p>
+<pre># host -t A centos6ad.dramor.int 127.0.0.1
+Using domain server:
+Name: 127.0.0.1
+Address: 127.0.0.1#53
+Aliases:</pre>
+<pre>centos6ad.dramor.int has address 192.168.56.10
+# host -t A centos6ad2.dramor.int 127.0.0.1
+Using domain server:
+Name: 127.0.0.1
+Address: 127.0.0.1#53
+Aliases:</pre>
+<pre>centos6ad2.dramor.int has address 192.168.56.30</pre>
+<p>&nbsp;</p>
+<h2>Arranque de Samba</h2>
+<p>Para arrancar Samba4 en modo directorio activo, editamos el fichero /etc/default/sernet-samba cambiando la variable SAMBA_START_MODE al valor “ad” en lugar de “none”. Finalmente, arrancamos con “service sernet-samba-ad start”.</p>
+<p>Si vemos en los logs ( /var/log/samba/log.samba ) un error similar a este:</p>
+<p>&nbsp;</p>
+<pre>Failed to bind to uuid e3514235-4b06-11d1-ab04-00c04fc2dcd2 for e3514235-4b06-
+11d1-ab04-00c04fc2dcd2@ncacn_ip_tcp:b78fee18-83b9-4478-9239-0d9a13b654c2._msdcs.
+dramor.int[1024,seal,krb5] NT_STATUS_UNSUCCESSFUL</pre>
+<p>normalmente reiniciando el samba de esa máquina se soluciona.</p>
+<p>Una vez dejemos de ver los errores, podemos comprobar que los objetos del directorio activo se replican, para ello desde uno de los servidores creamos un usuario:</p>
+<pre># samba-tool user add usuario1</pre>
+<pre>Password: XXXX</pre>
+<pre># samba-tool user list</pre>
+<pre>dns-CENTOS6AD2
+Administrator
+dns-CENTOS6AD
+usuario1
+krbtgt
+Guest</pre>
+<p>Tras unos segundos, ejecutando la misma orden (samba-tool user list) en el otro servidor DC debemos ver que también aparece el usuario1 recién creado.</p>
+<h2>Interacción con DC Windows Server</h2>
+<p>Si el servidor DC es Windows Server y no Samba 4, debemos tener en cuenta que tras añadir el servidor Samba 4 y arrancar Samba, no funcionará la replicación. Esto se verá con un error en los logs de Samba, similares a:</p>
+<pre>UpdateRefs failed with WERR_DS_DRA_BAD_NC/NT</pre>
+<p>Para solucionarlo, debemos ejecutar "repadmin /kcc" en el servidor Windows, o bien el siguiente comando en el Samba 4:</p>
+<pre># samba-tool drs kcc -Uadministrator w2003srv.dramor.int
+ Consistency check on centos6ad.dramor.int successful.</pre>
+<p>Tras esto podemos verificar la replicación con:</p>
+<pre># samba-tool drs showrepl
+ Default-First-Site-Name\CENTOS6AD2
+ DSA Options: 0x00000001
+ DSA object GUID: b78fee18-83b9-4478-9239-0d9a13b654c2
+ DSA invocationId: 45869512-53e2-4e3e-9478-3c874e4352d7</pre>
+<pre>==== INBOUND NEIGHBORS ====</pre>
+<pre>DC=ForestDnsZones,DC=dramor,DC=int
+ Default-First-Site-Name\W2003SRV via RPC
+ DSA object GUID: ff97c348-e990-4a6a-a9c5-879c9b1e2dea
+ Last attempt @ Sun Feb 9 14:04:42 2014 CET was successful
+ 0 consecutive failure(s).
+ Last success @ Sun Feb 9 14:04:42 2014 CET</pre>
+<pre>DC=dramor,DC=int
+ Default-First-Site-Name\W2003SRV via RPC
+ DSA object GUID: ff97c348-e990-4a6a-a9c5-879c9b1e2dea
+ Last attempt @ Sun Feb 9 14:04:43 2014 CET was successful
+ 0 consecutive failure(s).
+ Last success @ Sun Feb 9 14:04:43 2014 CET</pre>
+<pre>...</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>También nos fallará el backend DNS BIND_DLZ, si el servidor es Windows 2003. Esto es en este momento, un <a href="https://bugzilla.samba.org/show_bug.cgi?id=9210">error conocido</a> sin resolver en Samba4, Se puede evitar utilizando el backend DNS interno de Samba 4, aunque habrá que tener en cuenta <a href="https://wiki.samba.org/index.php/DNS">sus limitaciones</a>.</p>
+<p>&nbsp;</p>

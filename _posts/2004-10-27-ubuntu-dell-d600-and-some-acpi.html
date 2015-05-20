@@ -1,0 +1,74 @@
+---
+layout: post
+title: Ubuntu, a Dell D600, and some ACPI adventures (with kernel lockups)
+date: '2004-10-27T23:42:00.000+02:00'
+author: Juanjo
+tags: 
+modified_time: '2004-10-28T00:24:40.020+02:00'
+blogger_id: tag:blogger.com,1999:blog-8286711.post-109891588001930022
+blogger_orig_url: http://dramor.blogspot.com/2004/10/ubuntu-dell-d600-and-some-acpi.html
+---
+
+And, finally, I've my new Dell D600 working (almost) correctly with a <a href="http://www.ubuntulinux.org/">Ubuntu Linux Warty</a> distribution. Installing Ubuntu did produce some problems, however the most difficult was <a href="http://www.acpi.info/">ACPI</a> related.
+<br />
+<br />The main problem: with Ubuntu installed you cannot close the LCD, or Linux kernel will hang inmediately. Some other ACPI events was affected with this problem. Of course, others worked ok (power button events, for example), but LCD closing was very important for me.
+<br />
+<br />When I booted standard linux kernel provided with Ubuntu (2.6.8.1), by closing the LCD the kernel locks up. Always. It's didn't matter if I booted with "acpi=off" command line. Press your lid button and Linux will hang.
+<br />
+<br />Speaking about this problem with <a href="http://people.debian.org/%7Ejgb/">Jesús</a>, he recommended us to use a previous kernel, 2.6.7. So we searched the package for Ubuntu and installed it. The problem, magically fixed. ¿Has 2.6.8.x kernel a bug with these laptops? ¿will 2.6.9 hang in my machine? It is not packaged yet for Ubuntu nor Debian sid, so I'll not test it for now.
+<br />
+<br />Next, it's time to test programming ACPI events. It was easy: I wish to disconnect the screen when closing the display, and suspend to RAM when hitting the Sleep key (Fn+Esc). I've not modified other event behaviors: Power button (it will shutdown cleanly the system) and Battery/AC events (which will put part of hardware, such as harddisk, in energy saving mode).
+<br />
+<br />If you wish to know Power or Battery/AC behaviors, please take a look to <i>acpi-support</i> and <i>laptop-mode</i> <a href="http://archive.ubuntu.com/ubuntu/">Ubuntu packages</a>.
+<br />
+<br />For lid button, I've modified the script /etc/acpi/lid.sh. It also disconnects the backlight of display panel to save energy. For that, I use<span style="font-style: italic;"> radeontool 1.5</span>. You can download a <a href="ftp://debian.marlow.dk/dists/woody/laptop/pool/vga/">Debian package here</a>. The script:
+<br />
+<br /><pre>
+<br /><span style="font-size:85%;"><span style="font-family:courier new;">#!/bin/sh</span>
+<br />
+<br /><span style="font-family:courier new;">. /usr/share/acpi-support/power-funcs</span>
+<br />
+<br /><span style="font-family:courier new;">getXuser;</span>
+<br />
+<br /><span style="font-family:courier new;">grep -q closed /proc/acpi/button/lid/*/state</span>
+<br /><span style="font-family:courier new;">if [ $? = 0 ]</span>
+<br /><span style="font-family:courier new;">then</span>
+<br /><span style="font-family:courier new;">        . /usr/share/acpi-support/screenblank</span>
+<br /><span style="font-family:courier new;">        echo `fgconsole` > $LIDSTATE</span>
+<br /><span style="font-family:courier new;">        chvt 12</span>
+<br /><span style="font-family:courier new;">        radeontool light off</span>
+<br /><span style="font-family:courier new;">else</span>
+<br /><span style="font-family:courier new;">        grep -q off-line /proc/acpi/ac_adapter/*/state</span>
+<br /><span style="font-family:courier new;">        if [ $? = 1 ]</span>
+<br /><span style="font-family:courier new;">        then</span>
+<br /><span style="font-family:courier new;">                su - $user -c "xscreensaver-command -unthrottle"</span>
+<br /><span style="font-family:courier new;">        fi</span>
+<br /><span style="font-family:courier new;">        radeontool light on</span>
+<br /><span style="font-family:courier new;">        chvt `cat $LIDSTATE`</span>
+<br /><span style="font-family:courier new;">fi</span>
+<br /></span></pre>
+<br />
+<br />For sleeping the machine, I've needed to shutdown the network. It is important to avoid problems with tg3 driver (Broadcom Gigabit). It was not neccesary to unload (rmmod) the driver. Also, I shutdown hotplug subsystems to automatically unload any module related with USB interfaces (which Linux cannot suspend). The script:
+<br />
+<br /><pre>
+<br /><span style="font-size:85%;"><span style="font-family:courier new;">#!/bin/sh</span>
+<br />
+<br /><span style="font-family:courier new;">. /usr/share/acpi-support/power-funcs</span>
+<br />
+<br /><span style="font-family:courier new;">getXuser;</span>
+<br />
+<br /><span style="font-family:courier new;">grep -q closed /proc/acpi/button/lid/*/state</span>
+<br />
+<br /><span style="font-family:courier new;">        /etc/init.d/hotplug stop</span>
+<br /><span style="font-family:courier new;">        /etc/init.d/network stop</span>
+<br /><span style="font-family:courier new;">        echo 3 > /proc/acpi/sleep</span>
+<br />
+<br /><span style="font-family:courier new;">        # wake up</span>
+<br /><span style="font-family:courier new;">        /etc/init.d/hotplug start</span>
+<br /><span style="font-family:courier new;">        /etc/init.d/network start</span>
+<br /></span></pre>
+<br />
+<br />
+<br />Some problem that persist: the Broadcom Gigabit does not wake correctly when powering up the network again. However, if I type ifconfig eth0 up in a shell, the device wakes without problems. I do not know why, but in sleep.sh script I can wake eth0 correctly (however, wireless card, with a much more experimental driver, works better).
+<br />
+<br />Another unresolved issue: battery info key (Fn+F3) stops working when Linux boots (in Grub I can poll the battery). The same problem occurs with CRT/LCD (Fn+F8). However, for switch to CRT I use <span style="font-style: italic;">radeontool </span>again (with dac option). It's command line but not a problem.

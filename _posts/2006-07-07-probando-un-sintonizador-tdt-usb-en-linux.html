@@ -1,0 +1,115 @@
+---
+layout: post
+title: Probando un sintonizador TDT USB en Linux
+date: 2006-07-07 08:36:59.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Hacía tiempo que no escribía el típico post <em>geek</em>, que cuenta al detalle cómo configurar algún cacharro para que funcione con Linux. Pero por fin toca. A continuación relataré los pasos a seguir para poner en marcha en Linux el sintonizador de TDT "AverTV DVB-T USB2.0", de AverMedia.<!--more--></p>
+<p><a href="http://img337.imageshack.us/my.php?image=avermediaa800avertvdvbtusb20ex.jpg"><img align="right" alt="AverTV DVB-T USB2.0" title="AverTV DVB-T USB2.0" src="http://img337.imageshack.us/img337/6816/avermediaa800avertvdvbtusb20ex.th.jpg" /></a>Este pequeño aparato atrae a simple vista. Consta de una pequeña caja algo más grande que un paquete de cigarrillos, con una antenita portátil y un mando a distancia. Naturalmente, configurarlo en Windows es tan simple como instalar el software que trae, enchufar el aparato y dejarse guiar por el programa, que te ayuda a escanear el espectro para sintonizar todos los canales de tu zona.</p>
+<p>Pero es que además este modelo trae una pegatina en la caja que pone claramente "Linux Compatible". Así que no debería ser difícil ... pero no, fácil no es.</p>
+<p>Lo primero que hice, iluso de mí, fue enchufar directamente el aparato en mi Ubuntu Dapper. Al momento, se detectó y cargó un driver aparentemente preparado para el cacharro: el driver <em>dvb-usb-a800</em>. Pero no hizo nada más. Mirando los mensajes del núcleo vi que necesitaba un firmware. A partir de aquí comencé a documentarme en <a href="http://www.linuxtv.org/">linuxtv.org</a>, de donde obtuve el mencionado <a href="http://www.linuxtv.org/downloads/firmware/dvb-usb-avertv-a800-02.fw">firmware</a> y lo dejé en el directorio <strong>/lib/firmware/`uname -r`/.</strong></p>
+<p>Finalmente, sin embargo, los drivers que venían con Ubuntu Dapper no eran suficientes para que el aparato se pusiera en marcha. Mirando por ahí vi <a href="http://www.wi-bw.tfh-wildau.de/~pboettch/home/index.php?site=dvb-usb-howto">un blog</a> que aconsejaba bajárselo todo en código fuente y recompilarlo. Sin embargo, siguiendo los pasos del blog anterior y cargando a mano los módulos, cuando enchufaba el aparato seguía sin encenderse la luz azul y sin crear los dispositivos en <em>/dev</em>. La solución definiva la encontré muy escondida, en una lista de correo, y con pocas esperanzas ya de que funcionase: el problema es que, probablemente, y según la versión que tengas del aparato, <a href="http://linuxtv.org/pipermail/linux-dvb/2006-June/011072.html">sea necesario modificar una línea del driver</a>. El autor de ese mensaje me comentó mientras escribía esto que había otro parche mejor que se incluirá en el código oficial.<strike> Así que luego probaré <a href="http://www.linuxtv.org/pipermail/linux-dvb/2006-June/011298.html">el otro parche</a> para ver si también me sirve y confirmárselo a los desarrolladores.</strike> He probado <a href="http://www.linuxtv.org/pipermail/linux-dvb/2006-June/011298.html">el nuevo parche</a> y ¡funciona! Además, con este nuevo parche, no necesito el firmware (depende del modelo, pero el mío es de los que no lo necesitan). Así que un trocito menos de código propietario en mi portátil ;-)<br />
+En resumen,  los pasos a seguir fueron:</p>
+<ul>
+<li>Obtener las fuentes del driver. He utilizado, tal como recomiendan en su página, el sistema de control de versiones Mercurial. Así que lo instalamos y bajamos las fuentes:</li>
+</ul>
+<blockquote><p># apt-get install mercurial<br />
+# hg clone http://linuxtv.org/hg/v4l-dvb</p></blockquote>
+<ul>
+<li>Modificamos el fichero v4l-dvb/linux/drivers/media/dvb/dvb-usb/a800.c con el siguiente parche:</li>
+</ul>
+<blockquote>
+<pre>#### beginning of patch
+#Applies against: 2.6.17
+#Signed-off-by: Klaus Frahm and Martin Habbecke
+#Changes: fixes initialization problem with new model of AVerTV DVB-T USB2.0,
+# A800, by correctly identifying warm or cold state according to iManufacturer
+--- a/drivers/media/dvb/dvb-usb/a800.c    2006-06-22 21:24:51.000000000 +0200
++++ b/drivers/media/dvb/dvb-usb/a800.c    2006-06-29 18:55:14.000000000 +0200
+@@ -26,6 +26,14 @@
+return 0;
+}
++/* assure to put cold to 0 for iManufacturer == 1 */
++static int a800_identify_state(struct usb_device *udev, struct dvb_usb_properties *props,struct dvb_usb_device_description **desc, int *cold)
++{
++  *cold=(udev->descriptor.iManufacturer != 1);
++
++  return 0;
++}
++
+static struct dvb_usb_rc_key a800_rc_keys[] = {
+{ 0x02, 0x01, KEY_PROG1 },       /* SOURCE */
+{ 0x02, 0x00, KEY_POWER },       /* POWER */
+@@ -113,6 +121,7 @@
+.power_ctrl       = a800_power_ctrl,
+.frontend_attach  = dibusb_dib3000mc_frontend_attach,
+.tuner_attach     = dibusb_dib3000mc_tuner_attach,
++    .identify_state   = a800_identify_state,
+.rc_interval      = DEFAULT_RC_INTERVAL,
+.rc_key_map       = a800_rc_keys,
+#### end of patch</pre>
+</blockquote>
+<ul>
+<li>Compilamos todo:</li>
+</ul>
+<blockquote><p># make install</p></blockquote>
+<ul>
+<li><strike>Copiamos el firmware en su sitio:</strike></li>
+</ul>
+<blockquote><p><strike># mv dvb-usb-avertv-a800-02.fw /lib/firmware/`uname -r`</strike></p></blockquote>
+<ul>
+<li>Cargamos los módulos en memoria:</li>
+</ul>
+<blockquote><p>cd v4l<br />
+insmod ./dvb-pll.ko<br />
+insmod ./dvb-core.ko<br />
+insmod ./dvb-usb.ko<br />
+insmod ./dib3000-common.ko<br />
+insmod ./dib3000mc.ko<br />
+insmod ./dvb-usb-dibusb-common.ko<br />
+insmod ./dvb-usb-a800.ko</p></blockquote>
+<ul>
+<li>Ahora pinchamos el dispositivo y veremos que se inicia completamente (se enciende el piloto azul) y los mensajes del núcleo serán similares a:</li>
+</ul>
+<blockquote><p>[17205584.720000] usb 4-3: new high speed USB device using ehci_hcd and address 6<br />
+[17205584.948000] dvb-usb: found a 'AVerMedia AverTV DVB-T USB 2.0 (A800)' in cold state, will try to load a firmware<br />
+[17205585.020000] dvb-usb: downloading firmware from file 'dvb-usb-avertv-a800-02.fw'<br />
+[17205585.084000] dvb-usb: found a 'AVerMedia AverTV DVB-T USB 2.0 (A800)' in warm state.<br />
+[17205585.084000] dvb-usb: will pass the complete MPEG2 transport stream to the software demuxer.<br />
+[17205585.084000] DVB: registering new adapter (AVerMedia AverTV DVB-T USB 2.0 (A800)).<br />
+[17205585.492000] dib3000: Found a DiBcom 3000P.<br />
+[17205585.492000] DVB: registering frontend 0 (DiBcom 3000P/M-C DVB-T)...<br />
+[17205585.492000] input: IR-receiver inside an USB DVB receiver as /class/input/input8<br />
+[17205585.492000] dvb-usb: schedule remote query interval to 150 msecs.<br />
+[17205585.492000] dvb-usb: AVerMedia AverTV DVB-T USB 2.0 (A800) successfully initialized and connected.</p></blockquote>
+<p>Ahora viene el cómo usarlo. En primer lugar una forma rápida de sintonizar un canal con <em>mplayer</em>:</p>
+<ul>
+<li>Instalamos del repositorio universe de Ubuntu Dapper, el paquete <em>dvb-utils</em>:</li>
+</ul>
+<blockquote><p># apt-get install dvb-utils</p></blockquote>
+<ul>
+<li>Buscamos los canales y lo volcamos en channels.conf:</li>
+</ul>
+<blockquote><p>#  scan /usr/share/doc/dvb-utils/examples/scan/dvb-t/es-Madrid > $HOME/.mplayer/channels.conf</p></blockquote>
+<ul>
+<li>En el fichero channels.conf queda almacenada la información de unos 23 canales (los que recibo correctamente desde mi casa de Madrid, a unos 2.5 Km del pirulí, en habitación interior y un primer piso). Cada canal es una línea del fichero anterior que empieza con el nombre del mismo. Por ejemplo, la cadena de noticias de PRISA, que se llama `CNN+'.</li>
+<li>Si tenemos mplayer instalado, basta con ejecutar: <em>mplayer dvb://CNN+</em> para ver ese canal. Por supuesto, podemos usar <em>mencoder</em> para capturar la señal y grabarla en DivX, etc.</li>
+</ul>
+<p>Una segunda forma de utilizar el sintonizador, algo más cómodo, es usar el programa <em>kaffeine</em>, de KDE (no, no conseguí encontrar nada funcional en GNOME).<br />
+<a href="http://img267.imageshack.us/my.php?image=captura8nc.jpg"><img align="left" alt="Kaffeine-Scanning" title="Kaffeine-Scanning" src="http://img267.imageshack.us/img267/9074/captura8nc.th.jpg" /></a>Basta con instalar el paquete (`apt-get install kaffeine'), lanzarlo, y en la pestaña DVB hacer la búsqueda de canales. Esta aplicación permite, además, grabar la señal (en el formato original MPEG2) y además podremos hacer <em>zapping</em> usando el ratón.</p>
+<p>No obstante, lo ideal sería usar el mando a distancia. Para ello habría que usar un programa que lea el mando y realice acciones sobre el programa utilizado, en este caso kaffeine. Pero bueno, por hoy está bien. :-)</p>

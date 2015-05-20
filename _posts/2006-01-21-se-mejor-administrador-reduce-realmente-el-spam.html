@@ -1,0 +1,33 @@
+---
+layout: post
+title: 'Sé mejor administrador: reduce realmente el spam'
+date: 2006-01-21 07:35:55.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Periódicamente asistimos a noticias (que, también es cierto, apenas salen del mundo <em>geek</em>) acerca del perjuicio que una de las técnicas más usadas para reducir el spam, las listas negras de correo electrónico, causan a tantos usuarios legítimos. No negaremos que se reduzca el spam. En efecto, se reduce, pero a costa de tener una alta tasa de falsos positivos, de personas que por usar un servidor de correo anotado en una lista negra, no pueden enviarnos mensajes. Ante este problema, muchos administradores optan por negarlo siguiendo el algoritmo del avestruz y acusar a los afectados de no saber lo que hacen. Sinceramente, creo que eso no debería permitirlo ningún administrador por mal que le paguen ;-)</p>
+<p>No creo que encontremos pronto técnicas definitivas (o infalibles) contra el spam. Pero ahora mismo hay dos técnicas que funcionan realmente bien y más si se combinan: los filtros por contenido (especialmente, los bayesianos) y las listas grises (<em>greylisting</em>).</p>
+<p><!--more--><br />
+Los primeros ejecutan una serie de reglas sobre el correo entrante. Analizan las palabras del mismo y, si el mensaje reune alguna característica propia del spam, acumula una serie de puntos. Si el número de puntos acumulados supera un determinado umbral, el que el mensaje será clasificado como spam. Esta clasificación normalmente debe hacerse modificando el asunto del mensaje (añadiendo, por ejemplo, un prefijo similar a <em>**spam?**</em>) y tal vez una línea de cabecera que nos ayude, si queremos, a filtrarlo automáticamente. No debe borrarse sin más ya que los falsos positivos, aunque escasos, se producen.</p>
+<p>Muchos de estos filtros pueden ejecutar algoritmos bayesianos, que deben ser alimentados durante un tiempo por medio de mensajes clasificados manualmente como spam y otros tantos clasificados como legítimos. Cuando esta alimentación sea suficiente, el programa habrá aprendido a distinguir automáticamente lo que es spam de lo que no lo es, con una baja tasa de fallos.</p>
+<p>Una de los filtros de contenido más completos es <a href="http://spamassassin.apache.org/">Spamassassin</a>. Se puede instalar para filtrar el correo de todos nuestros usuarios o bien se puede delegar esta responsabilidad en cada uno. En <a href="http://www.7throot.com/node/721">7throot</a> encontramos instrucciones para una configuración del primer tipo.</p>
+<p>La otra técnica que quería comentar es el <em>greylisting</em>. <a href="http://projects.puremagic.com/greylisting/whitepaper.html">La idea es bastante simple y, por ahora, eficaz</a>: un alto porcentaje del spam actual es generado por programas muy sencillos (con frecuencia, corriendo como infecciones víricas en PCs de usuarios que, por supuesto, no saben nada). La sencillez de estos programas hacen que apenas implementen el protocolo SMTP, siendo capaces simplemente de hacer la conexión para enviar los mensajes, de manera que si se produce un error, saltan a otro destinatario. El problema es que hay errores del tipo "reinténtalo más tarde" pero que los programas de envío de spam no implementan, por lo que el  correo no solicitado no llega a ser enviado a ese buzón.</p>
+<p>La idea de la lista gris es, cuando recibimos en el servidor de correo un mensaje de un sitio nuevo, decirle al remitente algo similar a "reinténtalo en cinco minutos". Un servidor remitente de correo bien implementado reintentará más tarde al ver que es un error temporal, pero un programa de envío masivo de spam normalmente no lo hará. Resultado: lo que nunca nos llegue podemos decir que siempre será spam, mientras que el correo legítimo nos llegará siempre (salvo que el servidor de correo remitente no esté bien implementado, cosa que es fácilmente corregible y apenas se da).</p>
+<p>Hablando de implementaciones, aquellos que usen <a href="http://www.postfix.org/">Postfix</a> como servidor de correo, pueden implementar listas grises con <a href="http://isg.ee.ethz.ch/tools/postgrey/">postgrey</a>. Y para los que usamos <a href="http://www.sendmail.org/">Sendmail</a>, hace poco que encontré <a href="http://smfs.sourceforge.net/smf-grey.html">smf-grey</a>. Ambos son muy fáciles de instalar y merecen realmente la pena.</p>
+<p>Quizás algún día estas técnicas dejen de funcionar bien. Probablemente entonces sea el momento de adoptar masivamente las <a href="http://domainkeys.sourceforge.net/">Domainkeys</a>, una solución que está en pruebas desde hace meses en <a href="http://gmail.google.com/">Gmail</a> y supongo que en su creador, <a href="http://www.yahoo.com/">Yahoo</a>. O inventar algo nuevo.</p>
+<p>Pero, por favor, administradores: listas negras, NO. Hay soluciones mejores.</p>

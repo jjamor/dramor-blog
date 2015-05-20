@@ -1,0 +1,39 @@
+---
+layout: post
+title: Solaris Express en mi (ya vejete) Dell D600
+date: 2007-05-28 22:15:12.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+- Opensolaris
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Estoy preparando Solaris Express / OpenSolaris en mi Dell D600. Se instala fácilmente y si se tiene un mínimo cuidado no fastidia la instalación de otros sistemas que tengamos en el mismo equipo. Ahora mismo mi D600 tiene Ubuntu, Solaris Express y la licencia original de Windows XP. Tenía una partición primaria VFAT de 10 gigas, y es la que he borrado para que Solaris Express ocupe con la suya. La instalación se ha hecho ahí sin problemas, quedando su gestor de arranque (Grub) en la propia partición, de forma que para arrancar Solaris lo hago desde el Grub que ya tenía para Ubuntu y Windows XP.</p>
+<p><font size="1"># uname -a</font><br />
+<font size="1">SunOS ada 5.11 snv_54 i86pc i386 i86pc<br />
+# :-)<br />
+</font></p>
+<p>El siguiente paso ha sido instalar la red inalámbrica (todavía uso la Intel 2100). La versión que instalé (snv_54) no incluía aun el driver, así que he tenido que <a href="http://www.opensolaris.org/os/community/laptop/wireless/ipw/">obtenerlo</a> de la web de <a href="http://www.opensolaris.org/os/community/laptop/wireless/">chipsets wifi del grupo de desarrollo para portátiles</a>. En cualquier caso, ha sido sencillísimo: obtener el paquete, instalarlo y reiniciar el sistema. También hay que instalar la utilidad <a href="http://www.opensolaris.org/os/community/laptop/wireless/wificonfig/">wificonfig</a>, pero mi versión ya la incluía.</p>
+<p><font size="1"># gzip -dc ipw-0.5-pkg.tar.gz | tar xvf -</font><br />
+<font size="1"># pkgadd -d ./ipw-0.5 SUNWipw<br />
+# init 6</font></p>
+<p>Una vez disponibles el driver y la utilidad wificonfig, se puede configurar la red desde el administrador de redes de GNOME (que es parte del Java Desktop, escritorio que pretende sustituir a CDE) o a mano. A título de curiosidad, configurarlo a mano para una red con cifrado WEP se realiza con los siguientes comandos:</p>
+<p><font size="1"># ifconfig ipw0 plumb</font><br />
+<font size="1"># wificonfig createprofile MiRed essid=MiRed encryption=wep wepkey1=Miclave</font><br />
+<font size="1"># wificonfig -i ipw0 connect MiRed<br />
+# ifconfig ipw0 dhcp<br />
+</font></p>
+<p>Aun tengo leves problemas: el dispositivo se desconecta a veces, pero basta con reactivar la configuración desde el administrador de red de GNOME para que vuelva a funcionar.</p>
+<p>Creo que con esto ya tengo mi portátil preparado para el <a href="http://www.opensolaris.org/os/community/os_user_groups/sposug/Eventos/">evento del jueves</a>. :-) Por cierto, muy interesante el <a href="http://www.opensolaris.org/os/community/laptop/">grupo de desarrollo de portátiles</a>. En los últimos meses, además, he visto importantes avances, como el soporte de nuevos chipsets Wifi.</p>

@@ -1,0 +1,35 @@
+---
+layout: post
+title: Preparando un entorno para Opensolaris
+date: 2005-12-31 21:48:06.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+- Opensolaris
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p><img vspace="5" hspace="5" align="right" alt="Solaris en el port&aacute;til" src="http://static.flickr.com/43/79897653_b99f5a96ff_m.jpg" />Uno de mis objetivos de mi visita al pasado congreso Hispalinux era <a href="http://dramor.net/blog/archives/10">charlar un rato con Alo sobre Solaris y Opensolaris</a>. No es para menos: ya tenía ganas de empezar a jugar con un sistema que me viene llamando la atención desde que anunció hace más de un año. Después de pasarme una buena temporada conociendo a fondo <a href="http://www.sun.com/software/solaris/">Solaris</a> hasta la versión 8 y todo lo que hay alrededor, la noticia de <a href="http://dramor.net/blog/wp-admin/http:/www.opensolaris.org/">Opensolaris</a> me sorprendió gratamente. Y creo que no está de más que aproveche para ponerme al día con las nuevas características que se están introduciendo en lo que será Solaris 11.</p>
+<p>Como puede verse en la fotografía, ya tengo instalado <a href="http://www.opensolaris.org/os/community/onnv/">Solaris Nevada</a> en un portátil. Esta versión es la preliminar, para desarrolladores, de lo que será Solaris 11. Para instalárselo, hay que obtener <a href="http://www.opensolaris.org/os/downloads/">Solaris Express Community Release</a>, que en este momento va por la construcción 28, aunque en breve pondrán una nueva. Una característica de esta versión es que se construye con los progresos aprobados de Opensolaris, de tal forma que se beneficia directamente de las aportaciones de la comunidad que ha surgido en torno al nuevo sistema libre. Por ejemplo, una ventaja que salta a la vista enseguida es que el gestor de arranque para <em>x86</em> ya no es el incómodo <em>configuration assistant</em>, sino <a href="http://www.gnu.org/software/grub/">grub</a>.</p>
+<p>La instalación la he hecho en un portátil que tenía Windows XP. Primero, he realizado en el disco duro un hueco de 10 Gb para Solaris, con la ayuda del <a href="http://qtparted.sourceforge.net/">qtparted</a> que viene en el <a href="http://www.sysresccd.org/">System Rescue CD</a>. Después, la instalación automática de Solaris Express CR me ha detectado el espacio libre y me ha ofrecido usarlo como partición Solaris. Finalmente, se han creado en esa partición los <em>slices</em> precisos con sus sistemas de ficheros, y por último el sistema completo. La tarjeta gráfica del portátil usado es una Intel Extreme. Está perfectamente soportada desde el servidor Xsun de esta versión de Solaris, así como en la versión de x.org incluida. Sin embargo, el instalador automático opta por Xsun, por lo que, por ahora, he dejado este servidor.</p>
+<p>Una vez instalado tenemos un portátil centrino sin red y con la CPU a 1600 Mhz permanentemente. Hay que buscar solución a estos dos problemas. Entre las comunidades de Opensolaris he encontrado la <a href="http://www.opensolaris.org/os/community/laptop/">dedicada a los portátiles</a>. Allí se ofrece una solución que funciona para las tarjetas <em>WiFi</em> de Intel, aunque de momento no hay nada para controlar la velocidad de la CPU (Speedstep). Habrá que esperar, pero me imagino que no mucho :-)</p>
+<p>La instalación del soporte Wifi fue sencilla: me bajé los paquetes <em>ipw-0.1</em>, <em>wificonfig-0.1</em> e <em>inetmenu</em> de <a href="http://www.opensolaris.org/os/community/laptop/wireless/ipw/">esta página</a>. Luego los he instalado como otro cualquier paquete de Solaris, es decir:</p>
+<pre><code>
+pkgadd ipw-0.1
+pkgadd wificonfig-0.1
+pkgadd inetmenu
+</code></pre>
+<p>Tras reiniciar la máquina, ejecutando <em>inetmenu</em> desde el entorno gráfico (un Gnome 2.6 hasta que empiece a parchear el sistema con todo lo nuevo de Opensolaris) he podido enganchar la tarjeta WiFi a mi red casera sin mayores problemas. El único inconveniente es que el arranque de la tarjeta aun no es automático. Pero todo se andará. Por cierto, el driver <em>ipw</em> aun es una beta, pero funciona perfectamente y con el tiempo seguramente formará parte de SunOS 5.11. Otro beneficio que este sistema obtiene de la comunidad.</p>
+<p>Bueno, pues ya tenemos Nevada operativo. Podemos empezar a trabajar con él desde dos puntos de vista: el primero, conocer a fondo las capacidades del futuro Solaris 11, con vistas a un futuro profesional. El segundo, jugar con Opensolaris y sorprenderme día a día de la dinamización que un sistema puede tener gracias a su liberación.</p>
+<p>Seguiremos informando, aunque no haré un blog específico para ello, que no es para tanto :-D</p>

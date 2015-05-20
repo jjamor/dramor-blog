@@ -1,0 +1,37 @@
+---
+layout: post
+title: DNI electrónico
+date: 2008-11-25 14:43:02.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Ayer fui a hacerme el <a href="http://www.dnielectronico.es/">DNI electrónico</a> (<a href="http://www.dnielectronico.es/">DNIe</a> para los amigos, si es que tiene alguno). Aproveché que tengo un cambio de domicilio pendiente para ir a renovármelo, pues en este caso la renovación sale gratis. Pedí <a href="https://www.citapreviadnie.es/">cita previa</a> en la web correspondiente, de manera que fue llegar y <em>besar el santo</em>. O casi, porque las fotos que tenía no valían (me dijeron que salían mis ojos muy oscuros) y tuve que hacerme unas fotos en el chino de al lado (menudo negocio debe tener el chino, desde luego). Por lo demás, el trámite fue rápido, no tuve que esperar y, a los pocos minutos (principalmente, los minutos que lleva generar las claves en la tarjeta), tenía mi nuevo DNIe en la mano.</p>
+<p><img title="DNI electronico" src="http://dramor.net/archivos/blog/dnie.jpg" alt="DNI electronico" align="middle" /></p>
+<p>A continuación me dirigí al PAD, un terminal que tienen en las oficinas de expedición, que nos permite acceder a los datos que hay en el DNI y cambiar el PIN (contraseña de acceso y de desbloqueo de la clave privada). Está bien pensado: el terminal cuenta con un lector de huellas dactilares y así, en caso de que se nos bloquee el PIN, podemos resetearlo en el terminal sin más que identificarnos con nuestra huella dactilar. El problema es que, tanto el terminal como el PAD virtual (un software que permite cambiar el PIN en nuestro ordenador personal) necesitan estar conectados a los servidores de la Policía para proceder, cosa que no me explico (siendo malpensados, podría servir para que la Policía guarde siempre una copia de seguridad del PIN).</p>
+<p>En cualquier caso, una vez cambiado el PIN me volví a casa con el DNIe, dispuesto a probarlo en mi portátil con la Ubuntu 8.10. Mi portátil es por ahora un Dell D430, que tiene lector de tarjetas integrado, y además reconocido por Linux, así que en principio deberá funcionar.</p>
+<p>Efectivamente, siguiendo las <a href="http://www.dnielectronico.es/descargas/PKCS11_para_Sistemas_Unix/index.html">instrucciones que dan en esta página</a> para Ubuntu Gutsy, el DNIe puede usarse desde Firefox para autenticarnos o firmar peticiones. En realidad, en el manual han omitido un paso que si no se hace, impide a Firefox acceder al DNIe (cuando intentamos cargar el módulo criptográfico nos dará error). El paso que han omitido es instalar el paquete pcscd (algo que haremos con el comando "<em>aptitude install pcscd</em>").</p>
+<p>Hecho esto, abrimos manualmente la página de configuración del navegador para DNIe (basta con abrir la URL "<em>file:///usr/share/opensc-dnie/instal_dnie/instala_modulo.htm</em>"), seguimos sus instrucciones y, si no da errores, ya podremos <a href="https://av-dnie.cert.fnmt.es/compruebacert/compruebacert">verificar el DNI en esta página</a>, obteniendo el resultado esperado:</p>
+<p><img title="Verificacion DNIe OK" src="http://dramor.net/archivos/blog/verificacion_dnie.jpg" alt="Verificacion DNIe OK" align="middle" /></p>
+<p>Esto es todo. Para detalles técnicos adicionales recomiendo leer <a href="http://www.google.es/search?hl=es&amp;q=dni+electr%C3%B3nico+ubuntu+8.10">otras fuentes</a> que lo único que hacen es repetir el mismo procedimiento técnico que indica el portal oficial.</p>
+<p>Ahora vamos a los inconvenientes:</p>
+<p>En primer lugar, el DNIe tiene una funcionalidad muy limitada. Las claves generadas solo sirven para autenticar al usuario y firmar peticiones con el navegador. No permite, por ejemplo, firmar correo electrónico ya que la Policía decidió no incluir direcciones de correo electrónico del ciudadano en el dispositivo. Tampoco se permite cifrar información, es decir, las claves están ahí pero no se han definido para cifrar documentos.</p>
+<p>Estas carencias son cubiertas por el <a href="http://www.cert.fnmt.es/">certificado de la FNMT</a>, por lo que recomiendo utilizarlo en su lugar.</p>
+<p>Otra limitación es que, supuestamente, el DNI incluye en su interior versiones codificadas de la fotografía, la firma manuscrita  y la huella dactilar. Sin embargo ningún software permite extraer dicha información al usuario; solo se pueden visualizar utilizando los terminales PAD de la policía.</p>
+<p>Por otro lado, no podemos negar que hay algunas deficiencias que generan desconfianza. La generación de claves ocurre (y solo puede ocurrir) en la oficina de expedición, teniendo una norma administrativa (y el uso de tarjetas que supuestamente solo pueden generar las claves privadas en su interior) como única garantía de que las claves no son copiadas por un tercero. Por otro lado, para cambiar la contraseña de acceso, es preciso usar un software que, como ya hemos indicado anteriormente, necesita conectarse al servidor de la Policía, sin que vea explicación para ello; o bien usar un PAD, ese dispositivo cerrado que se encuentra en las oficinas policiales y que presumiblemente también se encuentra conectado a sus servidores. Por tanto, no hay garantías tampoco de que la contraseña la conozca únicamente el usuario.</p>
+<p>Pero existe una deficiencia más: el DNI electrónico solo se puede gestionar con el paquete <em>opensc-dnie</em>. Este paquete tiene bastante poco de <em>open</em>, porque ni la Policía ni sus posibles mantenedores (todo apunta a que son la misma gente que los responsables de CERES en la FNMT) suministran el código fuente del mismo. Esto obviamente genera desconfianza, pues nada nos asegura que no tenga algún tipo de manipulación para enviar información privada a un servidor gubernamental, por ejemplo. Y esto al margen de un posible incumplimiento de licencia, si el código estuviera basado en el paquete <em>opensc</em>, que se distribuye con licencia LGPL.</p>
+<p>Por todas estas razones, creo que por ahora seguiré usando el <a href="http://www.cert.fnmt.es/">certificado de la FNMT</a>, que sirve para casi toda la administración electrónica española y además otorga al usuario las mismas garantías que cualquier otra infraestructura de clave pública "<em>en condiciones</em>". El DNIe me puede servir para una emergencia, como puede ser generar un nuevo certificado de usuario FNMT desde casa, sin necesidad de acreditar mi identidad presencialmente.</p>

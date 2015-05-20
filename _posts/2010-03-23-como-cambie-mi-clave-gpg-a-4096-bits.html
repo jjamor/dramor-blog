@@ -1,0 +1,96 @@
+---
+layout: post
+title: Como cambié mi clave GPG a 4096 bits
+date: 2010-03-23 10:38:20.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+tags:
+- gnupg
+- openpgp
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Me he enterado, gracias a la gente que realmente le preocupan estas cosas, de que es buena idea dejar de usar claves para cifrado o firma de menos de 2048 bits. Así que nada, mirando posts por ahí ya he generado mis nuevas claves, de 4096 bits. Mis referencias principales han sido <a href="http://herraiz.org/blog/2010/01/27/new-gpg-key/">el blog de Israel</a> y, sobre todo, <a href="http://ekaia.org/blog/2009/05/10/creating-new-gpgkey/">el de Ana</a>. Mi proceso ha sido, <em>resumidamente</em>: (de resumen nada, tan solo omito algunas salidas por pantalla ;-)</p>
+<ul>
+<li>Reconfigurar mi .gnupg/gpg.conf, añadiendo las líneas:</li>
+</ul>
+<pre>personal-digest-preferences SHA256
+cert-digest-algo SHA256
+default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed</pre>
+<ul>
+<li>Generar una clave nueva, de 4096 bits:</li>
+</ul>
+<pre>$ gpg --gen-key
+ ...        
+
+Please select what kind of key you want:
+   (1) DSA and Elgamal (default)
+   (2) DSA (sign only)
+   (5) RSA (sign only)
+Your selection? 5
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096
+Requested keysize is 4096 bits
+...</pre>
+<ul>
+<li>Me ha dado como identificador: 7CC1E39B. Así que ahora añado las identidades alternativas (direcciones de correo) que utilizo, como siempre, editando esta nueva clave:</li>
+</ul>
+<pre>$ gpg --edit-key 0x7CC1E39B
+ ...
+command&gt; adduid</pre>
+<ul>
+<li>También, he marcado el UID principal:</li>
+</ul>
+<pre>Command&gt; 1
+
+pub  4096R/7CC1E39B  created: 2010-03-13  expires: never       usage: SC  
+ trust: ultimate      validity: ultimate
+[ultimate] (1)* Juan Jose Amor Iglesias &lt;XXXX@XXX.YY&gt;
+[ultimate] (2)  Juan Jose Amor Iglesias &lt;ZZZZ@TTT.QQ&gt;
+...
+
+Command&gt; primary</pre>
+<ul>
+<li>Ahora ponemos las preferencias para la clave:</li>
+</ul>
+<pre>Command&gt;  setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed</pre>
+<ul>
+<li>Y por último, es necesario crear la subclave para cifrado (pues la principal solo vale para firmar):</li>
+</ul>
+<pre>Command&gt; addkey
+Key is protected.
+
+You need a passphrase to unlock the secret key for
+user: ...
+
+Please select what kind of key you want:
+   (2) DSA (sign only)
+   (4) Elgamal (encrypt only)
+   (5) RSA (sign only)
+   (6) RSA (encrypt only)
+Your selection? 6
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096
+Requested keysize is 4096 bits
+...</pre>
+<ul>
+<li>Finalmente, salvo todo y ya puedo subir al servidor la pública:</li>
+</ul>
+<pre>Command&gt; save
+$ gpg --keyserver pgp.mit.edu --send-keys 7CC1E39B</pre>
+<p>Ahora queda decidir qué hago con mi clave antigua: por un lado Ana firma su nueva clave con la antigua, mientras que Israel renuncia a la vieja clave y por tanto, la revoca. Supongo que lo más correcto es lo segundo, puesto que se trata de dejar de dar validez a claves cortas. Ya veré qué hago ;-)</p>
+<p>___<br />
+<em>Publicado simultáneamente en el Blog de Opensistemas.<br />
+<a href="http://blog.opensistemas.com/">http://blog.opensistemas.com/</a></em></p>

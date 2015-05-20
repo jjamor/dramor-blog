@@ -1,0 +1,198 @@
+---
+layout: post
+title: Creación de Directorio Activo con Samba 4 en CentOS 6
+date: 2014-02-02 10:19:49.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+- RHEL
+tags:
+- active directory
+- centos 6
+- rhel 6
+- samba 4
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+  _yoast_wpseo_linkdex: '77'
+  _yoast_wpseo_focuskw: samba 4
+  _yoast_wpseo_metadesc: Cómo crear un Directorio Activo completamente funcional con
+    Samba 4 en GNU/Linux (CentOS)
+teaser: Cómo crear un Directorio Activo completamente funcional con
+    Samba 4 en GNU/Linux (CentOS)
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>A finales de 2012 se publicó la versión 4 de <a href="http://www.samba.org/">Samba</a>. La gran novedad fue la capacidad para implementar controladores de dominio de directorio activo. Durante el pasado año se ha mejorado bastante esta versión de Samba, ampliando las funcionalidades soportadas, aunque aun tiene algunas limitaciones. Por el momento no repararemos en ellas, y baste decir que en muchos entornos facilitará la implementación del directorio sin necesidad de invertir en licencias de Windows Server.</p>
+<p>El presente procedimiento permite construir rápidamente un Directorio Activo con paquetes compilados de Samba4 en CentOS 6.x o Red Hat 6.x, ya que la mayoría de procedimientos existentes no se encuentran preparados para CentOS o requieren la compilación del código fuente. Los paquetes elegidos han sido los de <a href="http://www.enterprisesamba.com/">Enterprise Samba</a>, debido a la calidad de los mismos.</p>
+<p><!--more--></p>
+<h2>Requisitos</h2>
+<p>Partiremos de una máquina con <a href="http://www.centos.org/">CentOS</a> 6 o <a href="http://www.redhat.com/">Red Hat Enterprise Linux</a> 6, recién instalada en la que desactivaremos SELINUX e IPTABLES para mayor comodidad. Posteriormente, se puede reactivar IPTABLES aunque habrá que abrir algunos puertos relacionados con la conexión de clientes al directorio activo.</p>
+<p>Para acceder a los paquetes de Enterprise Samba 4, es necesario registrarse. Para ello iremos a <a href="https://portal.enterprisesamba.org/">https://portal.enterprisesamba.org/</a> y nos registraremos (Sign Up). Una vez dentro, debemos descargarnos el fichero sernet-samba-4.1.repo, en el que debemos modificar los valores USERNAME y ACCESSKEY con los que nos aparecerán en la página web anterior. Este archivo lo llevaremos a /etc/yum.repos.d/. Por ejemplo, podría quedar así:</p>
+<p>&nbsp;</p>
+<pre>[sernet-samba-4.1]
+name=SerNet Samba 4.1 Packages (centos-6)
+type=rpm-md
+baseurl=https://tuusuario:TUCLAVEPROPORCIONADAENPORTALENTERPRISESAMBA@download.sernet.de/packages/samba/4.1/centos/6/
+gpgcheck=1
+gpgkey=https://tuusuario:TUCLAVEPROPORCIONADAENPORTALENTERPRISESAMBA@download.sernet.de/packages/samba/4.1/centos/6/repodata/repomd.xml.key
+enabled=1</pre>
+<h2>Instalación de paquetes</h2>
+<p>Instalaremos entonces algunos paquetes:</p>
+<pre>yum -y install wget gcc make wget postfix bind bind-libs bind-utils ntp krb5-workstation</pre>
+<p>Los paquetes relacionados con bind (bind, bind-libs, bind-utils) deben instalarse desde fuentes, recompilando sin la opción --disable-isc-spnego si queremos que el servidor DNS soporte actualizaciones dinámicas desde los clientes. Para ello, se recomienda instalar el grupo de paquetes "Development Tools" y buscar el paquete fuente de CentOS para reconstruir los binarios eliminando la opción anterior en el bind.spec.</p>
+<p>También es necesario configurar NTP. Basta una configuración sencilla que haga que nuestra máquina sea servidora de hora, para que los clientes puedan sincronizar sus relojes con el servidor y así no tener problemas con Kerberos.</p>
+<p>A continuación, instalamos desde Enterprise Samba los paquetes para crear el directorio activo:</p>
+<pre>yum install sernet-samba-ad</pre>
+<h2>Provisión del directorio activo</h2>
+<p>Procedemos a provisionar el directorio con el comando samba-tool. La mayoría de los valores se pueden dejar como vienen por defecto, en particular el nombre del dominio se tomará con el dominio DNS en el que se encuentre el servidor, lo cual será suficiente en la mayoría de los casos. Por ejemplo, en mi caso puse lo siguiente:</p>
+<pre>[root@CENTOS6AD ~]# samba-tool domain provision
+Realm [DRAMOR.NET]: 
+ Domain [DRAMOR]: 
+ Server Role (dc, member, standalone) [dc]: 
+ DNS backend (SAMBA_INTERNAL, BIND9_FLATFILE, BIND9_DLZ, NONE) [SAMBA_INTERNAL]: BIND9_DLZ
+Administrator password: 
+Retype password:</pre>
+<p>La contraseña deberá ser compleja, es decir, incluir mayúsculas, minúsculas, números y algún signo de puntuación. Si no lo hacemos así, el proceso de creación fallará.</p>
+<p>Si todo va bien, veremos el proceso automático de creación del directorio:</p>
+<pre>Looking up IPv4 addresses
+Looking up IPv6 addresses
+No IPv6 address will be assigned
+Setting up share.ldb
+Setting up secrets.ldb
+Setting up the registry
+Setting up the privileges database
+Setting up idmap db
+Setting up SAM db
+Setting up sam.ldb partitions and settings
+Setting up sam.ldb rootDSE
+Pre-loading the Samba 4 and AD schema
+Adding DomainDN: DC=dramor,DC=net
+Adding configuration container
+Setting up sam.ldb schema
+Setting up sam.ldb configuration data
+Setting up display specifiers
+Modifying display specifiers
+Adding users container
+Modifying users container
+Adding computers container
+Modifying computers container
+Setting up sam.ldb data
+Setting up well known security principals
+Setting up sam.ldb users and groups
+Setting up self join
+Adding DNS accounts
+Creating CN=MicrosoftDNS,CN=System,DC=dramor,DC=net
+Creating DomainDnsZones and ForestDnsZones partitions
+Populating DomainDnsZones and ForestDnsZones partitions
+<strong>See /var/lib/samba/private/named.conf for an example configuration include file for BIND
+and /var/lib/samba/private/named.txt for further documentation required for secure DNS updates</strong>
+Setting up sam.ldb rootDSE marking as synchronized
+Fixing provision GUIDs
+<strong>A Kerberos configuration suitable for Samba 4 has been generated at /var/lib/samba/private/krb5.conf</strong>
+Once the above files are installed, your Samba4 server will be ready to use
+Server Role: active directory domain controller
+Hostname: CENTOS6AD
+NetBIOS Domain: DRAMOR
+DNS Domain: dramor.net
+DOMAIN SID: S-1-5-21-2963293665-1815356632-74099400</pre>
+<p>Hemos marcado en negrita las advertencias sobre ficheros creados que nos harán falta en los siguientes pasos (BIND y Kerberos).</p>
+<h2>Configuración de BIND</h2>
+<p>Pasamos a configurar BIND. El fichero de configuración debe tener en cuenta las indicaciones recibidas durante la creación del directorio activo y algunas más. El siguiente diff contiene los cambios realizados sobre el named.conf que viene con el paquete Bind original de CentOS 6.5:</p>
+<pre>--- named.conf.orig 2010-07-19 15:34:15.000000000 +0200
++++ named.conf 2014-02-01 20:51:30.490129384 +0100
+@@ -8,13 +8,13 @@
+ //
+
+ options {
+- listen-on port 53 { 127.0.0.1; };
+- listen-on-v6 port 53 { ::1; };
++ listen-on port 53 { any; };
++ listen-on-v6 port 53 { any; };
+ directory "/var/named";
+ dump-file "/var/named/data/cache_dump.db";
+ statistics-file "/var/named/data/named_stats.txt";
+ memstatistics-file "/var/named/data/named_mem_stats.txt";
+- allow-query { localhost; };
++ allow-query { any; };
+ recursion yes;
+
+ dnssec-enable yes;
+@@ -25,6 +25,8 @@
+ bindkeys-file "/etc/named.iscdlv.key";
+
+ managed-keys-directory "/var/named/dynamic";
++
++ tkey-gssapi-keytab "/var/lib/samba/private/dns.keytab";
+ };
+
+ logging {
+@@ -41,4 +43,5 @@
+
+ include "/etc/named.rfc1912.zones";
+ include "/etc/named.root.key";
+-
++include "/var/lib/samba/private/named.conf";
++include "/etc/rndc.key";</pre>
+<p>El fichero /etc/rndc.key lo generamos con:</p>
+<pre>rndc-confgen -a -r /dev/urandom</pre>
+<p>Antes de arrancar el Bind tendremos que ajustar algunos permisos en para permitir que el usuario <em>named</em> alcance los ficheros indicados ( /var/lib/samba/private/named.conf, /var/lib/samba/private/dns.keytab). En general, se trata de hacer que el grupo de los archivos de /var/lib/samba/private sea <em>named</em> en lugar de <em>root</em>.</p>
+<p>Si al arrancar el Bind (service named start) vemos que da un error, podemos examinar /var/log/messages para averiguar qué sucedió. Casi siempre se detectarán problemas de permisos.</p>
+<p>Una vez arrancado, comprobamos que funciona con el comando dig, buscando resolver el dominio que ha creado Samba4:</p>
+<pre># dig @127.0.0.1 dramor.net</pre>
+<pre>; &lt;&lt;&gt;&gt; DiG 9.8.2rc1-RedHat-9.8.2-0.23.rc1.el6_5.1 &lt;&lt;&gt;&gt; @127.0.0.1 dramor.net
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 55516
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1</pre>
+<pre>;; QUESTION SECTION:
+;dramor.net. IN A</pre>
+<pre>;; ANSWER SECTION:
+dramor.net. 900 IN A 172.16.34.70</pre>
+<pre>;; AUTHORITY SECTION:
+dramor.net. 900 IN NS centos6ad.dramor.net.</pre>
+<pre>;; ADDITIONAL SECTION:
+centos6ad.dramor.net. 900 IN A 172.16.34.70</pre>
+<pre>;; Query time: 4 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Sat Feb 1 21:00:11 2014
+;; MSG SIZE rcvd: 84</pre>
+<p>Si todo ha ido correctamente, activaremos el arranque de named con el equipo (chkconfig named on) y cambiaremos el fichero /etc/resolv.conf para que utilice este servidor:</p>
+<pre>domain dramor.net
+nameserver 172.16.34.70</pre>
+<pre><span style="font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 14px; line-height: 1.5em;"> </span></pre>
+<h2>Arranque y prueba de Samba 4</h2>
+<p>Para arrancar Samba4 en modo directorio activo, editamos el fichero /etc/default/sernet-samba cambiando la variable SAMBA_START_MODE al valor "ad" en lugar de "none". Finalmente, arrancamos con "service sernet-samba-ad start".</p>
+<p>El siguiente paso es probar a autenticarnos en el reino Kerberos creado por Samba4. Para ello copiamos a /etc/krb5.conf:</p>
+<pre>cp /var/lib/samba/private/krb5.conf /etc/krb5.conf</pre>
+<p>El fichero tendrá este contenido:</p>
+<pre>[libdefaults]
+ default_realm = DRAMOR.NET
+ dns_lookup_realm = false
+ dns_lookup_kdc = true</pre>
+<p>Y comprobamos que podemos entrar y examinar el servidor, ya que durante la provisión del directorio se generó un fichero smb.conf que implementa las funciones de servidor necesarias:</p>
+<pre># kinit Administrator@DRAMOR.NET
+Password for Administrator@DRAMOR.NET:
+Warning: Your password will expire in 41 days on Sat Mar 15 20:35:20 2014</pre>
+<pre># smbclient -k -L  CENTOS6AD</pre>
+<pre>Domain=[DRAMOR] OS=[Unix] Server=[Samba 4.1.4-SerNet-RedHat-7.el6]</pre>
+<pre>Sharename Type Comment
+ --------- ---- -------
+ netlogon Disk 
+ sysvol Disk 
+ IPC$ IPC IPC Service (Samba 4.1.4-SerNet-RedHat-7.el6)
+...</pre>
+<p>A continuación ya podemos tomar un cliente Windows XP Profesional, por ejemplo, y unirlo al dominio normalmente.</p>
+<p>Dado que Samba4 no incluye herramientas de gestión cómodas, podemos <a href="https://wiki.samba.org/index.php/Samba_AD_management_from_windows">instalar en un cliente Windows las herramientas de Microsoft</a> (herramientas RSAT en Windows 7, Administration Tools en Windows XP, etc). Samba 4 implementa la mayoría de las características del directorio activo y de las políticas GPO, si bien las políticas de contraseñas se gestionan exclusivamente con el comando samba-tool. Por ejemplo, con el comando "samba-tool domain passwordsettings set --complexity=off" podemos quitar la exigencia de complejidad en las contraseñas.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

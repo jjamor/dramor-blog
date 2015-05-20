@@ -1,0 +1,34 @@
+---
+layout: post
+title: A ver si puedo decir que me quedo con Wordpress 2.0
+date: 2006-01-04 00:05:04.000000000 +00:00
+categories:
+- Boring Stories
+- Frikadas
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: Juanjo
+  email: jjamorNOSPAM@gmail.com
+  display_name: Juanjo
+  first_name: Juanjo
+  last_name: Amor
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Llevo unos días probando Wordpress 2.0, pero no había dicho nada porque había un detalle que me tenía un poco mosca: el contador de comentarios de cada envío no se actualizaba bien. Tras un paseo por la web encontré <a href="http://wordpress.org/support/topic/53509">este aviso de fallo</a> en las páginas de <a href="http://wordpress.org/">Wordpress</a>. Parece que el problema se deriva de usar <a href="http://unknowngenius.com/blog/wordpress/spam-karma/">Spam Karma 2</a> con la nueva versión de Wordpress.</p>
+<p>Al final, el aviso de error anterior me ha dado la pista y <a href="http://paulaoffutt.com/blog/archives/2005/12/28/wordpress-20-upgrade-process/">este otro artículo</a>, los enlaces que necesitaba para encontrar los parches necesarios. Como las explicaciones anteriores son un poco largas, dejo aquí un resumen de lo que hay que hacer:</p>
+<ul>
+<li>Lo primero, bajarnos <a href="http://wp-plugins.net/sk2/">de aquí Spam Karma 2.1 beta</a> y <a href="http://lair.fierydragon.org/2005/11/sk2-wp2compatibility/">el plugin de compatibilidad con WP2.0 de aquí</a> (en este último, rebuscad un poco hasta dar con <a href="http://lair.fierydragon.org/downloads/sk2_wp2compatibility_plugin.zip">el fichero</a>).</li>
+<li>A continuación, desactivamos el plugin de Spam Karma 2 y después lo borramos físicamente de nuestro hosting (se trata de borrar el directorio <code>SK2</code> que hay bajo <code>wp-content/plugins</code>).</li>
+<li>Instalamos Spam Karma 2.1 en el lugar del anterior.</li>
+<li>Descomprimimos el plugin de compatibilidad. El fichero <code>sk2_wp2compatibility_plugin.php</code> lo pasamos al directorio <code>sk2_plugins</code> que hay dentro de <code>SK2</code>.</li>
+<li>Ahora activamos el plugin Spam Karma 2.1 y nos vamos a la configuración (menú Manage -&gt; Spam Karma 2) para verificar que el plugin de compatibilidad (WP2-Compatibility) está activado (en mi caso aparece casi al final del todo).</li>
+<li>Para corregir el contador de los comentarios antiguos, tenemos que pasarles el plugin de compatibilidad. Para ello, vamos a Manage -&gt; Spam Karma 2 -&gt; Approved Comments, marcamos todos los comentarios ahí y seleccionamos el filtro <em>Run selected entries through WP2-Compatibility</em>.</li>
+<li>Probarlo todo: ver que los contadores se han corregido y que si enviamos un comentario el contador del envío afectado también se modifica.
+</li>
+</ul>
+<p>Bueno, sigamos probando Wordpress 2.0. A ver si un día de estos decido que me quedo definitivamente con él. Que aun guardo los backups, por si acaso ;-)</p>
