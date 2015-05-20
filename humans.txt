@@ -1,12 +1,13 @@
----
----
 /* SITE */
 # humanstxt.org/
 # The humans responsible & technology colophon
 
 # TEAM
 
-
+Name: Juanjo Amor
+Role: Author and developer
+Site: http://dramor.net/
+Twitter: http://twitter.com/dramor
 
 # THANKS
 
