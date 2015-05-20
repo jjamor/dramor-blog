@@ -21,7 +21,7 @@ widget-2:
 widget-3:
     title: "Y ahora... github!"
     url: 'https://github.com/jjamor'
-    text: 'Un poco cansado de la complejidad de Wordpress y siempre convencido en que hay que mostrar todas las cartas, renové mis páginas tanto principal como Blog (esta última gracias a la plantilla <em>Feeling Responsive</em> de <a href="http://moritz.sauer.io/"><em>phlow</em></a>). Y como digo, mostrando todas mis cartas y las de aquellos que, inconscientemente, gracias a una licencia de uso libre, me ayudaron. En Github, por supuesto.'
+    text: 'Un poco cansado de la complejidad de Wordpress y siempre convencido en que hay que mostrar todas las cartas, renové completamente este blog (con la ayuda de Jekyll y la plantilla <em>Feeling Responsive</em> de <a href="http://moritz.sauer.io/"><em>phlow</em></a>). Y como digo, mostrando todas mis cartas y las de aquellos que, con una licencia libre, han ayudado a esta página poniendo a nuestra disposición su trabajo para que lo evolucionemos. En Github, por supuesto.'
     image: github-303x182.jpg
 ---
 
