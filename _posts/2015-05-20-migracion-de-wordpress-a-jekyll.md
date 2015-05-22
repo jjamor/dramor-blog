@@ -22,7 +22,7 @@ teaser: Migración a Jekyll del blog y publicación de todas las fuentes en Gith
 show_meta: true
 ---
 
-Continuando con el trabajo comenzado con [mi página][1], y buscando como [objetivo hacerla *responsive* y compatible con móviles], procedí a realizar un trabajo de migración de Wordpress a Jekyll. Las razones para movernos a Jekyll están [bien justificadas aquí][3].
+Continuando con el trabajo comenzado con [mi página][1], y buscando como [objetivo hacerla *responsive* y compatible con móviles][2], procedí a realizar un trabajo de migración de Wordpress a Jekyll. Las razones para movernos a Jekyll están [bien justificadas aquí][3].
 
 Jekyll es un sistema de blogs con páginas estáticas muy sencillos. Para empezar, no necesita *cookies* para nada, por lo que me olvido de estas [extrañas normas europeas][4].
 
