@@ -1,17 +1,17 @@
 - name: YouTube
   url: http://www.youtube.com/JuanjoAI
   class: icon-youtube
-  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+  title: "Videos"
 
 - name: Twitter
   url: http://twitter.com/dramor
   class: icon-twitter
-  title: "Immer das Neuste von Phlow gibt es auf Twitter"
+  title: "Silbidos"
 
 - name: Facebook
   url: http://www.facebook.com/juanjo.amor
   class: icon-facebook
-  title: "Lass uns Freunde sein!"
+  title: "Red Social"
 
 #- name: Soundcloud
 #  url: http://soundcloud.com/phlow
@@ -21,12 +21,17 @@
 - name: GitHub
   url: http://github.com/jjamor
   class: icon-github
-  title: Code und mehr...
+  title: "Codigo libre"
 
 - name: Instagram
   url: http://instagram.com/juanjoai
   class: icon-instagram
-  title: "Bilder und Impressionen mit und ohne Filter..."
+  title: "Fotos desde el movil"
+
+- name: Flickr
+  url: https://www.flickr.com/photos/dramor/albums
+  class: icon-flickr
+  title: "Flickr Albums"
 
 #- name: Pinterest
 #  url: http://www.pinterest.com/phlowmedia/
