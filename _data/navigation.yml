@@ -7,20 +7,20 @@
   side: left
 
 - title: "Investigación y CV"
-  url: "http://home.dramor.net/"
-  side: left
-#  dropdown:
-#  - title: "Investigación"
-#    url: "/research/"
-#  - title: "Software Libre"
-#    url: "/swlibre/"
-
-- title: Blog
-# url: "/blog/"
+  url: "/research/"
   side: left
   dropdown:
-  - title: Blog
-    url: "/blog/"
+  - title: "Curriculum"
+    url: "/research/cv.html"
+  - title: "Investigación"
+    url: "/research/investigacion.html"
+  - title: "Software Libre"
+    url: "/research/swlibre.html"
+
+- title: Blog
+  url: "/blog/"
+  side: left
+  dropdown:
   - title: "Archivos Blog"
     url: "/blog/archive/"
 
