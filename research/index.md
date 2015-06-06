@@ -32,12 +32,12 @@ En estas páginas, puedes consultar un resumen de mi [curriculum profesional][7]
 
 [1]: http://www.fi.upm.es/
 [2]: http://www.upm.es/
-[3]: http://home.dramor.net/pfc/
+[3]: http://googledrive.com/host/0Bx8Qihapa6BLfmwxZXY2QUlvRFVydU5KZTY4WVNDd0NvRzF5TDVoWXNEVVZhbjUwMWM1Y2c/edu/pfc/
 [4]: http://libresoft.es/
 [5]: http://gsyc.escet.urjc.es/
 [6]: http://www.urjc.es/
-[7]: http://home.dramor.net/cv.html
-[8]: http://home.dramor.net/research.html
+[7]: {{ site.url }}/research/cv.html
+[8]: {{ site.url }}/research/investigacion.html
 
 Un resumen (corto)
 ==================

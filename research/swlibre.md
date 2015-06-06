@@ -91,7 +91,7 @@ Otros temas
 
 > [Sistemas de Tiempo Real: Realización en Linux][21] Campus-Party 1998
 
-[19]: http://home.dramor.net/research/talks/20110429-Madrid-casul-cacert.pdf
+[19]: http://googledrive.com/host/0Bx8Qihapa6BLfmwxZXY2QUlvRFVydU5KZTY4WVNDd0NvRzF5TDVoWXNEVVZhbjUwMWM1Y2c/edu/research/talks/20110429-Madrid-casul-cacert.pdf
 [20]: http://formacion.libresoft.es/cursos/sistemas
 [21]: http://es.tldp.org/Presentaciones/1998cp/conf-jjamor/conf-jjamor-cp98.tgz
 
