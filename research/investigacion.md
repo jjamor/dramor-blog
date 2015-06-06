@@ -31,7 +31,7 @@ En esta página pueden encontrarse las publicaciones científicas en las que voy
 [Más información (PDF)][3]
 
 [1]: http://www.urjc.es/
-[2]: http://libresoft.urjc.es/
+[2]: http://libresoft.es/
 [3]: http://home.dramor.net/curriculum/cictcv.pdf
 
 Libros

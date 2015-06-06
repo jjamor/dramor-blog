@@ -33,7 +33,7 @@ En estas páginas, puedes consultar un resumen de mi [curriculum profesional][7]
 [1]: http://www.fi.upm.es/
 [2]: http://www.upm.es/
 [3]: http://home.dramor.net/pfc/
-[4]: http://libresoft.urjc.es/
+[4]: http://libresoft.es/
 [5]: http://gsyc.escet.urjc.es/
 [6]: http://www.urjc.es/
 [7]: http://home.dramor.net/cv.html
