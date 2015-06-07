@@ -1,8 +1,3 @@
-- name: YouTube
-  url: http://www.youtube.com/JuanjoAI
-  class: icon-youtube
-  title: "Videos"
-
 - name: Twitter
   url: http://twitter.com/dramor
   class: icon-twitter
@@ -12,6 +7,11 @@
   url: http://www.facebook.com/juanjo.amor
   class: icon-facebook
   title: "Red Social"
+
+- name: Linkedin
+  url: http://www.linkedin.com/in/dramor
+  class: icon-linkedin
+  title: "Red Social Profesional"
 
 #- name: Soundcloud
 #  url: http://soundcloud.com/phlow
@@ -27,6 +27,11 @@
   url: http://instagram.com/juanjoai
   class: icon-instagram
   title: "Fotos desde el movil"
+
+- name: YouTube
+  url: http://www.youtube.com/JuanjoAI
+  class: icon-youtube
+  title: "Videos"
 
 #- name: Pinterest
 #  url: http://www.pinterest.com/phlowmedia/
