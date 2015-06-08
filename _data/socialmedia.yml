@@ -28,6 +28,11 @@
   class: icon-instagram
   title: "Fotos desde el movil"
 
+- name: Flickr
+  url: https://www.flickr.com/photos/dramor/sets
+  class: icon-camera
+  title: "Fotos del DrAmor"
+
 - name: YouTube
   url: http://www.youtube.com/JuanjoAI
   class: icon-youtube
