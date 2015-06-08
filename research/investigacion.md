@@ -28,10 +28,11 @@ Cursé estudios de doctorado en la [Universidad Rey Juan Carlos][1]. Trabajo con
 
 En esta página pueden encontrarse las publicaciones científicas en las que voy participando. 
 
-[Más información (PDF)][3]
+Más información: [Citaciones MSResearch][40]; [Citaciones ResearchGate][41]
+
 
 [1]: http://www.urjc.es/
-[2]: http://libresoft.es/
+[2]: http://www.libresoft.es/
 [3]: http://googledrive.com/host/0Bx8Qihapa6BLfmwxZXY2QUlvRFVydU5KZTY4WVNDd0NvRzF5TDVoWXNEVVZhbjUwMWM1Y2c/edu/curriculum/cictcv.pdf
 
 Libros
@@ -157,4 +158,6 @@ Software Libre: Introducción e Ingeniería del Software. Impartida en la Univer
 
 [39]: http://googledrive.com/host/0Bx8Qihapa6BLfmwxZXY2QUlvRFVydU5KZTY4WVNDd0NvRzF5TDVoWXNEVVZhbjUwMWM1Y2c/edu/research/talks/2005-fosdem-jjamorherraiz.pdf
 
+[40]: http://academic.research.microsoft.com/Author/3522332
+[41]: http://www.researchgate.net/profile/Juan_Amor
 
