@@ -52,7 +52,7 @@ la OSI*][6]. ¿Qué significa esto? En primer lugar, significa que cumple la def
 [disponible aquí][7]. Esto es importante. Como lo es el hecho de que elijan una
 licencia *permisiva*, es decir, que permite *cerrar* el código fuente de los trabajos derivados.
 Esto es lo que la diferencia de las licencias de software libre *copyleft*, como la [GPL][8]. Y Apple,
-como tantas otras compañías, elijen este modelo permisivo.
+como tantas otras compañías, elige este modelo permisivo.
 
 [6]: https://developer.apple.com/swift/blog/?id=29
 [7]: http://opensource.org/osd
