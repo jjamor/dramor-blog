@@ -10,7 +10,7 @@ header:
    image_fullwidth: "portada-datacentre.jpg"
 widget-1:
     title: "Blog"
-    url: '/blog/'
+    url: 'blog/'
     text: 'Desde 2004, escribo regularmente este blog. Artículos a veces de índole social, pero sobre todo de carácter técnico. Principalmente sobre el paradigma que más me ha motivado siempre: el <em>open source</em> o software libre. Pero ojo, que puede que cuele hasta ¡recetas de cocina!'
     image: oldblog.jpg
 widget-2:
