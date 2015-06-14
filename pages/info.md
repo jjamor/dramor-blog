@@ -12,6 +12,7 @@ header:
 
 Con esta transformación, comencé a usar un software de blog de página estática (*Jekyll*), lo versioné con Git (en *github*) y, de paso, adaptamos todo al recomendado diseño *apto para móviles*. Aunque en el fondo, lo que más nos interesa a todos es **simplificar el mantenimiento**.
 
+![Aceptamos todas las Cookies][7]
 
 ## Basado en...
 
@@ -34,4 +35,5 @@ También procuro poner yo el *artwork* pero también hay mucha gente que pone a 
  [4]: http://github.com/jjamor/dramor-blog/
  [5]: https://www.flickr.com/photos/beraldoleal/
  [6]: http://dramor.net/
+ [7]: {{ site.urlimg }}/articles/aceptamostodascookies.jpg
  
