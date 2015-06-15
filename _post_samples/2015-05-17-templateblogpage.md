@@ -23,6 +23,7 @@ show_meta: true
 Página de plantilla para artículos del blog.
 
 ![Ejemplo de imagen incrustada][1]
+*Ejemplo de caption de la imagen (opcional)*
 
 Esto es un [ejemplo de enlace][2].
 
