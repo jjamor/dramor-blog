@@ -10,7 +10,7 @@ header:
    image_fullwidth: "portada-datacentre.jpg"
 widget-1:
     title: "Blog"
-    url: '/blog/'
+    url: 'blog/'
     text: 'Desde 2004, escribo regularmente este blog. Artículos a veces de índole social, pero sobre todo de carácter técnico. Principalmente sobre el paradigma que más me ha motivado siempre: el <em>open source</em> o software libre. Pero ojo, que puede que cuele hasta ¡recetas de cocina!'
     image: oldblog.jpg
 widget-2:
@@ -19,9 +19,9 @@ widget-2:
     text: 'Mi nombre es Juanjo Amor. Soy un profesional de la informática especialista en sistemas Unix/Linux y durante mucho tiempo, <em>activista</em> del modelo de software libre. Inquietudes diversas me han llevado a pasar de empresa a investigación y viceversa. Pero DrAmor es, sobre todo, una pequeña broma que hicimos unos amigos hace muchos años.'
     image: dramor.jpg
 widget-3:
-    title: "Y ahora... github!"
-    url: 'https://github.com/jjamor'
-    text: 'Un poco cansado de la complejidad de Wordpress y siempre convencido en que hay que mostrar todas las cartas, renové completamente este blog (con la ayuda de Jekyll y la plantilla <em>Feeling Responsive</em> de <a href="http://moritz.sauer.io/"><em>phlow</em></a>). Y como digo, mostrando todas mis cartas y las de aquellos que, con una licencia libre, han ayudado a esta página poniendo a nuestra disposición su trabajo para que lo evolucionemos. En Github, por supuesto.'
-    image: github-303x182.jpg
+    title: "Colección Fotográfica"
+    url: 'https://www.flickr.com/photos/dramor/sets'
+    text: 'Las fotos de algunos viajes de DrAmor por el mundo, publicadas con licencia <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES">Creative Commons Attribution-ShareAlike</a>. Ahora ya alojadas en <a href="https://www.flickr.com/photos/dramor/albums">Flickr</a>, hasta que Yahoo decida lo contrario. La mayoría de los viajes tienen como excusa la participación en diversos congresos relacionados con la informática y la sociedad digital. Y faltan muchas, muchísimas fotos. Incluso hay viajes que no están aquí, por falta de tiempo.'
+    image: camara-antigua-publicdomainimage.jpg
 ---
 

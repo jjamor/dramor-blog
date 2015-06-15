@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Plantilla de artículo de blog"
+date: 2015-05-17 19:33:00.000000000 +00:00
 categories:
 - Boring Stories
 - Frikadas
@@ -21,4 +22,11 @@ show_meta: true
 ---
 Página de plantilla para artículos del blog.
 
+![Ejemplo de imagen incrustada][1]
+*Ejemplo de caption de la imagen (opcional)*
+
+Esto es un [ejemplo de enlace][2].
+
+[1]: {{ site.urlimg }}/articles/imagen.png
+[2]: http://dramor.net/
 

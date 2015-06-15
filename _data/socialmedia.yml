@@ -1,17 +1,17 @@
-- name: YouTube
-  url: http://www.youtube.com/JuanjoAI
-  class: icon-youtube
-  title: "Videos"
-
 - name: Twitter
   url: http://twitter.com/dramor
   class: icon-twitter
   title: "Silbidos"
 
 - name: Facebook
-  url: http://www.facebook.com/juanjo.amor
+  url: http://www.facebook.com/jjamor
   class: icon-facebook
   title: "Red Social"
+
+- name: Linkedin
+  url: http://www.linkedin.com/in/dramor
+  class: icon-linkedin
+  title: "Red Social Profesional"
 
 #- name: Soundcloud
 #  url: http://soundcloud.com/phlow
@@ -32,6 +32,16 @@
   url: https://www.flickr.com/photos/dramor/albums
   class: icon-flickr
   title: "Flickr Albums"
+
+#- name: Flickr
+#  url: https://www.flickr.com/photos/dramor/sets
+#  class: icon-camera
+#  title: "Fotos del DrAmor"
+
+- name: YouTube
+  url: http://www.youtube.com/JuanjoAI
+  class: icon-youtube
+  title: "Videos"
 
 #- name: Pinterest
 #  url: http://www.pinterest.com/phlowmedia/
