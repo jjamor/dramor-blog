@@ -13,6 +13,7 @@ header:
 Con esta transformación, comencé a usar un software de blog de página estática (*Jekyll*), lo versioné con Git (en *github*) y, de paso, adaptamos todo al recomendado diseño *apto para móviles*. Aunque en el fondo, lo que más nos interesa a todos es **simplificar el mantenimiento**.
 
 ![Aceptamos todas las Cookies][7]
+*Imagen por [@rosmadoiro](http://twitter.com/rosmadoiro)*
 
 ## Basado en...
 
