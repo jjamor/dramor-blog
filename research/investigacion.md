@@ -28,7 +28,7 @@ Cursé estudios de doctorado en la [Universidad Rey Juan Carlos][1]. Trabajo con
 
 En esta página pueden encontrarse las publicaciones científicas en las que voy participando. 
 
-Más información: [Citaciones MSResearch][40]; [Citaciones ResearchGate][41]
+Más información: [Citaciones Google Scholar][42]; [Citaciones MSResearch][40]; [Citaciones ResearchGate][41]
 
 
 [1]: http://www.urjc.es/
@@ -160,4 +160,4 @@ Software Libre: Introducción e Ingeniería del Software. Impartida en la Univer
 
 [40]: http://academic.research.microsoft.com/Author/3522332
 [41]: http://www.researchgate.net/profile/Juan_Amor
-
+[42]: https://scholar.google.es/citations?user=ZrYHT0sAAAAJ
