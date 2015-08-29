@@ -216,3 +216,6 @@ google_analytics_tracking_id: UA-120704-7
 # used in _includes/footer_scripts.html
 
 tawkto_embed_uri: https://embed.tawk.to/5407146b59df1e704b00001b/default
+
+gems:
+    - jekyll-redirect-from

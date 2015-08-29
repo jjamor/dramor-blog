@@ -20,6 +20,7 @@ author:
   last_name: Amor
 teaser: Cómo buscar stickers en Telegram. La "guía definitiva"
 show_meta: true
+redirect_from: "/2017/07/como-buscar-stickers-telegram/"
 ---
 
 [Telegram][3], ese chat que le da bastantes vueltas a [Whatsapp][4]
