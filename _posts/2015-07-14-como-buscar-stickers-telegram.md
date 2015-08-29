@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cómo buscar stickers para Telegram"
-date: 2017-07-14 10:00:00.000000000 +00:00
+date: 2015-07-14 10:00:00.000000000 +00:00
 categories:
 - Boring Stories
 - Frikadas
